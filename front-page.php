@@ -1,10 +1,4 @@
-<?php /*
 
-	Template Name: Front Page
-
-*/
-
-?>
 <?php get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<section id="main" class="container">
