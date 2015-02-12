@@ -1,0 +1,20 @@
+/*
+Theme Name: Print Themed
+Theme URI: http://wearehmc.com/theme/new_theme
+Author: Amanda Iaria @ HMC Advertising
+Author URI: http://wearehmc.com
+Version:
+*/
+
+//Vendor - Bootstrap
+@import "_bootstrapSass/bootstrap";
+
+@import "_partials/variables";
+@import "_partials/mixins";
+@import "_partials/fonts";
+
+#image{
+    img{
+        width:100%;
+    }
+}
