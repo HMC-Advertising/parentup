@@ -1,0 +1,183 @@
+/*
+Theme Name: Parent Up
+Theme URI: http://wearehmc.com/theme/new_theme
+Author: Amanda Iaria @ HMC Advertising
+Author URI: http://wearehmc.com
+Version:
+*/
+
+//Vendor - Bootstrap
+@import "_bootstrapSass/bootstrap";
+
+@import "_partials/variables";
+@import "_partials/mixins";
+@import "_partials/fonts";
+
+body{
+    background: $cream url("http://placehold.it/2200x500") no-repeat top;
+    background-size: 100% auto;
+    color: $burg;
+    font-family: $freight;
+
+}
+
+a{
+    color:$dblue;
+}
+#header{
+    padding-top: 10px;
+    background:$cream;
+    ul{
+        left: 200px;
+        position: relative;
+        padding-left: 0;
+        li{
+              display:inline-block;
+            a{
+                font-weight: 600;
+                padding-left:10px;
+                padding-right:10px;
+            }
+        }
+    }
+    .alert{
+        background:$orange;
+        width:300px;
+        position: absolute;
+       right:10%;
+       top:-10px;
+       z-index:100;
+       padding-bottom:0;
+        color:$cream;
+        @include border-radius(0);
+        footer{
+            &.on{
+                background: $burg;
+                padding:20px;
+                margin-left:-16px;
+                margin-right:-16px;
+                margin-bottom: -1px;
+            }
+            &.off{
+                background: $orange;
+                padding:10px;
+                display:none;
+                margin-top:-18px;
+            }
+            a{
+                text-align: right;
+            }
+        }
+        a.close{
+                color:$cream;
+                display:block;
+                width:100%;
+                float:none;
+                font-size:20px;
+                font-weight: 400;
+                line-height: auto;
+                text-shadow:none;
+                opacity:1.0;
+            }
+        h1{
+            color:$burg;
+            text-transform: uppercase;
+
+        }
+        ul{
+            left:0;
+            li{
+                display: block;
+                a{
+
+                }
+            }
+        }
+
+    }
+}
+
+#content{
+    z-index: 1;
+  height:100%;
+
+    .sidenav{
+        background:$dblue;
+        width:200px;
+        min-height: 100%;
+
+        ul{
+            list-style-image: url("http://placehold.it/20x20");
+            margin-top: 20px;
+            margin-bottom:0;
+            padding-left: 26px;
+
+
+            li{
+                vertical-align: middle;
+                a{
+                    color:$cream;
+                    font-weight: 600;
+                    padding-bottom:20px;
+                    display:block;
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+    }
+    .page_content{
+        margin-top:200px;
+        background:rgba(255,255,255, 0.5);
+        padding:20px;
+
+    }
+    .seperator{
+        background:$burg;
+        color:$dblue;
+        font-size: 30px;
+        padding:20px;
+    }
+    .onhover{
+        background:$cream;
+        color:$dblue;
+        padding:20px;
+        font-size: 20px;
+         height:300px;
+        display: block;
+        position:relative;
+        .hovering{
+            height:300px;
+        }
+    }
+    .page_content, .seperator, .onhover{
+        padding-left:20px;
+        margin-left: 5px;
+    }
+
+}
+
+#footer{
+    background:$burg;
+    color:$cream;
+    .tagline{
+        padding-top:15px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    img{
+        float:right;
+    }
+    ul{
+      right:300px;
+      position: relative;
+      float:right;
+      padding-top:15px;
+        li{
+            display:inline-block;
+            a{
+                color:$cream;
+            }
+        }
+    }
+}

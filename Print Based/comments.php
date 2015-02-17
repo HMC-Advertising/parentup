@@ -1,1 +1,0 @@
-<h2 class="lead">Comments</h2>
