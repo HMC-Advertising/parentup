@@ -52,23 +52,7 @@
 
 						 wp_nav_menu($defaults); ?>
 					</nav>
-					<div class="alert">
-						<article>
-							<h1> My Teen Needs Help Now</h1>
-							<ul>
-								<li>one</li>
-								<li>two</li>
-								<li>three</li>
-							</ul>
-						</article>
-						<footer class="on">
-							<a href="#" class="close on">close X</a>
-						</footer>
-						<footer class="off">
-							<a href="#"  class="close off">My Teen Needs Help Now &gt;</a>
-						</footer>
-
-					</div>
+					<?php get_template_part("assets/php/templates/alert"); ?>
 				</div>
 			</div>
 		</div>

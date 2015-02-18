@@ -5,6 +5,7 @@ $(function(){
    var cl = $(".close");
    var a = $(".alert article");
    var f = $(".alert footer");
+   var nato = $(".top_drop");
 
    cl.on("click", function(e){
         e.preventDefault();
@@ -27,7 +28,24 @@ $(function(){
 
    })
    bakeCookies();
+   //
 
+   nato.on("click", function(e){
+         e.preventDefault();
+         t = $(this);
+         nato.children("ul").slideUp();
+
+
+         if(t.hasClass("on")){
+            t.children("ul").slideUp();
+            t.removeClass("on");
+         }
+         else{
+             nato.removeClass("on");
+             t.children("ul").slideDown();
+            t.addClass("on");
+         }
+   })
 
 
 
@@ -42,7 +60,7 @@ function bakeCookies(yum){
     }
     else{
         var ck = readCookie("yum");
-        if(ck == "on"){
+        if(ck){
             $(".alert article").hide();
             $("footer.on").hide();
             $("footer.off").show();

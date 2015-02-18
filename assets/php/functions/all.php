@@ -1,6 +1,5 @@
 <?php
 include("menus.php");
-
 include("newFunctions.php");
 include("postTypes.php");
 include("shortcodes.php");

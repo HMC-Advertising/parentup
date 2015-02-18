@@ -14,15 +14,23 @@ Version:
 @import "_partials/fonts";
 
 body{
-    background: $cream url("http://placehold.it/2200x500") no-repeat top;
+    background: $cream ;
     background-size: 100% auto;
     color: $burg;
     font-family: $freight;
-
 }
 
 a{
     color:$dblue;
+    font-weight: 600;
+    @include transition(1, 1s, 0);
+    &:hover{
+        color:$burg;
+    }
+}
+h1{
+    font-weight: 600;
+    text-transform: uppercase;
 }
 #header{
     padding-top: 10px;
@@ -44,13 +52,16 @@ a{
         background:$orange;
         width:300px;
         position: absolute;
-       right:10%;
-       top:-10px;
-       z-index:100;
-       padding-bottom:0;
+        right:10%;
+        top:-10px;
+        z-index:100;
+        padding-bottom:0;
+        padding-top: 0px;
         color:$cream;
         @include border-radius(0);
+
         footer{
+             @include transition(1, 1s, 0);
             &.on{
                 background: $burg;
                 padding:20px;
@@ -62,10 +73,15 @@ a{
                 background: $orange;
                 padding:10px;
                 display:none;
-                margin-top:-18px;
+                padding-bottom: 9px;
             }
             a{
                 text-align: right;
+                color:$cream;
+                text-transform: uppercase;
+                &:hover{
+                    color:$lburg;
+                }
             }
         }
         a.close{
@@ -73,23 +89,58 @@ a{
                 display:block;
                 width:100%;
                 float:none;
-                font-size:20px;
-                font-weight: 400;
                 line-height: auto;
                 text-shadow:none;
                 opacity:1.0;
+                &.off{
+                    font-size: 18px;
+                    font-weight:800;
+                    text-align: left;
+                     i{
+                        float: right;
+                        font-size: 17px;
+                        top: 2px;
+                        position: relative;
+                        right: -10px;
+                    }
+                }
+                &.on{
+                   font-size:20px;
+                    font-weight: 400;
+                }
             }
         h1{
             color:$burg;
             text-transform: uppercase;
-
+            font-size: 28px;
+            line-height: 22px;
+            letter-spacing: -1px;
+            font-weight:800;
         }
         ul{
             left:0;
             li{
                 display: block;
+                 padding:10px;
+                 border-bottom: 2px solid $lorange;
+                 &:last-child{
+                    border-bottom:none;
+                 }
                 a{
-
+                    color:$cream;
+                    text-transform: uppercase;
+                    display: block;
+                    &:hover{
+                        text-decoration: none;
+                        color:$burg;
+                    }
+                    i{
+                        float: right;
+                        font-size: 39px;
+                        top: -16px;
+                        position: relative;
+                        right: -30px;
+                    }
                 }
             }
         }
@@ -99,20 +150,26 @@ a{
 
 #content{
     z-index: 1;
-  height:100%;
-
+    height:100%;
     .sidenav{
         background:$dblue;
         width:200px;
         min-height: 100%;
+        .top_drop{
+            ul{
+                display:none;
+                 list-style-image: none;
+                 list-style: none;
+                 padding-top: 0;
+                 margin-top: -10px;
+            }
+        }
 
         ul{
             list-style-image: url("http://placehold.it/20x20");
             margin-top: 20px;
             margin-bottom:0;
             padding-left: 26px;
-
-
             li{
                 vertical-align: middle;
                 a{
@@ -126,35 +183,59 @@ a{
             }
         }
     }
-    .page_content{
-        margin-top:200px;
-        background:rgba(255,255,255, 0.5);
-        padding:20px;
 
-    }
-    .seperator{
-        background:$burg;
-        color:$dblue;
-        font-size: 30px;
-        padding:20px;
-    }
-    .onhover{
-        background:$cream;
-        color:$dblue;
-        padding:20px;
-        font-size: 20px;
-         height:300px;
-        display: block;
-        position:relative;
-        .hovering{
-            height:300px;
-        }
-    }
-    .page_content, .seperator, .onhover{
+    .page_content, .seperator, .onhover, .breadcrumbs{
         padding-left:20px;
         margin-left: 5px;
     }
+    &.page{
+        background: url("assets/img/pagebg.png") repeat-x top;
+        .page_content{
+            background:none;
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+        h1{
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .breadcrumbs{
+            color:$lburg;
+            margin-top: 15px;
+            font-weight: 600;
+            a{
+                color:$cream;
+            }
+        }
+    }
+    &.frontpage{
+        background:url("http://placehold.it/2200x500") no-repeat top;
+        background-size: 100% auto;
+        .page_content{
+            margin-top:200px;
+            background:rgba(255,255,255, 0.5);
+            padding:20px;
 
+        }
+        .seperator{
+            background:$burg;
+            color:$dblue;
+            font-size: 30px;
+            padding:20px;
+        }
+        .onhover{
+            background:$cream;
+            color:$dblue;
+            padding:20px;
+            font-size: 20px;
+            height:300px;
+            display: block;
+            position:relative;
+            .hovering{
+                height:300px;
+            }
+        }
+    }
 }
 
 #footer{
@@ -166,17 +247,20 @@ a{
         font-size: 16px;
     }
     img{
-        float:right;
+        float:left;
+        display:inline;
     }
     ul{
-      right:300px;
-      position: relative;
-      float:right;
-      padding-top:15px;
+        // right:300px;
+        //position: relative;
+        float:left;
+        padding-top:15px;
+        display:inline-block;
         li{
             display:inline-block;
             a{
                 color:$cream;
+                font-weight:400;
             }
         }
     }

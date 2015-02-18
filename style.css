@@ -7055,33 +7055,47 @@ button.close {
   src: url("assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 /* line 16, assets/sass/style.scss */
 body {
-  background: #dfdccb url("http://placehold.it/2200x500") no-repeat top;
+  background: #dfdccb;
   background-size: 100% auto;
   color: #52111d;
   font-family: "freight-sans-pro"; }
 
-/* line 24, assets/sass/style.scss */
+/* line 23, assets/sass/style.scss */
 a {
-  color: #00878d; }
+  color: #00878d;
+  font-weight: 600;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  /* line 27, assets/sass/style.scss */
+  a:hover {
+    color: #52111d; }
 
-/* line 27, assets/sass/style.scss */
+/* line 31, assets/sass/style.scss */
+h1 {
+  font-weight: 600;
+  text-transform: uppercase; }
+
+/* line 35, assets/sass/style.scss */
 #header {
   padding-top: 10px;
   background: #dfdccb; }
-  /* line 30, assets/sass/style.scss */
+  /* line 38, assets/sass/style.scss */
   #header ul {
     left: 200px;
     position: relative;
     padding-left: 0; }
-    /* line 34, assets/sass/style.scss */
+    /* line 42, assets/sass/style.scss */
     #header ul li {
       display: inline-block; }
-      /* line 36, assets/sass/style.scss */
+      /* line 44, assets/sass/style.scss */
       #header ul li a {
         font-weight: 600;
         padding-left: 10px;
         padding-right: 10px; }
-  /* line 43, assets/sass/style.scss */
+  /* line 51, assets/sass/style.scss */
   #header .alert {
     background: #e45f18;
     width: 300px;
@@ -7090,123 +7104,207 @@ a {
     top: -10px;
     z-index: 100;
     padding-bottom: 0;
+    padding-top: 0px;
     color: #dfdccb;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0; }
-    /* line 54, assets/sass/style.scss */
-    #header .alert footer.on {
-      background: #52111d;
-      padding: 20px;
-      margin-left: -16px;
-      margin-right: -16px;
-      margin-bottom: -1px; }
-    /* line 61, assets/sass/style.scss */
-    #header .alert footer.off {
-      background: #e45f18;
-      padding: 10px;
-      display: none;
-      margin-top: -18px; }
-    /* line 67, assets/sass/style.scss */
-    #header .alert footer a {
-      text-align: right; }
-    /* line 71, assets/sass/style.scss */
+    /* line 63, assets/sass/style.scss */
+    #header .alert footer {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
+      /* line 65, assets/sass/style.scss */
+      #header .alert footer.on {
+        background: #52111d;
+        padding: 20px;
+        margin-left: -16px;
+        margin-right: -16px;
+        margin-bottom: -1px; }
+      /* line 72, assets/sass/style.scss */
+      #header .alert footer.off {
+        background: #e45f18;
+        padding: 10px;
+        display: none;
+        padding-bottom: 9px; }
+      /* line 78, assets/sass/style.scss */
+      #header .alert footer a {
+        text-align: right;
+        color: #dfdccb;
+        text-transform: uppercase; }
+        /* line 82, assets/sass/style.scss */
+        #header .alert footer a:hover {
+          color: #6c343f; }
+    /* line 87, assets/sass/style.scss */
     #header .alert a.close {
       color: #dfdccb;
       display: block;
       width: 100%;
       float: none;
-      font-size: 20px;
-      font-weight: 400;
       line-height: auto;
       text-shadow: none;
       opacity: 1.0; }
-    /* line 82, assets/sass/style.scss */
+      /* line 95, assets/sass/style.scss */
+      #header .alert a.close.off {
+        font-size: 18px;
+        font-weight: 800;
+        text-align: left; }
+        /* line 99, assets/sass/style.scss */
+        #header .alert a.close.off i {
+          float: right;
+          font-size: 17px;
+          top: 2px;
+          position: relative;
+          right: -10px; }
+      /* line 107, assets/sass/style.scss */
+      #header .alert a.close.on {
+        font-size: 20px;
+        font-weight: 400; }
+    /* line 112, assets/sass/style.scss */
     #header .alert h1 {
       color: #52111d;
-      text-transform: uppercase; }
-    /* line 87, assets/sass/style.scss */
+      text-transform: uppercase;
+      font-size: 28px;
+      line-height: 22px;
+      letter-spacing: -1px;
+      font-weight: 800; }
+    /* line 120, assets/sass/style.scss */
     #header .alert ul {
       left: 0; }
-      /* line 89, assets/sass/style.scss */
+      /* line 122, assets/sass/style.scss */
       #header .alert ul li {
-        display: block; }
+        display: block;
+        padding: 10px;
+        border-bottom: 2px solid #e47334; }
+        /* line 126, assets/sass/style.scss */
+        #header .alert ul li:last-child {
+          border-bottom: none; }
+        /* line 129, assets/sass/style.scss */
+        #header .alert ul li a {
+          color: #dfdccb;
+          text-transform: uppercase;
+          display: block; }
+          /* line 133, assets/sass/style.scss */
+          #header .alert ul li a:hover {
+            text-decoration: none;
+            color: #52111d; }
+          /* line 137, assets/sass/style.scss */
+          #header .alert ul li a i {
+            float: right;
+            font-size: 39px;
+            top: -16px;
+            position: relative;
+            right: -30px; }
 
-/* line 100, assets/sass/style.scss */
+/* line 151, assets/sass/style.scss */
 #content {
   z-index: 1;
   height: 100%; }
-  /* line 104, assets/sass/style.scss */
+  /* line 154, assets/sass/style.scss */
   #content .sidenav {
     background: #00878d;
     width: 200px;
     min-height: 100%; }
-    /* line 109, assets/sass/style.scss */
+    /* line 159, assets/sass/style.scss */
+    #content .sidenav .top_drop ul {
+      display: none;
+      list-style-image: none;
+      list-style: none;
+      padding-top: 0;
+      margin-top: -10px; }
+    /* line 168, assets/sass/style.scss */
     #content .sidenav ul {
       list-style-image: url("http://placehold.it/20x20");
       margin-top: 20px;
       margin-bottom: 0;
       padding-left: 26px; }
-      /* line 116, assets/sass/style.scss */
+      /* line 173, assets/sass/style.scss */
       #content .sidenav ul li {
         vertical-align: middle; }
-        /* line 118, assets/sass/style.scss */
+        /* line 175, assets/sass/style.scss */
         #content .sidenav ul li a {
           color: #dfdccb;
           font-weight: 600;
           padding-bottom: 20px;
           display: block;
           text-transform: uppercase; }
-  /* line 129, assets/sass/style.scss */
-  #content .page_content {
-    margin-top: 200px;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 20px; }
-  /* line 135, assets/sass/style.scss */
-  #content .seperator {
-    background: #52111d;
-    color: #00878d;
-    font-size: 30px;
-    padding: 20px; }
-  /* line 141, assets/sass/style.scss */
-  #content .onhover {
-    background: #dfdccb;
-    color: #00878d;
-    padding: 20px;
-    font-size: 20px;
-    height: 300px;
-    display: block;
-    position: relative; }
-    /* line 149, assets/sass/style.scss */
-    #content .onhover .hovering {
-      height: 300px; }
-  /* line 153, assets/sass/style.scss */
-  #content .page_content, #content .seperator, #content .onhover {
+  /* line 187, assets/sass/style.scss */
+  #content .page_content, #content .seperator, #content .onhover, #content .breadcrumbs {
     padding-left: 20px;
     margin-left: 5px; }
+  /* line 191, assets/sass/style.scss */
+  #content.page {
+    background: url("assets/img/pagebg.png") repeat-x top; }
+    /* line 193, assets/sass/style.scss */
+    #content.page .page_content {
+      background: none;
+      margin-top: 50px;
+      padding-bottom: 50px; }
+    /* line 198, assets/sass/style.scss */
+    #content.page h1 {
+      font-weight: 800;
+      text-transform: uppercase; }
+    /* line 202, assets/sass/style.scss */
+    #content.page .breadcrumbs {
+      color: #6c343f;
+      margin-top: 15px;
+      font-weight: 600; }
+      /* line 206, assets/sass/style.scss */
+      #content.page .breadcrumbs a {
+        color: #dfdccb; }
+  /* line 211, assets/sass/style.scss */
+  #content.frontpage {
+    background: url("http://placehold.it/2200x500") no-repeat top;
+    background-size: 100% auto; }
+    /* line 214, assets/sass/style.scss */
+    #content.frontpage .page_content {
+      margin-top: 200px;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px; }
+    /* line 220, assets/sass/style.scss */
+    #content.frontpage .seperator {
+      background: #52111d;
+      color: #00878d;
+      font-size: 30px;
+      padding: 20px; }
+    /* line 226, assets/sass/style.scss */
+    #content.frontpage .onhover {
+      background: #dfdccb;
+      color: #00878d;
+      padding: 20px;
+      font-size: 20px;
+      height: 300px;
+      display: block;
+      position: relative; }
+      /* line 234, assets/sass/style.scss */
+      #content.frontpage .onhover .hovering {
+        height: 300px; }
 
-/* line 160, assets/sass/style.scss */
+/* line 241, assets/sass/style.scss */
 #footer {
   background: #52111d;
   color: #dfdccb; }
-  /* line 163, assets/sass/style.scss */
+  /* line 244, assets/sass/style.scss */
   #footer .tagline {
     padding-top: 15px;
     font-weight: 600;
     font-size: 16px; }
-  /* line 168, assets/sass/style.scss */
+  /* line 249, assets/sass/style.scss */
   #footer img {
-    float: right; }
-  /* line 171, assets/sass/style.scss */
+    float: left;
+    display: inline; }
+  /* line 253, assets/sass/style.scss */
   #footer ul {
-    right: 300px;
-    position: relative;
-    float: right;
-    padding-top: 15px; }
-    /* line 176, assets/sass/style.scss */
+    float: left;
+    padding-top: 15px;
+    display: inline-block; }
+    /* line 259, assets/sass/style.scss */
     #footer ul li {
       display: inline-block; }
-      /* line 178, assets/sass/style.scss */
+      /* line 261, assets/sass/style.scss */
       #footer ul li a {
-        color: #dfdccb; }
+        color: #dfdccb;
+        font-weight: 400; }
