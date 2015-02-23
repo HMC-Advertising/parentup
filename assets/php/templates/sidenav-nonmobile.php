@@ -1,11 +1,10 @@
  <div class="col-lg-2">
-    <div class="sidenav">
+    <div class="sidenav nonmobile">
         <div class="logo">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/desktoplogo.png">
         </div>
-                            <?php
-
-                        $defaults = array(
+        <?php
+            $defaults = array(
                             'theme_location'  => 'main_nav',
                             'menu'            => 'main',
                             'menu_class'      => 'main-menu',
@@ -23,5 +22,5 @@
 
 
                          wp_nav_menu($defaults); ?>
-                         </div>
+    </div>
 </div>

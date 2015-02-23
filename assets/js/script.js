@@ -6,24 +6,53 @@ $(function(){
    var a = $(".alert article");
    var f = $(".alert footer");
    var nato = $(".top_drop");
+   var hov = $(".slide");
+
+   //window.mySwipe = new SwipeView(document.getElementById('swipe1'));
+   $("#swipe1").slick({
+         arrows: false,
+         slide: ".slide"
+   });
+   $("#swipe2").slick({
+         arrows: false,
+           slide: ".slide"
+   });
+   $("#swipe3").slick({
+         arrows: false,
+           slide: ".slide"
+   });
+   $("#swipe4").slick({
+         arrows: false,
+           slide: ".slide"
+   });
+   //$('.single-item').slick();
+
+    hov.hover(function(){
+        $(this).addClass("on");
+        $(this).find("img.one").hide();
+        $(this).find("img.two").show();
+    },
+    function(){
+        $(this).removeClass("on");
+        $(this).find("img.two").hide();
+        $(this).find("img.one").show();
+    });
 
    cl.on("click", function(e){
         e.preventDefault();
         t = $(this);
 
         if(t.hasClass("on")){
-
             a.slideUp();
             $("footer.on").hide();
-             $("footer.off").show();
+            $("footer.off").show();
             bakeCookies("bake");
         }
         else{
-
             a.slideDown();
-             $("footer.off").hide();
-             $("footer.on").show();
-             bakeCookies("eat");
+            $("footer.off").hide();
+            $("footer.on").show();
+            bakeCookies("eat");
         }
 
    })
@@ -31,20 +60,17 @@ $(function(){
    //
 
    nato.on("click", function(e){
-         e.preventDefault();
-         t = $(this);
-         nato.children("ul").slideUp();
+        t = $(this);
+        nato.children("ul").slideUp();
 
-
-         if(t.hasClass("on")){
-            t.children("ul").slideUp();
-            t.removeClass("on");
+        if(t.hasClass("on")){
+             e.preventDefault();
+            t.removeClass("on").children("ul").slideUp();
          }
          else{
-             nato.removeClass("on");
-             t.children("ul").slideDown();
-            t.addClass("on");
-         }
+            nato.removeClass("on");
+            t.children("ul").slideDown().addClass("on");
+        }
    })
 
 

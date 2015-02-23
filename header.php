@@ -2,6 +2,7 @@
 <html lang="en-US" class="">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title><?php
 			if(!wp_title()):
 				bloginfo("name" );
@@ -23,40 +24,30 @@
 
 	</head>
 	<body>
-
+	<div class="hidden-md hidden-lg">
+		<?php get_template_part("assets/php/templates/sidenav", "mobile"); ?>
+	</div>
+	<div class="hidden-md hidden-lg">
+		<div class="sb-slidebar sb-right">
+		Search
+		</div>
+	</div>
+	 <div id="sb-site" class="sb-slide">
 
 	<!-- header non mobile-->
-	<header id="header">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="container">
-					<nav>
-							<?php
-
-						$defaults = array(
-							'theme_location'  => 'top_nav',
-							'menu'            => 'top',
-							'menu_class'      => 'top_nav',
-							'menu_id'         => '',
-							'echo'            => true,
-							'fallback_cb'     => 'wp_page_menu',
-							'before'          => '',
-							'after'           => '',
-							'link_before'     => '',
-							'link_after'      => '',
-							'items_wrap' => '<ul class="top_nav">%3$s</ul>',
-							'depth'           => 0,
-							'walker'          => ''
-						);
-
-
-						 wp_nav_menu($defaults); ?>
-					</nav>
-					<?php get_template_part("assets/php/templates/alert"); ?>
-				</div>
-			</div>
-		</div>
-	</header>
+	<div class="hidden-sm hidden-xs">
+	<?php
+		get_template_part("assets/php/templates/header", "nonmobile")
+	?>
+	</div>
 	<!-- /header non mobile-->
+	<!-- mobile -->
+	<div class="hidden-md hidden-lg">
+		<?php get_template_part("assets/php/templates/header", "mobile"); ?>
+	</div>
+
+	<!-- /mobile -->
+
+
 
 

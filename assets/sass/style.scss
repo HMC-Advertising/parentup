@@ -19,6 +19,10 @@ body{
     color: $burg;
     font-family: $freight;
 }
+#sb-site{
+    background-color: $cream !important;
+    height:100%;
+}
 
 a{
     color:$dblue;
@@ -32,6 +36,15 @@ h1{
     font-weight: 600;
     text-transform: uppercase;
 }
+.q{
+    font-weight: 800;
+    color:$tintlb;
+    font-size: 30px;
+}
+.clear{
+    clear:both;
+}
+
 #header{
     padding-top: 10px;
     background:$cream;
@@ -49,7 +62,7 @@ h1{
         }
     }
     .alert{
-        background:$orange;
+        background:$orange url("assets/img/help_arrow.png") no-repeat center top;
         width:300px;
         position: absolute;
         right:10%;
@@ -166,10 +179,33 @@ h1{
         }
 
         ul{
-            list-style-image: url("http://placehold.it/20x20");
+            list-style-image: url("assets/img/side_nav_arrow.png");
             margin-top: 20px;
             margin-bottom:0;
-            padding-left: 26px;
+            padding-left: 37px;
+
+            .top_drop{
+                 &.current-menu-parent {
+                    list-style-image: url("assets/img/side_nav_arrow_active.png");
+                    a{
+                            color:$lblue;
+                    }
+                    ul{
+                            display: block;
+                          li{
+                               &.current_page_item{
+                                    a{
+                                        color:$lblue;
+                                    }
+                                }
+                                a{
+                                    color:$cream;
+                                }
+                            }
+                        }
+                }
+            }
+
             li{
                 vertical-align: middle;
                 a{
@@ -178,6 +214,11 @@ h1{
                     padding-bottom:20px;
                     display:block;
                     text-transform: uppercase;
+
+
+                    &:hover{
+
+                    }
 
                 }
             }
@@ -189,6 +230,7 @@ h1{
         margin-left: 5px;
     }
     &.page{
+
         background: url("assets/img/pagebg.png") repeat-x top;
         .page_content{
             background:none;
@@ -209,34 +251,186 @@ h1{
         }
     }
     &.frontpage{
-        background:url("http://placehold.it/2200x500") no-repeat top;
+        background:url("assets/img/front-page-stock.png") no-repeat top;
         background-size: 100% auto;
+        @media only screen and (max-width : 400px) {
+            .row{
+                margin-left:-18px;
+            }
+        }
+        .nonmobile .row{
+            @media only screen and (min-width : 900px) {
+
+                margin-left:0px;
+
+            }
+        }
+
         .page_content{
-            margin-top:200px;
-            background:rgba(255,255,255, 0.5);
+            margin-top:400px;
+            background:rgba(230, 228, 214, 0.8);
             padding:20px;
+             /* Smartphones (portrait) ----------- */
+            @media only screen and (max-width : 400px) {
+              margin-top: 100px;
+            }
 
         }
         .seperator{
-            background:$burg;
-            color:$dblue;
-            font-size: 30px;
             padding:20px;
+            background: $burg url("assets/img/burgarrow.png") no-repeat left center;
+            background-size: 133px;
+            color: $dblue;
+            font-size: 30px;
+            text-align: center;
+            line-height: 27px;
+            @media only screen and (max-width : 400px) {
+                padding: 42px;
+                padding-bottom: 17px;
+                padding-top: 12px;
+            }
         }
         .onhover{
             background:$cream;
             color:$dblue;
             padding:20px;
             font-size: 20px;
-            height:300px;
+            height:100%;
             display: block;
             position:relative;
             .hovering{
-                height:300px;
+                height: 580px;
+                //margin-left:-33px;
+                background: $cream;
+                &.row{
+                    margin-left: -15px;
+                }
+                .slide{
+                    height:550px;
+                    //padding-left:5px;
+                    //padding-right:5px;
+
+                }
+                header{
+                    margin:auto;
+                    margin-top:5px;
+                    margin-bottom:10px;
+                    text-align: center;
+                    img{
+                        &:last-child{
+
+                            display: none;
+                        }
+                    }
+                }
+                footer{
+                    //width:250px;
+                    //margin-left:-30px;
+                    //height:155px;
+                    margin-left:-14px;
+                    margin-right: -14px;
+                    display:none;
+
+                    .content1{
+                        border-top:2px solid $cream;
+                        background: $burg;
+                    }
+                }
+                article{
+                    font-weight: 600;
+                    line-height:23px;
+                    height:190px;
+                    padding:10px;
+                    color:$dblue;
+                    text-align: center;
+                }
+                ul{
+                    list-style: none;
+                    padding-left: 0;
+                    margin-left: 0;
+                    li{
+                        border-bottom: thin solid $cream;
+                        a{
+                            color:$cream;
+                            display:block;
+                            font-size: 12px;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            padding:25px;
+                            &:hover{
+                                text-decoration: none;
+                                background:$dblue;
+                            }
+                            i{
+                                position: relative;
+                                float: right;
+                                font-size: 30px;
+                                right: -22px;
+                            }
+                        }
+                    }
+                }
+                .twoline{
+                    i{
+                        top: -10px;
+                    }
+                }
+                .threeline{
+                    i{
+                        top:-20px;
+                    }
+                }
+                .fourline{
+                    i{
+                        top:-30px;
+                    }
+                }
+                .bottom1{
+                    padding-bottom: 36px;
+                }
+                 .bottom2{
+                    padding-bottom: 19px;
+                }
+                .bottom3{
+                    padding-bottom:36px;
+                }
+                //@include transition(1, 1s, 0);
+                .on{
+                    //@include transition(1, 1s, 0);
+                    .cont{
+                        background:$dblue;
+                        article{
+                            color:$cream !important;
+
+                        }
+                        .arrow{
+                            display:block;
+                        }
+                    }
+                    footer{
+                        display:block;
+                    }
+                }
+                .cont{
+                    margin-left: -14px;
+                    margin-right: -14px;
+                    padding-top: 26px;
+                    margin-top: -17px;
+                    .arrow{
+                        display:none;
+                        position: absolute;
+                            color: $burg;
+                            font-size: 90px;
+                            top: -76px;
+                            left: 38%;
+                            text-shadow: 0px 3px 0px $cream;
+                    }
+                }
             }
         }
     }
 }
+
 
 #footer{
     background:$burg;
@@ -245,6 +439,7 @@ h1{
         padding-top:15px;
         font-weight: 600;
         font-size: 16px;
+        text-transform: uppercase;
     }
     img{
         float:left;
@@ -265,3 +460,4 @@ h1{
         }
     }
 }
+@import "_partials/mobile";

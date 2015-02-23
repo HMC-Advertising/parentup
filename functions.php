@@ -3,6 +3,7 @@
 
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
+
     //register navigation
     function register_my_menus(){
         register_nav_menu('main_nav', 'Main Navigation');

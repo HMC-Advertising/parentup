@@ -1,46 +1,35 @@
-    <!-- footer-->
-    <footer id="footer">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="container">
-                    <div class="col-lg-8 tagline">
-                        Tag line
-                    </div>
-                    <div class="col-lg-4">
-                     <?php
+<div class="hidden-sm hidden-xs">
+<?php get_template_part("assets/php/templates/footer", "nonmobile");?>
+</div>
 
-                        $defaults = array(
-                            'theme_location'  => 'footer_nav',
-                            'menu'            => 'footer_nav',
-                            'menu_class'      => 'footer_nav',
-                            'menu_id'         => '',
-                            'echo'            => true,
-                            'fallback_cb'     => 'wp_page_menu',
-                            'before'          => '',
-                            'after'           => '',
-                            'link_before'     => '',
-                            'link_after'      => '',
-                            'items_wrap' => '<ul class="footer_nav">%3$s</ul>',
-                            'depth'           => 0,
-                            'walker'          => ''
-                        );
-
-
-                         wp_nav_menu($defaults); ?>
-                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/vtlogo.png"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /footer-->
+<div class="hidden-lg hidden-md sb-slide">
+<?php get_template_part("assets/php/templates/footer", "mobile");?>
+</div>
 
 <script type="text/javascript">
-    var h = jQuery("#content").height();
-    jQuery(".sidenav").height(h);
+    var $ = jQuery;
+    var h = $("#content").height();
+    $(".sidenav.nonmobile").height(h);
+
+            (function($) {
+                $(document).ready(function() {
+
+                     $.slidebars({
+                        siteClose: true, // true or false
+
+                        scrollLock: false // true or false
+                    });
+                });
+            }) (jQuery);
+
 </script>
 
 	<?php wp_footer(); ?>
+
+    <script type="text/javascript">
+
+    </script>
+
 
 </body>
 </html>

@@ -9,11 +9,10 @@
                 <div class="container">
                     <div class="row">
                         <!-- non-mobile -->
+                        <div class="hidden-sm hidden-xs">
                         <?php get_template_part("assets/php/templates/sidenav", "nonmobile"); ?>
+                        </div>
                         <!-- /none-mobile -->
-                        <!-- mobile -->
-                        <?php //get_template_part("assets/php/templates/sidenav", "mobile"); ?>
-                        <!-- /mobile -->
 
                         <!-- content -->
                         <section class="col-lg-10">
