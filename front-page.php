@@ -15,6 +15,11 @@
 						<!-- content -->
 						<div class="col-lg-10 col-md-9 nonmobile">
 							<div class="row">
+								<div class="frontpage_image">
+									<img src="<?php echo get_template_directory_uri()?>/assets/img/front-page-stock.png">
+									</div>
+							</div>
+							<div class="row">
 								<article class="page_content">
 									<?php if ( have_posts() ) : while ( have_posts() ) :
 										the_post();
