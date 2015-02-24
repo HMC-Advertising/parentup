@@ -1,5 +1,5 @@
 <div class="row hovering">
-        <div id="slide1" class="slide col-lg-3 ">
+        <div id="slide1" class="slide col-lg-3 col-md-3 col-sm-3 ">
             <div class="cont">
                 <div class="arrow">
                     <i class="fa fa-caret-down"></i>
@@ -26,7 +26,7 @@
                 </footer>
 
         </div>
-        <div id="slide2" class="slide col-lg-3 ">
+        <div id="slide2" class="slide col-lg-3 col-lg-3 col-md-3 col-sm-3">
              <div class="cont">
              <div class="arrow">
                     <i class="fa fa-caret-down"></i>
@@ -53,7 +53,7 @@
             </footer>
 
         </div>
-        <div id="slide3" class="slide col-lg-3">
+        <div id="slide3" class="slide col-lg-3 col-lg-3 col-md-3 col-sm-3">
              <div class="cont">
              <div class="arrow">
                     <i class="fa fa-caret-down"></i>
@@ -80,7 +80,7 @@
             </footer>
 
         </div>
-        <div id="slide4" class="slide col-lg-3">
+        <div id="slide4" class="slide col-lg-3 col-lg-3 col-md-3 col-sm-3">
              <div class="cont">
              <div class="arrow">
                     <i class="fa fa-caret-down"></i>

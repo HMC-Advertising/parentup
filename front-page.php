@@ -13,7 +13,7 @@
 						</div>
 						<!-- /none-mobile -->
 						<!-- content -->
-						<div class="col-lg-10 nonmobile">
+						<div class="col-lg-10 col-md-9 nonmobile">
 							<div class="row">
 								<article class="page_content">
 									<?php if ( have_posts() ) : while ( have_posts() ) :
@@ -30,15 +30,18 @@
 							</div>
 							<div class="row">
 								<footer class="onhover">
-									<div class="hidden-lg hidden-md">
-										<?php //if(is_mobile()):
-											get_template_part("assets/php/templates/frontpage_hover", "mobile"); ?>
-									</div>
-									<div class="hidden-sm hidden-xs">
+								<?php if(is_mobile() or is_tablet()): ?>
+									<div >
 
-										<?php get_template_part("assets/php/templates/frontpage_hover", "nonmobile");
-										//endif; ?>
+											<?php get_template_part("assets/php/templates/frontpage_hover", "mobile"); ?>
 									</div>
+								<?php else: ?>
+									<div >
+
+										<?php get_template_part("assets/php/templates/frontpage_hover", "nonmobile");?>
+									</div>
+								<?php endif; ?>
+
  								</footer>
  							</div>
 						</div>

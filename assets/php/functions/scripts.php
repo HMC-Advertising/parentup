@@ -25,17 +25,25 @@ function theme_scripts() {
     wp_enqueue_style( 'fontawesome' );
     wp_enqueue_style( 'style-css' );
     wp_enqueue_style( 'slidebars' );
-    wp_enqueue_style( 'slick-style' );
+
 
 //scripts
     wp_enqueue_script("jquery");
     wp_enqueue_script("bootstrap");
-    wp_enqueue_script("slick");
+
     wp_enqueue_script('html5shiv');
     wp_enqueue_script( 'slide');
 
     //my scripts
     wp_enqueue_script("main-script");
+
+    if(is_front_page()){
+        if(is_mobile() or is_tablet()){
+            wp_enqueue_style( 'slick-style' );
+            //wp_enqueue_style( 'slick-theme' );
+            wp_enqueue_script("slick");
+        }
+    }
 
 }
 

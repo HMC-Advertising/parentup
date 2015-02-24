@@ -7303,11 +7303,15 @@ h1 {
       background: rgba(230, 228, 214, 0.8);
       padding: 20px;
       /* Smartphones (portrait) ----------- */ }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 320px) {
         /* line 269, assets/sass/style.scss */
         #content.frontpage .page_content {
           margin-top: 100px; } }
-    /* line 279, assets/sass/style.scss */
+      @media only screen and (min-width: 321px) and (max-width: 568px) {
+        /* line 269, assets/sass/style.scss */
+        #content.frontpage .page_content {
+          margin-top: 200px; } }
+    /* line 282, assets/sass/style.scss */
     #content.frontpage .seperator {
       padding: 20px;
       background: #52111d url("assets/img/burgarrow.png") no-repeat left center;
@@ -7317,12 +7321,12 @@ h1 {
       text-align: center;
       line-height: 27px; }
       @media only screen and (max-width: 400px) {
-        /* line 279, assets/sass/style.scss */
+        /* line 282, assets/sass/style.scss */
         #content.frontpage .seperator {
           padding: 42px;
           padding-bottom: 17px;
           padding-top: 12px; } }
-    /* line 293, assets/sass/style.scss */
+    /* line 296, assets/sass/style.scss */
     #content.frontpage .onhover {
       background: #dfdccb;
       color: #00878d;
@@ -7331,35 +7335,35 @@ h1 {
       height: 100%;
       display: block;
       position: relative; }
-      /* line 301, assets/sass/style.scss */
+      /* line 304, assets/sass/style.scss */
       #content.frontpage .onhover .hovering {
         height: 580px;
         background: #dfdccb; }
-        /* line 305, assets/sass/style.scss */
+        /* line 308, assets/sass/style.scss */
         #content.frontpage .onhover .hovering.row {
           margin-left: -15px; }
-        /* line 308, assets/sass/style.scss */
+        /* line 311, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .slide {
           height: 550px; }
-        /* line 314, assets/sass/style.scss */
+        /* line 317, assets/sass/style.scss */
         #content.frontpage .onhover .hovering header {
           margin: auto;
           margin-top: 5px;
           margin-bottom: 10px;
           text-align: center; }
-          /* line 320, assets/sass/style.scss */
+          /* line 323, assets/sass/style.scss */
           #content.frontpage .onhover .hovering header img:last-child {
             display: none; }
-        /* line 326, assets/sass/style.scss */
+        /* line 329, assets/sass/style.scss */
         #content.frontpage .onhover .hovering footer {
           margin-left: -14px;
           margin-right: -14px;
           display: none; }
-          /* line 334, assets/sass/style.scss */
+          /* line 337, assets/sass/style.scss */
           #content.frontpage .onhover .hovering footer .content1 {
             border-top: 2px solid #dfdccb;
             background: #52111d; }
-        /* line 339, assets/sass/style.scss */
+        /* line 342, assets/sass/style.scss */
         #content.frontpage .onhover .hovering article {
           font-weight: 600;
           line-height: 23px;
@@ -7367,15 +7371,15 @@ h1 {
           padding: 10px;
           color: #00878d;
           text-align: center; }
-        /* line 347, assets/sass/style.scss */
+        /* line 350, assets/sass/style.scss */
         #content.frontpage .onhover .hovering ul {
           list-style: none;
           padding-left: 0;
           margin-left: 0; }
-          /* line 351, assets/sass/style.scss */
+          /* line 354, assets/sass/style.scss */
           #content.frontpage .onhover .hovering ul li {
             border-bottom: thin solid #dfdccb; }
-            /* line 353, assets/sass/style.scss */
+            /* line 356, assets/sass/style.scss */
             #content.frontpage .onhover .hovering ul li a {
               color: #dfdccb;
               display: block;
@@ -7383,53 +7387,53 @@ h1 {
               font-weight: 400;
               text-transform: uppercase;
               padding: 25px; }
-              /* line 360, assets/sass/style.scss */
+              /* line 363, assets/sass/style.scss */
               #content.frontpage .onhover .hovering ul li a:hover {
                 text-decoration: none;
                 background: #00878d; }
-              /* line 364, assets/sass/style.scss */
+              /* line 367, assets/sass/style.scss */
               #content.frontpage .onhover .hovering ul li a i {
                 position: relative;
                 float: right;
                 font-size: 30px;
                 right: -22px; }
-        /* line 374, assets/sass/style.scss */
+        /* line 377, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .twoline i {
           top: -10px; }
-        /* line 379, assets/sass/style.scss */
+        /* line 382, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .threeline i {
           top: -20px; }
-        /* line 384, assets/sass/style.scss */
+        /* line 387, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .fourline i {
           top: -30px; }
-        /* line 388, assets/sass/style.scss */
+        /* line 391, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .bottom1 {
           padding-bottom: 36px; }
-        /* line 391, assets/sass/style.scss */
+        /* line 394, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .bottom2 {
           padding-bottom: 19px; }
-        /* line 394, assets/sass/style.scss */
+        /* line 397, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .bottom3 {
           padding-bottom: 36px; }
-        /* line 400, assets/sass/style.scss */
+        /* line 403, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .on .cont {
           background: #00878d; }
-          /* line 402, assets/sass/style.scss */
+          /* line 405, assets/sass/style.scss */
           #content.frontpage .onhover .hovering .on .cont article {
             color: #dfdccb !important; }
-          /* line 406, assets/sass/style.scss */
+          /* line 409, assets/sass/style.scss */
           #content.frontpage .onhover .hovering .on .cont .arrow {
             display: block; }
-        /* line 410, assets/sass/style.scss */
+        /* line 413, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .on footer {
           display: block; }
-        /* line 414, assets/sass/style.scss */
+        /* line 417, assets/sass/style.scss */
         #content.frontpage .onhover .hovering .cont {
           margin-left: -14px;
           margin-right: -14px;
           padding-top: 26px;
           margin-top: -17px; }
-          /* line 419, assets/sass/style.scss */
+          /* line 422, assets/sass/style.scss */
           #content.frontpage .onhover .hovering .cont .arrow {
             display: none;
             position: absolute;
@@ -7439,29 +7443,30 @@ h1 {
             left: 38%;
             text-shadow: 0px 3px 0px #dfdccb; }
 
-/* line 435, assets/sass/style.scss */
+/* line 438, assets/sass/style.scss */
 #footer {
   background: #52111d;
-  color: #dfdccb; }
-  /* line 438, assets/sass/style.scss */
+  color: #dfdccb;
+  z-index: 1000; }
+  /* line 442, assets/sass/style.scss */
   #footer .tagline {
     padding-top: 15px;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase; }
-  /* line 444, assets/sass/style.scss */
+  /* line 448, assets/sass/style.scss */
   #footer img {
     float: left;
     display: inline; }
-  /* line 448, assets/sass/style.scss */
+  /* line 452, assets/sass/style.scss */
   #footer ul {
     float: left;
     padding-top: 15px;
     display: inline-block; }
-    /* line 454, assets/sass/style.scss */
+    /* line 458, assets/sass/style.scss */
     #footer ul li {
       display: inline-block; }
-      /* line 456, assets/sass/style.scss */
+      /* line 460, assets/sass/style.scss */
       #footer ul li a {
         color: #dfdccb;
         font-weight: 400; }
@@ -7603,57 +7608,117 @@ h1 {
 /* line 136, assets/sass/_partials/_mobile.scss */
 .hovering.mobile {
   height: auto !important;
-  display: table; }
-  /* line 143, assets/sass/_partials/_mobile.scss */
+  display: table;
+  z-index: 1; }
+  /* line 144, assets/sass/_partials/_mobile.scss */
   .hovering.mobile .q {
     font-size: 18px; }
-  /* line 146, assets/sass/_partials/_mobile.scss */
+  /* line 147, assets/sass/_partials/_mobile.scss */
+  .hovering.mobile article {
+    padding: 0 !important; }
+  /* line 150, assets/sass/_partials/_mobile.scss */
+  .hovering.mobile .slider {
+    border-bottom: thin solid #92d5cb;
+    background: #dfdccb;
+    overflow: hidden; }
+    @media only screen and (max-width: 568px) {
+      /* line 154, assets/sass/_partials/_mobile.scss */
+      .hovering.mobile .slider:last-child {
+        border-bottom: none; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      /* line 150, assets/sass/_partials/_mobile.scss */
+      .hovering.mobile .slider {
+        width: 325px;
+        float: left;
+        height: 200px; } }
+  /* line 171, assets/sass/_partials/_mobile.scss */
   .hovering.mobile .slide {
     display: table-row;
     height: auto !important;
-    border-bottom: thin solid #92d5cb;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-    /* line 152, assets/sass/_partials/_mobile.scss */
+    padding-top: 20px; }
+    /* line 177, assets/sass/_partials/_mobile.scss */
     .hovering.mobile .slide .image, .hovering.mobile .slide .content, .hovering.mobile .slide .icon {
       display: table-cell; }
-      /* line 154, assets/sass/_partials/_mobile.scss */
+      /* line 179, assets/sass/_partials/_mobile.scss */
       .hovering.mobile .slide .image img, .hovering.mobile .slide .content img, .hovering.mobile .slide .icon img {
         vertical-align: middle; }
-    /* line 159, assets/sass/_partials/_mobile.scss */
+    /* line 184, assets/sass/_partials/_mobile.scss */
     .hovering.mobile .slide .links {
-      width: 380px; }
-    /* line 162, assets/sass/_partials/_mobile.scss */
+      margin: auto; }
+      @media only screen and (max-width: 320px) {
+        /* line 184, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .links {
+          width: 391px;
+          padding-left: 10px !important; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* line 184, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .links {
+          width: 300px;
+          margin-right: 18px !important; } }
+      @media only screen and (min-width: 321px) and (max-width: 568px) {
+        /* line 184, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .links {
+          width: 550px; } }
+    /* line 199, assets/sass/_partials/_mobile.scss */
     .hovering.mobile .slide .image {
-      width: 100px;
       float: left; }
-    /* line 166, assets/sass/_partials/_mobile.scss */
+      @media only screen and (max-width: 320px) {
+        /* line 199, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .image {
+          width: 103px; } }
+    /* line 207, assets/sass/_partials/_mobile.scss */
     .hovering.mobile .slide .icon {
-      width: 20px;
       float: left; }
-    /* line 170, assets/sass/_partials/_mobile.scss */
+      @media only screen and (max-width: 320px) {
+        /* line 207, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .icon {
+          width: 100px; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* line 207, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .icon {
+          width: 80px;
+          margin-right: 20px; } }
+      @media only screen and (min-width: 321px) and (max-width: 568px) {
+        /* line 207, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .icon {
+          width: 46px;
+          margin-right: 20px; } }
+    /* line 221, assets/sass/_partials/_mobile.scss */
     .hovering.mobile .slide .content {
-      width: 200px;
+      /* Smartphones (portrait) ----------- */
       float: left;
       font-weight: 800;
       font-size: 15px;
       line-height: 16px; }
-    /* line 177, assets/sass/_partials/_mobile.scss */
+      @media only screen and (max-width: 320px) {
+        /* line 221, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .content {
+          width: 200px; } }
+      @media only screen and (min-width: 321px) and (max-width: 568px) {
+        /* line 221, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .content {
+          width: 400px; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* line 221, assets/sass/_partials/_mobile.scss */
+        .hovering.mobile .slide .content {
+          width: 160px;
+          padding-left: 10px !important; } }
+    /* line 240, assets/sass/_partials/_mobile.scss */
     .hovering.mobile .slide i {
       font-size: 100px;
       color: #52111d;
       position: absolute; }
-  /* line 184, assets/sass/_partials/_mobile.scss */
+  /* line 247, assets/sass/_partials/_mobile.scss */
   .hovering.mobile ul {
     list-style: none;
     padding-left: 0;
     margin-left: 0;
     display: block; }
-    /* line 190, assets/sass/_partials/_mobile.scss */
+    /* line 253, assets/sass/_partials/_mobile.scss */
     .hovering.mobile ul li {
       border-bottom: thin solid #dfdccb;
       display: block; }
-      /* line 193, assets/sass/_partials/_mobile.scss */
+      /* line 256, assets/sass/_partials/_mobile.scss */
       .hovering.mobile ul li a {
         color: #dfdccb;
         display: block;
@@ -7662,78 +7727,78 @@ h1 {
         text-transform: uppercase;
         padding: 25px;
         background: #00878d; }
-        /* line 201, assets/sass/_partials/_mobile.scss */
+        /* line 264, assets/sass/_partials/_mobile.scss */
         .hovering.mobile ul li a i {
           position: relative;
           float: right;
           font-size: 30px;
           right: -22px; }
 
-/* line 212, assets/sass/_partials/_mobile.scss */
+/* line 275, assets/sass/_partials/_mobile.scss */
 #footer.mobile .tagline {
   text-align: center; }
-/* line 215, assets/sass/_partials/_mobile.scss */
+/* line 278, assets/sass/_partials/_mobile.scss */
 #footer.mobile .menu {
   text-align: center; }
-  /* line 217, assets/sass/_partials/_mobile.scss */
+  /* line 280, assets/sass/_partials/_mobile.scss */
   #footer.mobile .menu ul {
     float: none; }
-/* line 221, assets/sass/_partials/_mobile.scss */
+/* line 284, assets/sass/_partials/_mobile.scss */
 #footer.mobile .logo {
   text-align: center; }
-  /* line 223, assets/sass/_partials/_mobile.scss */
+  /* line 286, assets/sass/_partials/_mobile.scss */
   #footer.mobile .logo img {
     text-align: center;
     margin: auto;
     float: none; }
 
-/* line 230, assets/sass/_partials/_mobile.scss */
+/* line 293, assets/sass/_partials/_mobile.scss */
 .sb-slidebar {
   background: #00878d !important; }
-  /* line 232, assets/sass/_partials/_mobile.scss */
+  /* line 295, assets/sass/_partials/_mobile.scss */
   .sb-slidebar ul {
     list-style: none; }
-    /* line 235, assets/sass/_partials/_mobile.scss */
+    /* line 298, assets/sass/_partials/_mobile.scss */
     .sb-slidebar ul.main_nav {
       list-style-image: url("assets/img/side_nav_arrow.png");
       margin-top: 50px;
       margin-bottom: 0;
       padding-left: 37px; }
-      /* line 241, assets/sass/_partials/_mobile.scss */
+      /* line 304, assets/sass/_partials/_mobile.scss */
       .sb-slidebar ul.main_nav li a {
         font-weight: 800; }
-    /* line 246, assets/sass/_partials/_mobile.scss */
+    /* line 309, assets/sass/_partials/_mobile.scss */
     .sb-slidebar ul.top_nav {
       margin-top: 50px; }
-    /* line 249, assets/sass/_partials/_mobile.scss */
+    /* line 312, assets/sass/_partials/_mobile.scss */
     .sb-slidebar ul li {
       margin-top: 20px; }
-      /* line 252, assets/sass/_partials/_mobile.scss */
+      /* line 315, assets/sass/_partials/_mobile.scss */
       .sb-slidebar ul li a {
         display: block;
         color: #dfdccb;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 18px; }
-    /* line 261, assets/sass/_partials/_mobile.scss */
+    /* line 324, assets/sass/_partials/_mobile.scss */
     .sb-slidebar ul .top_drop ul {
       display: none;
       list-style-image: none;
       list-style: none;
       padding-top: 0;
       margin-top: -10px; }
-    /* line 268, assets/sass/_partials/_mobile.scss */
+    /* line 331, assets/sass/_partials/_mobile.scss */
     .sb-slidebar ul .top_drop.current-menu-parent {
       list-style-image: url("assets/img/side_nav_arrow_active.png"); }
-      /* line 270, assets/sass/_partials/_mobile.scss */
+      /* line 333, assets/sass/_partials/_mobile.scss */
       .sb-slidebar ul .top_drop.current-menu-parent a {
         color: #1fcfcb; }
-      /* line 273, assets/sass/_partials/_mobile.scss */
+      /* line 336, assets/sass/_partials/_mobile.scss */
       .sb-slidebar ul .top_drop.current-menu-parent ul {
         display: block; }
-        /* line 277, assets/sass/_partials/_mobile.scss */
+        /* line 340, assets/sass/_partials/_mobile.scss */
         .sb-slidebar ul .top_drop.current-menu-parent ul li.current_page_item a {
           color: #1fcfcb; }
-        /* line 281, assets/sass/_partials/_mobile.scss */
+        /* line 344, assets/sass/_partials/_mobile.scss */
         .sb-slidebar ul .top_drop.current-menu-parent ul li a {
           color: #dfdccb; }

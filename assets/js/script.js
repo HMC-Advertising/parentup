@@ -9,22 +9,8 @@ $(function(){
    var hov = $(".slide");
 
    //window.mySwipe = new SwipeView(document.getElementById('swipe1'));
-   $("#swipe1").slick({
-         arrows: false,
-         slide: ".slide"
-   });
-   $("#swipe2").slick({
-         arrows: false,
-           slide: ".slide"
-   });
-   $("#swipe3").slick({
-         arrows: false,
-           slide: ".slide"
-   });
-   $("#swipe4").slick({
-         arrows: false,
-           slide: ".slide"
-   });
+
+
    //$('.single-item').slick();
 
     hov.hover(function(){

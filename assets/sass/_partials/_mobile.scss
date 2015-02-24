@@ -137,18 +137,43 @@
     //margin-top:20px;
     height:auto !important;
     display: table;
+    z-index:1;
     img{
         //width:100%;
     }
     .q{
         font-size: 18px;
     }
+    article{
+        padding:0 !important;
+    }
+    .slider{
+        border-bottom:thin solid $tintlb;
+        background:$cream;
+        overflow: hidden;
+        &:last-child{
+
+            @media only screen and (max-width : 568px) {
+                border-bottom:none;
+
+          }
+
+        }
+          @media only screen and (min-width: 768px) and (max-width : 1024px) {
+                width:325px;
+                float:left;
+                height:200px;
+
+          }
+    }
+
+
     .slide{
         display: table-row;
         height:auto !important;
-        border-bottom:thin solid $tintlb;
+        //border-bottom:thin solid $tintlb;
         padding-top:20px;;
-        padding-bottom: 20px;
+        //padding-bottom: 20px;
         .image, .content, .icon{
             display: table-cell;
             img{
@@ -157,18 +182,56 @@
 
         }
         .links{
-            width:380px;
+            @media only screen and (max-width : 320px) {
+                width: 391px;
+                  padding-left: 10px !important;
+            }
+             @media only screen and (min-width: 768px) and (max-width : 1024px) {
+                width:300px;
+                margin-right: 18px !important;
+            }
+            @media only screen and (min-width: 321px) and (max-width : 568px) {
+              width:550px;
+            }
+            margin: auto;
+
         }
         .image{
-            width:100px;
+
+            @media only screen and (max-width : 320px) {
+                width:103px;
+            }
+
             float:left;
         }
         .icon{
-            width:20px;
+            @media only screen and (max-width : 320px) {
+                width:100px;
+            }
+             @media only screen and (min-width: 768px) and (max-width : 1024px) {
+                width:80px;
+               margin-right:20px;
+            }
+            @media only screen and (min-width: 321px) and (max-width : 568px) {
+              width: 46px;
+margin-right: 20px;
+            }
             float:left;
         }
         .content{
-            width:200px;
+                         /* Smartphones (portrait) ----------- */
+            @media only screen and (max-width : 320px) {
+                width:200px;
+            }
+             @media only screen and (min-width: 321px) and (max-width : 568px) {
+                width:400px;
+            }
+            @media only screen and (min-width: 768px) and (max-width : 1024px) {
+                width:160px;
+                padding-left:10px !important;
+                //float:left;
+            }
+
             float:left;
             font-weight: 800;
             font-size: 15px;
@@ -287,3 +350,4 @@
             }
     }
 }
+

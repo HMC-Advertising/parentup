@@ -1,8 +1,8 @@
-<div class="hidden-sm hidden-xs">
+<div class="hidden-sm hidden-xs hidden-md">
 <?php get_template_part("assets/php/templates/footer", "nonmobile");?>
 </div>
 
-<div class="hidden-lg hidden-md sb-slide">
+<div class="hidden-lg  sb-slide">
 <?php get_template_part("assets/php/templates/footer", "mobile");?>
 </div>
 
@@ -25,11 +25,44 @@
 </script>
 
 	<?php wp_footer(); ?>
-
+    <?php if(is_front_page()) : if(is_mobile() or is_tablet()) : ?>
     <script type="text/javascript">
+         $("#swipe1").slick({
+        arrows: false,
+        slide: ".slide",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        variableWidth: true
 
+   });
+  $("#swipe2").slick({
+        arrows: false,
+        slide: ".slide",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        variableWidth: true
+   });
+
+   $("#swipe3").slick({
+        arrows: false,
+        slide: ".slide",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        variableWidth: true
+   });
+   $("#swipe4").slick({
+         arrows: false,
+        slide: ".slide",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        variableWidth: true
+   });
     </script>
-
+    <?php endif; endif; ?>
 
 </body>
 </html>

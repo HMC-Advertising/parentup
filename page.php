@@ -15,7 +15,7 @@
                         <!-- /none-mobile -->
 
                         <!-- content -->
-                        <section class="col-lg-10">
+                        <section class="col-lg-10 col-md-9">
                             <div class="breadcrumbs">
                                 / <a href="">BC</a> / Bread crumbs /
                             </div>
