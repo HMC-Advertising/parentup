@@ -1,0 +1,1 @@
+High Expectations | Both parent(s) and teachers encourage the young person to do well.

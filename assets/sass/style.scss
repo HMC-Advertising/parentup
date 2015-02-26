@@ -229,6 +229,9 @@ h1{
         padding-left:20px;
         margin-left: 5px;
     }
+    .frontpage_image{
+        margin-left:5px;
+    }
     &.page{
 
         background: url("assets/img/pagebg.png") repeat-x top;
@@ -274,10 +277,11 @@ h1{
 
         .page_content{
             //margin-top:400px;
-            margin-top: -200px;
+            margin-top: -236px;
             background:rgba(230, 228, 214, 0.8);
             padding:20px;
             z-index: 2;
+            position: relative;
              /* Smartphones (portrait) ----------- */
             @media only screen and (max-width : 320px) {
               //margin-top: 100px;
@@ -397,13 +401,13 @@ h1{
                     }
                 }
                 .bottom1{
-                    padding-bottom: 36px;
+                    padding-bottom: 50px;
                 }
                  .bottom2{
-                    padding-bottom: 19px;
+                    padding-bottom: 50px;
                 }
                 .bottom3{
-                    padding-bottom:36px;
+                    padding-bottom:50px;
                 }
                 //@include transition(1, 1s, 0);
                 .on{
@@ -473,3 +477,5 @@ h1{
     }
 }
 @import "_partials/mobile";
+
+@import "_partials/actionplan";

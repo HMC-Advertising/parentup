@@ -64,5 +64,70 @@
     </script>
     <?php endif; endif; ?>
 
+  <?php if(is_page_template("temp-actionplan.php")) : ?>
+
+       <div id ="info" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <script type="text/javascript">
+        var $ = jQuery;
+        $("#submit").click(function(e){
+            e.preventDefault();
+            //alert("click");
+            //$("#info").addClass("on");
+            $("#info .modal-body").html("<img src='http://placehold.it/100x100'>");
+
+            $.post("<?php echo get_template_directory_uri(); ?>/assets/php/actionplan/page.php",
+                $("form").serialize(),
+                function(data){
+                      $("#info .modal-body").html(data);
+
+                })
+            .error(function(){
+                console.log("failed");
+            })
+
+
+        });
+
+        $(".print").click(function(e){
+              e.preventDefault();
+        });
+
+
+        /*$(".more").click(function(e){
+            e.preventDefault();
+            if(!$(this).hasClass("on")){
+                $(this).parent().children(".mcontent").slideDown();
+                $(this).addClass("on");
+            }
+            else{
+                 $(this).parent().siblings().slideUp();
+                $(this).removeClass("on");
+            }
+        });*/
+
+
+
+        </script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/plugins/checkboxes/svgcheckbx.js"></script>
+
+<?php endif; ?>
+
 </body>
 </html>
