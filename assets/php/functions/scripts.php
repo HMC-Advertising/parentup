@@ -18,6 +18,10 @@ function theme_scripts() {
     wp_register_script('slick', get_template_directory_uri() . '/assets/js/plugins/slick.js/dev/slick.min.js', array(), '1.0.0', true);
     wp_register_script('slide', get_template_directory_uri() . '/assets/js/plugins/Slidebars/development/slidebars.js', array(), '1.0.0', true);
 
+    wp_register_script('checkboxes', get_template_directory_uri() . '/assets/js/plugins/checkboxes/svgcheckbx.js', array(), '1.0.0', true);
+
+    wp_register_script('buttons', get_template_directory_uri() . '/assets/js/plugins/b uttons/classie.js', array(), '1.0.0', true);
+
     //mine
     wp_register_script('main-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true );
 
@@ -43,6 +47,12 @@ function theme_scripts() {
             //wp_enqueue_style( 'slick-theme' );
             wp_enqueue_script("slick");
         }
+    }
+    if(is_page_template("temp-actionplan.php" )){
+        //buttons maybe a site wide one
+             wp_enqueue_script("buttons");
+        //checkboxes
+             wp_enqueue_script("checkboxes");
     }
 
 }

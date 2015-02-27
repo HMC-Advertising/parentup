@@ -71,7 +71,35 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <button class="print"><i class="fa fa-print"></i></button>
+        <nav>
+        <ul>
+          <li>
+              <a href="">Support</a>
+          </li>
+          <li>
+             <a href="">Empowerment</a>
+          </li>
+          <li>
+              <a href="">BOUNDARIES AND EXPECTATIONS</a>
+          </li>
+          <li>
+             <a href="">CONSTRUCTIVE USE OF TIME</a>
+          </li>
+          <li>
+             <a href="">COMMITMENT TO LEARNING</a>
+          </li>
+          <li>
+             <a href=""> POSITIVE VALUES</a>
+          </li>
+          <li>
+             <a href="">SOCIAL COMPETENCIES</a>
+          </li>
+          <li>
+              <a href="">POSITIVE IDENTITY</a>
+          </li>
+         </ul>
+         </nav>
       </div>
       <div class="modal-body">
         ...
@@ -110,22 +138,10 @@
         });
 
 
-        /*$(".more").click(function(e){
-            e.preventDefault();
-            if(!$(this).hasClass("on")){
-                $(this).parent().children(".mcontent").slideDown();
-                $(this).addClass("on");
-            }
-            else{
-                 $(this).parent().siblings().slideUp();
-                $(this).removeClass("on");
-            }
-        });*/
-
 
 
         </script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/plugins/checkboxes/svgcheckbx.js"></script>
+
 
 <?php endif; ?>
 

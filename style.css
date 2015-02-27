@@ -7811,47 +7811,201 @@ h1 {
   src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("assets/fonts/codropsicons/codropsicons.woff") format("woff"), url("assets/fonts/codropsicons/codropsicons.ttf") format("truetype"), url("assets/fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
   font-weight: normal;
   font-style: normal; }
+/* line 13, assets/sass/_partials/_actionplan.scss */
+#info .modal-dialog {
+  width: 1000px; }
 /* line 16, assets/sass/_partials/_actionplan.scss */
-#info.on {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%; }
-  /* line 24, assets/sass/_partials/_actionplan.scss */
-  #info.on .int {
-    padding: 20px;
-    background: #fff;
-    height: 80%;
-    width: 80%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-top: -25%;
-    margin-left: -40%; }
-  /* line 35, assets/sass/_partials/_actionplan.scss */
-  #info.on .top ul {
+#info .print {
+  background: none;
+  border: none;
+  color: #ccc; }
+/* line 21, assets/sass/_partials/_actionplan.scss */
+#info header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  /* line 25, assets/sass/_partials/_actionplan.scss */
+  #info header h1 {
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 3px; }
+    /* line 29, assets/sass/_partials/_actionplan.scss */
+    #info header h1 .line {
+      top: 20px;
+      height: 2px;
+      border: thin solid #cccccc;
+      position: relative;
+      margin-top: -5px; }
+      /* line 36, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.right {
+        float: right; }
+      /* line 39, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.left {
+        float: left; }
+      /* line 42, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.su {
+        width: 200px; }
+      /* line 45, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.emp {
+        width: 200px; }
+      /* line 48, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.be {
+        width: 40px; }
+      /* line 51, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.cut {
+        width: 100px; }
+      /* line 54, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.ctl {
+        width: 100px; }
+      /* line 57, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.pv {
+        width: 180px; }
+      /* line 60, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.sc {
+        width: 100px; }
+      /* line 63, assets/sass/_partials/_actionplan.scss */
+      #info header h1 .line.pi {
+        width: 159px; }
+  /* line 68, assets/sass/_partials/_actionplan.scss */
+  #info header h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-style: italic;
+    padding-top: 0;
+    margin-top: 0;
+    color: #ccc; }
+/* line 79, assets/sass/_partials/_actionplan.scss */
+#info nav {
+  margin-top: -42px; }
+  /* line 81, assets/sass/_partials/_actionplan.scss */
+  #info nav ul {
     list-style: none; }
-    /* line 37, assets/sass/_partials/_actionplan.scss */
-    #info.on .top ul li {
-      display: inline;
-      padding-left: 20px;
-      padding-right: 20px; }
-  /* line 43, assets/sass/_partials/_actionplan.scss */
-  #info.on .content {
-    overflow: scroll;
-    height: 95%; }
+    /* line 83, assets/sass/_partials/_actionplan.scss */
+    #info nav ul li {
+      display: inline-block; }
+      /* line 85, assets/sass/_partials/_actionplan.scss */
+      #info nav ul li:before {
+        content: '|'; }
+      /* line 88, assets/sass/_partials/_actionplan.scss */
+      #info nav ul li:first-child:before {
+        content: ''; }
+      /* line 91, assets/sass/_partials/_actionplan.scss */
+      #info nav ul li a {
+        text-transform: lowercase;
+        font-weight: 400; }
+/* line 100, assets/sass/_partials/_actionplan.scss */
+#info article .content {
+  margin-left: 50px; }
+/* line 103, assets/sass/_partials/_actionplan.scss */
+#info article ul {
+  list-style: none;
+  padding-left: 0; }
+  /* line 106, assets/sass/_partials/_actionplan.scss */
+  #info article ul li {
+    color: #333333;
+    font-size: 16px;
+    padding: 20px; }
+    /* line 110, assets/sass/_partials/_actionplan.scss */
+    #info article ul li:nth-child(odd) {
+      background: #eeeeee; }
 
-/* line 52, assets/sass/_partials/_actionplan.scss */
+/* line 125, assets/sass/_partials/_actionplan.scss */
 .actionplan {
   position: relative;
-  /* General SVG and path styles */ }
-  /* line 54, assets/sass/_partials/_actionplan.scss */
-  .actionplan ul li {
-    padding: 10px; }
-  /* line 57, assets/sass/_partials/_actionplan.scss */
+  padding-top: 50px; }
+  /* line 129, assets/sass/_partials/_actionplan.scss */
+  .actionplan .fa.fa-chevron-down {
+    font-size: 50px; }
+  /* line 132, assets/sass/_partials/_actionplan.scss */
+  .actionplan .odd {
+    background: #bfbcaf; }
+    /* line 134, assets/sass/_partials/_actionplan.scss */
+    .actionplan .odd.row {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+  /* line 139, assets/sass/_partials/_actionplan.scss */
+  .actionplan .even {
+    background: #dfdccb; }
+    /* line 141, assets/sass/_partials/_actionplan.scss */
+    .actionplan .even.row {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+  /* line 146, assets/sass/_partials/_actionplan.scss */
+  .actionplan header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    /* line 150, assets/sass/_partials/_actionplan.scss */
+    .actionplan header h1 {
+      font-size: 50px; }
+      /* line 152, assets/sass/_partials/_actionplan.scss */
+      .actionplan header h1 .line {
+        top: 20px;
+        height: 2px;
+        border: thin solid #bf9199;
+        position: relative;
+        margin-top: 10px; }
+        /* line 159, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.right {
+          float: right; }
+        /* line 162, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.left {
+          float: left; }
+        /* line 165, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.su {
+          width: 300px; }
+        /* line 168, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.emp {
+          width: 200px; }
+        /* line 171, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.be {
+          width: 40px; }
+        /* line 174, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.cut {
+          width: 100px; }
+        /* line 177, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.ctl {
+          width: 100px; }
+        /* line 180, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.pv {
+          width: 180px; }
+        /* line 183, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.sc {
+          width: 100px; }
+        /* line 186, assets/sass/_partials/_actionplan.scss */
+        .actionplan header h1 .line.pi {
+          width: 159px; }
+    /* line 191, assets/sass/_partials/_actionplan.scss */
+    .actionplan header h3 {
+      font-size: 24px;
+      text-transform: capitalize;
+      font-variant: small-caps;
+      font-style: italic;
+      padding-top: 0;
+      margin-top: 0;
+      color: #bf9199; }
+  /* line 202, assets/sass/_partials/_actionplan.scss */
+  .actionplan ul {
+    padding-left: 0;
+    margin-left: -15px;
+    margin-right: -15px; }
+    /* line 207, assets/sass/_partials/_actionplan.scss */
+    .actionplan ul li {
+      padding: 20px; }
+      /* line 210, assets/sass/_partials/_actionplan.scss */
+      .actionplan ul li .question {
+        float: right;
+        height: 100%; }
+        /* line 216, assets/sass/_partials/_actionplan.scss */
+        .actionplan ul li .question i {
+          font-size: 50px; }
+      /* line 221, assets/sass/_partials/_actionplan.scss */
+      .actionplan ul li .well {
+        background: none;
+        padding-bottom: 0;
+        border: none; }
+  /* line 228, assets/sass/_partials/_actionplan.scss */
   .actionplan label {
     display: inline-block;
     position: relative;
@@ -7860,11 +8014,12 @@ h1 {
     vertical-align: top;
     color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: color 0.3s; }
-  /* line 68, assets/sass/_partials/_actionplan.scss */
+    transition: color 0.3s;
+    width: 90%; }
+  /* line 240, assets/sass/_partials/_actionplan.scss */
   .actionplan input[type="checkbox"],
   .actionplan input[type="radio"],
-  .actionplan label::before {
+  .actionplan label:before {
     width: 50px;
     height: 50px;
     top: 50%;
@@ -7872,34 +8027,33 @@ h1 {
     margin-top: -25px;
     position: absolute;
     cursor: pointer; }
-  /* line 80, assets/sass/_partials/_actionplan.scss */
-  .actionplan input[type="checkbox"],
-  .actionplan input[type="radio"] {
+  /* line 252, assets/sass/_partials/_actionplan.scss */
+  .actionplan input[type="checkbox"], .actionplan input[type="radio"] {
     opacity: 0;
     display: inline-block;
     vertical-align: middle;
     z-index: 100; }
-  /* line 88, assets/sass/_partials/_actionplan.scss */
-  .actionplan label::before {
+  /* line 259, assets/sass/_partials/_actionplan.scss */
+  .actionplan label:before {
     content: '';
     border: 4px solid #fff;
     transition: opacity 0.3s; }
-  /* line 93, assets/sass/_partials/_actionplan.scss */
+  /* line 264, assets/sass/_partials/_actionplan.scss */
   .actionplan input[type="checkbox"]:checked + label,
   .actionplan input[type="radio"]:checked + label {
     color: #fff; }
-  /* line 98, assets/sass/_partials/_actionplan.scss */
+  /* line 269, assets/sass/_partials/_actionplan.scss */
   .actionplan input[type="checkbox"]:checked + label::before,
   .actionplan input[type="radio"]:checked + label::before {
     opacity: 0.8; }
-  /* line 104, assets/sass/_partials/_actionplan.scss */
+  /* line 273, assets/sass/_partials/_actionplan.scss */
   .actionplan ul {
     list-style: none;
     position: relative; }
-    /* line 107, assets/sass/_partials/_actionplan.scss */
+    /* line 276, assets/sass/_partials/_actionplan.scss */
     .actionplan ul li {
       position: relative; }
-  /* line 113, assets/sass/_partials/_actionplan.scss */
+  /* line 280, assets/sass/_partials/_actionplan.scss */
   .actionplan svg {
     position: absolute;
     width: 40px;
@@ -7907,55 +8061,63 @@ h1 {
     top: 13px;
     left: 15px;
     pointer-events: none; }
-  /* line 124, assets/sass/_partials/_actionplan.scss */
-  .actionplan svg path {
-    stroke: #00878d;
-    stroke-width: 5px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none; }
-  /* line 131, assets/sass/_partials/_actionplan.scss */
+    /* line 289, assets/sass/_partials/_actionplan.scss */
+    .actionplan svg path {
+      stroke: #00878d;
+      stroke-width: 5px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none; }
+  /* line 297, assets/sass/_partials/_actionplan.scss */
   .actionplan .mcontent {
     margin-left: 83px;
     font-size: 20px;
     font-weight: 600; }
 
-/* line 143, assets/sass/_partials/_actionplan.scss */
-#submit.btn:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s; }
-/* line 151, assets/sass/_partials/_actionplan.scss */
-#submit.btn.btn-7 {
-  background: #00a7ad;
-  color: #ffffff;
-  border-radius: 7px;
-  box-shadow: 0 5px #00878d;
-  padding: 25px 60px 25px 90px; }
-/* line 158, assets/sass/_partials/_actionplan.scss */
-#submit.btn.btn-7a {
-  overflow: hidden; }
-  /* line 160, assets/sass/_partials/_actionplan.scss */
-  #submit.btn.btn-7a:before {
+/* line 304, assets/sass/_partials/_actionplan.scss */
+#submit.btn {
+  margin: auto;
+  text-align: center; }
+  /* line 307, assets/sass/_partials/_actionplan.scss */
+  #submit.btn:after {
+    content: '';
     position: absolute;
-    left: 0;
-    width: 40%;
-    font-size: 160%;
-    line-height: 0.8;
-    color: #1fcfcb; }
-/* line 170, assets/sass/_partials/_actionplan.scss */
-#submit.btn.icon-list:before {
-  content: "\f0ca";
-  font-family: FontAwesome;
-  color: #00878d;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased; }
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+  /* line 315, assets/sass/_partials/_actionplan.scss */
+  #submit.btn.btn-7 {
+    background: #00a7ad;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 20px;
+    box-shadow: 0 5px #00878d;
+    padding: 9px 46px 12px 55px;
+    text-transform: uppercase; }
+    /* line 323, assets/sass/_partials/_actionplan.scss */
+    #submit.btn.btn-7:active {
+      background: #00878d;
+      box-shadow: 0 5px #1fcfcb; }
+  /* line 328, assets/sass/_partials/_actionplan.scss */
+  #submit.btn.btn-7a {
+    overflow: hidden; }
+    /* line 330, assets/sass/_partials/_actionplan.scss */
+    #submit.btn.btn-7a:before {
+      position: absolute;
+      left: -28px;
+      width: 40%;
+      top: 3px;
+      font-size: 30px;
+      line-height: 0.8; }
+  /* line 340, assets/sass/_partials/_actionplan.scss */
+  #submit.btn.icon-truck:before {
+    content: "\f0ca";
+    font-family: FontAwesome;
+    color: #00878d;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased; }
+  /* line 348, assets/sass/_partials/_actionplan.scss */
+  #submit.btn.icon-truck:active:before {
+    color: #1fcfcb !important; }

@@ -21,15 +21,21 @@
     $al = count($support);
     //print_r($support);
 
-echo "<p>";
-echo "<h1>Support</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>Support<span class="su right line"></span></h1>
+                     <h3>Sub Headline</h3>
+
+                </header>';
+                echo "<article><ul>";
     for($i = 0; $i<($al); $i++){
         if($aTrue[$i] == "yes"){
-            echo $support[$i]. "<br><br>";
+            echo "<li>" .$support[$i]. "</li>";
        }
     }
 
-echo "</p>";
+
+echo "</ul></article></div>";
 
 
 //Empowerment -------------------------------------------------------------------
@@ -52,15 +58,19 @@ echo "</p>";
     $al = count($emp);
     //print_r($emp);
 
-echo "<p>";
-echo "<h1>Empowerment</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>Empowerment<span class="su right line"></span></h1>
+ <h3>Sub Headline</h3>
+                </header>';
+
     for($i = 0; $i<($al); $i++){
         if($aemp[$i] == "yes"){
             echo $emp[$i]. "<br><br>";
        }
     }
 
-echo "</p>";
+echo "</div>";
 
 //boundaries --------------------------------------------------------------------
     // 11 - 16
@@ -84,15 +94,19 @@ echo "</p>";
 
     $aw = count($bound);
 
-echo "<p>";
-echo "<h1>BOUNDARIES AND EXPECTATIONS</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>BOUNDARIES AND EXPECTATIONS<span class="su right line"></span></h1>
+ <h3>Sub Headline</h3>
+                </header>';
+
     for($i = 0; $i<($aw); $i++){
         if($ab[$i] == "yes"){
             echo $i. "<br>".$bound[$i]. "<br><br>";
        }
     }
 
-echo "</p>";
+echo "</div>";
 
     //time --------------------------------------------------------------
     // 17 - 20
@@ -115,15 +129,19 @@ echo "</p>";
     $ad = count($time);
 
 
-echo "<p>";
-echo "<h1>CONSTRUCTIVE USE OF TIME</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>CONSTRUCTIVE USE OF TIME<span class="su right line"></span></h1>
+ <h3>Sub Headline</h3>
+                </header>';
+
     for($i = 0; $i<($ad); $i++){
         if($aq[$i] == "yes"){
             echo $time[$i]. "<br><br>";
        }
     }
 
-echo "</p>";
+echo "</div>";
     //learning --------------------------------------------------------------
     // 21 - 25
 
@@ -147,15 +165,19 @@ echo "</p>";
     $cc = count($support);
 
 
-echo "<p>";
-echo "<h1>COMMITMENT TO LEARNING</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>COMMITMENT TO LEARNING<span class="su right line"></span></h1>
+ <h3>Sub Headline</h3>
+                </header>';
+
     for($i = 0; $i<($cc); $i++){
         if($bb[$i] == "yes"){
             echo $learning[$i]. "<br><br>";
        }
     }
 
-echo "</p>";
+echo "</div>";
 
 //values -----------------------------------------------------------------------
     // 26 - 31
@@ -179,15 +201,18 @@ echo "</p>";
 
     $pp = count($values);
 
-echo "<p>";
-echo "<h1>POSITIVE VALUES</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>POSITIVE VALUES<span class="su right line"></span></h1>
+ <h3>Sub Headline</h3>
+                </header>';
+
     for($i = 0; $i<($pp); $i++){
         if($az[$i] == "yes"){
             echo $values[$i]. "<br><br>";
        }
     }
-
-echo "</p>";
+echo "</div>";
     ///competencies --------------------------------------------------------------
     // 32 - 36
 
@@ -210,15 +235,19 @@ echo "</p>";
     $hh = count($compt);
 
 
-echo "<p>";
-echo "<h1>SOCIAL COMPETENCIES</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>SOCIAL COMPETENCIES<span class="su right line"></span></h1>
+ <h3>Sub Headline</h3>
+                </header>';
+
     for($i = 0; $i<($hh); $i++){
         if($rj[$i] == "yes"){
             echo $compt[$i]. "<br><br>";
        }
     }
 
-echo "</p>";
+echo "</div>";
 
     //identity --------------------------------------------------------------
     // 37 - 40
@@ -242,15 +271,19 @@ echo "</p>";
     $vf = count($id);
 
 
-echo "<p>";
-echo "<h1>POSITIVE IDENTITY</h1>";
+echo "<div>";
+echo '   <header>
+                    <h1><span class="left line su"></span>POSITIVE IDENTITY<span class="su right line"></span></h1>
+ <h3>Sub Headline</h3>
+                </header>';
+
     for($i = 0; $i<($vf); $i++){
         if($tg[$i] == "yes"){
             echo $id[$i]. "<br><br>";
        }
     }
 
-echo "</p>";
+echo "</div>";
 
 
 ?>
