@@ -5,7 +5,7 @@
                 <header>
                     <h1><span class="left line su"></span>Support<span class="su right line"></span></h1>
                     <h3>Sub Headline</h3>
-                    <a data-toggle="collapse" href="#support" aria-expanded="false" aria-controls="support"><i class="fa fa-chevron-down"></i></a>
+                    <a data-toggle="collapse" href="#support" aria-expanded="false" aria-controls="support" class="arrow"><i class="fa fa-chevron-down"></i></a>
                 </header>
                 <article id="support" class="collapse">
                     <ul>
@@ -118,7 +118,7 @@
             <header>
                 <h1><span class="left emp line"></span>Empowerment<span class="emp right line"></span></h1>
                 <h3>Sub Headline</h3>
-                <a data-toggle="collapse" href="#empowerment" aria-expanded="false" aria-controls="empowerment"><i class="fa fa-chevron-down"></i></a>
+                <a data-toggle="collapse" href="#empowerment" aria-expanded="false" aria-controls="empowerment" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="empowerment" class="collapse">
                 <ul>
@@ -186,7 +186,7 @@
           <header>
                 <h1><span class="left be line"></span>BOUNDARIES AND EXPECTATIONS<span class="right be line"></span></h1>
                 <h3>Sub Headline</h3>
-                <a data-toggle="collapse" href="#be" aria-expanded="false" aria-controls="be"><i class="fa fa-chevron-down"></i></a>
+                <a data-toggle="collapse" href="#be" aria-expanded="false" aria-controls="be" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="be" class="collapse">
             <ul>
@@ -274,7 +274,7 @@
                <header>
                     <h1><span class="left cut line"></span>CONSTRUCTIVE USE OF TIME<span class="right cut line"></span></h1>
                     <h3>Sub Headline</h3>
-                    <a data-toggle="collapse" href="#cut" aria-expanded="false" aria-controls="cut"><i class="fa fa-chevron-down"></i></a>
+                    <a data-toggle="collapse" href="#cut" aria-expanded="false" aria-controls="cut" class="arrow"><i class="fa fa-chevron-down"></i></a>
                 </header>
                 <article id="cut" class="collapse">
                     <ul>
@@ -292,7 +292,7 @@
                     </div>
                 </li>
                 <li>
-                    <input type="checkbox" id='eightteen' name="eightten" value="yes">
+                    <input type="checkbox" id='eightteen' name="eightteen" value="yes">
                     <label for="eightteen"><strong>Youth Programs </strong> </label><div class="question">
                     <a data-toggle="collapse" href="#c18" aria-expanded="false" aria-controls="c18">
                             <i class="fa fa-question"></i>
@@ -340,7 +340,7 @@
                 <header>
                     <h1><span class="left ctl line"></span>COMMITMENT TO LEARNING<span class="right ctl line"></span></h1>
                     <h3>Sub Headline</h3>
-                    <a data-toggle="collapse" href="#ctl" aria-expanded="false" aria-controls="ctl"><i class="fa fa-chevron-down"></i></a>
+                    <a data-toggle="collapse" href="#ctl" aria-expanded="false" aria-controls="ctl" class="arrow"><i class="fa fa-chevron-down"></i></a>
                 </header>
                 <article id="ctl" class="collapse">
                     <ul>
@@ -416,7 +416,7 @@
               <header>
                 <h1><span class="left pv line"></span>POSITIVE VALUES<span class="right pv line"></span></h1>
                 <h3>Sub Headline</h3>
-                <a data-toggle="collapse" href="#pv" aria-expanded="false" aria-controls="pv"><i class="fa fa-chevron-down"></i></a>
+                <a data-toggle="collapse" href="#pv" aria-expanded="false" aria-controls="pv" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="pv" class="collapse">
              <ul>
@@ -503,7 +503,7 @@
               <header>
                 <h1><span class="left sc line"></span>SOCIAL COMPETENCIES<span class="right sc line"></span></h1>
                 <h3>Sub Headline</h3>
-                <a data-toggle="collapse" href="#sc" aria-expanded="false" aria-controls="sc"><i class="fa fa-chevron-down"></i></a>
+                <a data-toggle="collapse" href="#sc" aria-expanded="false" aria-controls="sc" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="sc" class="collapse">
              <ul>
@@ -556,7 +556,7 @@
                     </div>
                 </li>
                 <li class="even">
-                    <input type="checkbox" id='thirtysix' name="thirtyxix" value="yes">
+                    <input type="checkbox" id='thirtysix' name="thirtysix" value="yes">
                     <label for="thirtysix"><strong>Peaceful Conflict Resolution </strong> </label><div class="question"><a data-toggle="collapse" href="#c36" aria-expanded="false" aria-controls="c36">
                             <i class="fa fa-question"></i>
                         </a>
@@ -577,7 +577,7 @@
                <header>
                 <h1><span class="left pi line"></span>POSITIVE IDENTITY<span class="right pi line"></span></h1>
                 <h3>Sub Headline</h3>
-                <a data-toggle="collapse" href="#pi" aria-expanded="false" aria-controls="pi"><i class="fa fa-chevron-down"></i></a>
+                <a data-toggle="collapse" href="#pi" aria-expanded="false" aria-controls="pi" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="pi" class="collapse">
              <ul>
@@ -618,7 +618,7 @@
                     </div>
                 </li>
                  <li>
-                    <input type="checkbox" id='forty' name="forty" value="yes">
+                    <input type="checkbox" id='fourty' name="fourty" value="yes">
                     <label for="forty"><strong>Positive View of Personal Future </strong>  </label><div class="question"><a data-toggle="collapse" href="#c40" aria-expanded="false" aria-controls="c40">
                             <i class="fa fa-question"></i>
                         </a>

@@ -14,25 +14,28 @@
     array_push($aTrue, $one, $two, $three, $four, $five, $six);
     //print_r($aTrue);
 
-    for($i=1; $i < 6; $i++){
+    for($i=1; $i <= 6; $i++){
         $support[] = file_get_contents("files/support/".$i.".php");
     }
 
     $al = count($support);
+
     //print_r($support);
 
-echo "<div>";
+echo "<div id='sup'>";
 echo '   <header>
                     <h1><span class="left line su"></span>Support<span class="su right line"></span></h1>
                      <h3>Sub Headline</h3>
 
                 </header>';
                 echo "<article><ul>";
-    for($i = 0; $i<($al); $i++){
+
+    for($i = 0; $i<$al; $i++){
         if($aTrue[$i] == "yes"){
             echo "<li>" .$support[$i]. "</li>";
        }
     }
+
 
 
 echo "</ul></article></div>";
@@ -51,62 +54,64 @@ echo "</ul></article></div>";
     array_push($aemp, $seven, $eight, $nine, $ten);
     //print_r($aTrue);
 
-    for($i=7; $i < 10; $i++){
+    for($i=7; $i <= 10; $i++){
         $emp[] = file_get_contents("files/emp/".$i.".php");
     }
 
     $al = count($emp);
-    //print_r($emp);
+    //print_r($emp);s
 
-echo "<div>";
+echo "<div id='emp'>";
 echo '   <header>
                     <h1><span class="left line su"></span>Empowerment<span class="su right line"></span></h1>
  <h3>Sub Headline</h3>
                 </header>';
-
+  echo "<article><ul>";
     for($i = 0; $i<($al); $i++){
         if($aemp[$i] == "yes"){
-            echo $emp[$i]. "<br><br>";
+            echo "<li>" . $emp[$i]. "</li>";
        }
     }
 
-echo "</div>";
+
+echo "</ul></article></div>";
 
 //boundaries --------------------------------------------------------------------
     // 11 - 16
 
  if(isset($_POST["eleven"])){$eleven = $_POST["eleven"];}else{$eleven = "no";}
     if(isset($_POST["twelve"])){$twelve = $_POST["twelve"];}else{$twelve = "no";}
-    if(isset($_POST["threeteen"])){$threeteen = $_POST["threeteen"];}else{$threeteen = "no";}
+    if(isset($_POST["thirteen"])){$thirteen = $_POST["thirteen"];}else{$thirteen  = "no";}
     if(isset($_POST["fourteen"])){$fourteen = $_POST["fourteen"];}else{$fourteen = "no";}
     if(isset($_POST["fithteen"])){$fithteen = $_POST["fithteen"];}else{$fithteen = "no";}
     if(isset($_POST["sixteen"])){$sixteen = $_POST["sixteen"];}else{$sixteen = "no";}
 
     //first array is for the support section
     $ab =  array( );
-    array_push($ab, $eleven, $twelve, $threeteen, $fourteen, $fithteen, $sixteen);
+    array_push($ab, $eleven, $twelve, $thirteen, $fourteen, $fithteen, $sixteen);
     //print_r($ab);
 
-    for($i=11; $i < 16; $i++){
+    for($i=11; $i <= 16; $i++){
         $bound[] = file_get_contents("files/bound/".$i.".php");
     }
    // print_r($bound);
 
     $aw = count($bound);
 
-echo "<div>";
+echo "<div id='bound'>";
 echo '   <header>
                     <h1><span class="left line su"></span>BOUNDARIES AND EXPECTATIONS<span class="su right line"></span></h1>
  <h3>Sub Headline</h3>
                 </header>';
+                  echo "<article><ul>";
 
     for($i = 0; $i<($aw); $i++){
         if($ab[$i] == "yes"){
-            echo $i. "<br>".$bound[$i]. "<br><br>";
+            echo "<li>"  . $bound[$i]. "</li>";
        }
     }
 
-echo "</div>";
+echo "</ul></article></div>";
 
     //time --------------------------------------------------------------
     // 17 - 20
@@ -122,26 +127,27 @@ echo "</div>";
     array_push($aq, $seventeen, $eightteen, $nineteen, $twenty);
     //print_r($aTrue);
 
-    for($i=17; $i < 20; $i++){
+    for($i=17; $i <= 20; $i++){
         $time[] = file_get_contents("files/time/".$i.".php");
     }
 
     $ad = count($time);
 
 
-echo "<div>";
+echo "<div id='con'>";
 echo '   <header>
                     <h1><span class="left line su"></span>CONSTRUCTIVE USE OF TIME<span class="su right line"></span></h1>
  <h3>Sub Headline</h3>
                 </header>';
+    echo "<article><ul>";
 
     for($i = 0; $i<($ad); $i++){
         if($aq[$i] == "yes"){
-            echo $time[$i]. "<br><br>";
+            echo "<li>".$time[$i]. "</li>";
        }
     }
 
-echo "</div>";
+echo "</ul></article></div>";
     //learning --------------------------------------------------------------
     // 21 - 25
 
@@ -158,26 +164,26 @@ echo "</div>";
     array_push($bb, $twentyone, $twentytwo, $twentythree, $twentyfour, $twentyfive);
     //print_r($aTrue);
 
-    for($i=21; $i < 25; $i++){
+    for($i=21; $i <= 25; $i++){
         $learning[] = file_get_contents("files/learn/".$i.".php");
     }
 
-    $cc = count($support);
+    $cc = count($learning);
 
 
-echo "<div>";
+echo "<div id='com'>";
 echo '   <header>
                     <h1><span class="left line su"></span>COMMITMENT TO LEARNING<span class="su right line"></span></h1>
  <h3>Sub Headline</h3>
                 </header>';
-
+    echo "<article><ul>";
     for($i = 0; $i<($cc); $i++){
         if($bb[$i] == "yes"){
-            echo $learning[$i]. "<br><br>";
+            echo "<li>".$learning[$i]. "</li>";
        }
     }
 
-echo "</div>";
+echo "</ul></article></div>";
 
 //values -----------------------------------------------------------------------
     // 26 - 31
@@ -195,25 +201,24 @@ echo "</div>";
     array_push($az, $twentysix, $twentyseven, $twentyeight, $twentynine, $thirty, $thirtyone);
     //print_r($aTrue);
 
-    for($i=26; $i < 31; $i++){
+    for($i=26; $i <= 31; $i++){
         $values[] = file_get_contents("files/value/".$i.".php");
     }
 
     $pp = count($values);
 
-echo "<div>";
+echo "<div id='val'>";
 echo '   <header>
                     <h1><span class="left line su"></span>POSITIVE VALUES<span class="su right line"></span></h1>
  <h3>Sub Headline</h3>
                 </header>';
-
+    echo "<article><ul>";
     for($i = 0; $i<($pp); $i++){
         if($az[$i] == "yes"){
-            echo $values[$i]. "<br><br>";
+            echo "<li>".$values[$i]. "</li>";
        }
     }
-echo "</div>";
-    ///competencies --------------------------------------------------------------
+echo "</ul></article></div>";    ///competencies --------------------------------------------------------------
     // 32 - 36
 
 
@@ -228,26 +233,27 @@ echo "</div>";
     array_push($rj, $thirtytwo, $thirtythree, $thirtyfour, $thirtyfive, $thirtysix);
     //print_r($aTrue);
 
-    for($i=32; $i < 36; $i++){
+    for($i=32; $i <= 36; $i++){
         $compt[] = file_get_contents("files/comp/".$i.".php");
     }
 
     $hh = count($compt);
 
 
-echo "<div>";
+echo "<div id='soc'>";
 echo '   <header>
                     <h1><span class="left line su"></span>SOCIAL COMPETENCIES<span class="su right line"></span></h1>
  <h3>Sub Headline</h3>
                 </header>';
+                    echo "<article><ul>";
 
     for($i = 0; $i<($hh); $i++){
         if($rj[$i] == "yes"){
-            echo $compt[$i]. "<br><br>";
+            echo "<li>".$compt[$i]. "</li>";
        }
     }
 
-echo "</div>";
+echo "</ul></article></div>";
 
     //identity --------------------------------------------------------------
     // 37 - 40
@@ -264,26 +270,27 @@ echo "</div>";
     array_push($tg, $thirtyseven, $thirtyeight, $thirtynine, $fourty);
     //print_r($aTrue);
 
-    for($i=37; $i < 40; $i++){
+    for($i=37; $i <= 40; $i++){
         $id[] = file_get_contents("files/id/".$i.".php");
     }
 
     $vf = count($id);
 
 
-echo "<div>";
+echo "<div id='pos'>";
 echo '   <header>
-                    <h1><span class="left line su"></span>POSITIVE IDENTITY<span class="su right line"></span></h1>
+                    <h1>s<span class="left line su"></span>POSITIVE IDENTITY<span class="su right line"></span></h1>
  <h3>Sub Headline</h3>
                 </header>';
+                     echo "<article><ul>";
 
     for($i = 0; $i<($vf); $i++){
         if($tg[$i] == "yes"){
-            echo $id[$i]. "<br><br>";
+            echo "<li>".$id[$i]. "</li>";
        }
     }
 
-echo "</div>";
+echo "</ul></article></div>";
 
 
 ?>

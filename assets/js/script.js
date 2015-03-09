@@ -57,11 +57,42 @@ $(function(){
             nato.removeClass("on");
             t.children("ul").slideDown().addClass("on");
         }
-   })
+   });
 
 
+        $(".arrow .fa").click(function(){
+           if($(this).hasClass("fa-chevron-down")){
+                $(this).removeClass("fa-chevron-down").addClass("fa-chevron-up");
+           }
+           else{
+                $(this).removeClass("fa-chevron-up").addClass("fa-chevron-down");
+           }
+        });
+
+        $(".profilea .fa").click(function(){
+            console.log("click");
+             if($(this).hasClass("fa-minus")){
+                $(this).removeClass("fa-minus").addClass("fa-plus");
+           }
+           else{
+                $(this).removeClass("fa-plus").addClass("fa-minus");
+           }
+        })
+
+
+
+        $(".print").click(function(e){
+              e.preventDefault();
+              print();
+        });
 
 })
+
+
+
+
+
+
 
 function bakeCookies(yum){
     if(yum == "bake"){

@@ -1,0 +1,56 @@
+.facebooklike{
+    .fb-profile img.fb-image-lg{
+        z-index: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .fb-image-profile{
+        margin: -90px 10px 0px 50px;
+        z-index: 9;
+        width: 30%;
+    }
+
+    .about{
+        background: #fff;
+        border-radius: 5px;
+        border:thin solid #ccc;
+        padding:20px;
+        font-size: 10px;
+    }
+    ul {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+    .link{
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align: center;
+        i{
+            font-size: 25px;
+        }
+    }
+    .procontent{
+        background: #fff;
+        border-radius: 5px;
+        border:thin solid #ccc;
+        padding:20px;
+    }
+}
+
+@media (max-width:768px){
+    .facebooklike{
+        .fb-profile-text>h1{
+            font-weight: 700;
+            font-size:16px;
+        }
+
+        .fb-image-profile{
+            margin: -45px 10px 0px 25px;
+            z-index: 9;
+            width: 20%;
+        }
+    }
+}

@@ -8,4 +8,4 @@ Participate with your child in service projects, such as food drives, conducted 
 Show that you care about your child’s school. Join a parent-teacher organization, attend conferences and special events, and volunteer in any way you can.</p><p>
 Listen to your teenager when he complains about school or talks about not feeling connected. Is there a specific problem?</p><p>
 Don’t forget to identify on caring adult at school as your family’s “ally.” Aim for at least five caring adults in your teen’s life.</p><p>
-*For more on this topic, see Engage Every Parent! Encouraging Families to Sign On, Show Up, and Make a Difference by Nancy Tellett-Royce and Susan Wootten.</p></div></div>
+*For more on this topic, see Engage Every Parent! Encouraging Families to Sign On, Show Up, and Make a Difference by Nancy Tellett-Royce and Susan Wootten.</p></div></div><div class="page-break"></div>

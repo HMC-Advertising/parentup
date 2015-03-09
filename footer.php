@@ -8,8 +8,8 @@
 
 <script type="text/javascript">
     var $ = jQuery;
-    var h = $("#content").height();
-    $(".sidenav.nonmobile").height(h);
+   // var h = $("#content").height();
+    //$(".sidenav.nonmobile").height(h);
 
             (function($) {
                 $(document).ready(function() {
@@ -66,55 +66,10 @@
 
   <?php if(is_page_template("temp-actionplan.php")) : ?>
 
-       <div id ="info" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <button class="print"><i class="fa fa-print"></i></button>
-        <nav>
-        <ul>
-          <li>
-              <a href="">Support</a>
-          </li>
-          <li>
-             <a href="">Empowerment</a>
-          </li>
-          <li>
-              <a href="">BOUNDARIES AND EXPECTATIONS</a>
-          </li>
-          <li>
-             <a href="">CONSTRUCTIVE USE OF TIME</a>
-          </li>
-          <li>
-             <a href="">COMMITMENT TO LEARNING</a>
-          </li>
-          <li>
-             <a href=""> POSITIVE VALUES</a>
-          </li>
-          <li>
-             <a href="">SOCIAL COMPETENCIES</a>
-          </li>
-          <li>
-              <a href="">POSITIVE IDENTITY</a>
-          </li>
-         </ul>
-         </nav>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-        <script type="text/javascript">
-        var $ = jQuery;
-        $("#submit").click(function(e){
+      <?php get_template_part("assets/php/templates/actionplan", "nonmobile"); ?>
+      <?php //get_template_part("assets/php/templates/actionplan", "mobile") ?>
+  <script type="text/javascript">
+       $("#submit").click(function(e){
             e.preventDefault();
             //alert("click");
             //$("#info").addClass("on");
@@ -133,17 +88,10 @@
 
         });
 
-        $(".print").click(function(e){
-              e.preventDefault();
-        });
-
-
-
-
-        </script>
-
+  </script>
 
 <?php endif; ?>
+
 
 </body>
 </html>

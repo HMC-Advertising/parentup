@@ -9,4 +9,4 @@ Show them that you are brave enough to try again, even when you feel embarrassed
 Make sure children hear adults solving problems in peaceful ways—not with shouting, angry words, or hitting. If you and your child witness bullying or intimidation by adults or children, point it out, talk about it, and think of alternate ways the situation could have been handled.</p><p>
 Model for your children hard work, a good attitude, and respect for others. Avoid bad-mouthing coworkers, sports teams or players, and other with whom you compare yourself or compete.</p><p>
 *For more on this topic, see Just When I Needed You: True Stories of Adults Who Made a Difference in the Lives of Young People by Deborah Fisher and Mentoring for Meaningful Results.
-</p></div></div>
+</p></div></div><div class="page-break"></div>

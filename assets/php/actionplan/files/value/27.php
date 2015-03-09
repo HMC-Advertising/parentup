@@ -7,3 +7,4 @@ Together, choose an organization or group you want to support financially. Spend
 Begin teaching your child the importance of thinking of others who might not have as much as they do. Encourage your kids to “hand down” items they no longer use to charitable organizations.</p><p>
 Identify people (past or present) who have worked for social justice. Discuss their impact on their community or the world.</p><p>
 *For more on this topic, see Make a World of Difference: 50 Asset-Building Activities to Help Teens Explore Diversity by Dawn C. Oparah.</p></div></div>
+<div class="page-break"></div>

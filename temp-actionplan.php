@@ -11,13 +11,13 @@ template name: Action Plan
                 <div class="container">
                     <div class="row">
                         <!-- non-mobile -->
-                        <div class="hidden-sm hidden-xs">
+                        <div class="hidden-sm hidden-xs" style="position:absolute; height:100%">
                         <?php get_template_part("assets/php/templates/sidenav", "nonmobile"); ?>
                         </div>
                         <!-- /none-mobile -->
 
                         <!-- content -->
-                        <section class="col-lg-10 col-md-9">
+                        <section class="col-lg-10 col-md-9" style="margin-left:200px">
                             <div class="breadcrumbs">
                                 / <a href="">BC</a> / Bread crumbs /
                             </div>

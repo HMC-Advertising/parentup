@@ -7915,7 +7915,7 @@ h1 {
   position: relative;
   padding-top: 50px; }
   /* line 129, assets/sass/_partials/_actionplan.scss */
-  .actionplan .fa.fa-chevron-down {
+  .actionplan .fa.fa-chevron-down, .actionplan .fa.fa-chevron-up {
     font-size: 50px; }
   /* line 132, assets/sass/_partials/_actionplan.scss */
   .actionplan .odd {
@@ -8121,3 +8121,173 @@ h1 {
   /* line 348, assets/sass/_partials/_actionplan.scss */
   #submit.btn.icon-truck:active:before {
     color: #1fcfcb !important; }
+
+/* line 352, assets/sass/_partials/_actionplan.scss */
+.only_print {
+  display: none; }
+
+/* line 355, assets/sass/_partials/_actionplan.scss */
+.page-break {
+  display: none; }
+
+/* line 356, assets/sass/_partials/_actionplan.scss */
+#to_top {
+  background: #00878d;
+  color: #dfdccb;
+  position: fixed;
+  padding: 20px;
+  bottom: 0;
+  right: 20px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  /* line 364, assets/sass/_partials/_actionplan.scss */
+  #to_top i {
+    color: #dfdccb;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+  /* line 369, assets/sass/_partials/_actionplan.scss */
+  #to_top:hover i {
+    color: #52111d; }
+
+@media print {
+  /* line 376, assets/sass/_partials/_actionplan.scss */
+  body {
+    background: #ffffff;
+    color: #000000; }
+
+  /* line 380, assets/sass/_partials/_actionplan.scss */
+  img {
+    width: 100px; }
+
+  /* line 385, assets/sass/_partials/_actionplan.scss */
+  #info {
+    display: block !important;
+    position: relative; }
+    /* line 388, assets/sass/_partials/_actionplan.scss */
+    #info .modal-content {
+      box-shadow: none !important;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      border: none !important; }
+    /* line 396, assets/sass/_partials/_actionplan.scss */
+    #info .modal-dialog {
+      width: 600px;
+      height: 100%;
+      margin: auto;
+      box-shadow: none !important;
+      border: none !important; }
+      /* line 397, assets/sass/_partials/_actionplan.scss */
+      #info .modal-dialog .only_print {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 0; }
+      /* line 409, assets/sass/_partials/_actionplan.scss */
+      #info .modal-dialog h1 {
+        font-size: 18px; }
+        /* line 411, assets/sass/_partials/_actionplan.scss */
+        #info .modal-dialog h1 .line {
+          display: none; }
+      /* line 415, assets/sass/_partials/_actionplan.scss */
+      #info .modal-dialog h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 14px; }
+      /* line 421, assets/sass/_partials/_actionplan.scss */
+      #info .modal-dialog ul li {
+        padding: 0px;
+        font-size: 12px !important;
+        margin-bottom: 20px; }
+        /* line 425, assets/sass/_partials/_actionplan.scss */
+        #info .modal-dialog ul li:nth-child(odd) {
+          background: #eeeeee; }
+        /* line 428, assets/sass/_partials/_actionplan.scss */
+        #info .modal-dialog ul li:after {
+          margin-top: 20px;
+          width: 10%;
+          border-width: 2px;
+          border-top-style: solid;
+          content: "";
+          display: block;
+          height: 10px;
+          line-height: 1em;
+          margin: -13px auto auto;
+          padding-top: 20px;
+          top: 20px;
+          position: relative; }
+      /* line 444, assets/sass/_partials/_actionplan.scss */
+      #info .modal-dialog article {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 12px !important; }
+        /* line 452, assets/sass/_partials/_actionplan.scss */
+        #info .modal-dialog article p {
+          margin: 0 0 5px;
+          line-height: 15px; }
+    /* line 458, assets/sass/_partials/_actionplan.scss */
+    #info .modal-header, #info .modal-footer {
+      display: none; }
+
+  /* line 462, assets/sass/_partials/_actionplan.scss */
+  #sb-site, .sb-slide, #to_top {
+    display: none; }
+
+  @page :left {
+    margin: 0.5cm; }
+  @page :right {
+    margin: 0.8cm; } }
+/* line 2, assets/sass/_partials/_fbstyle.scss */
+.facebooklike .fb-profile img.fb-image-lg {
+  z-index: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px; }
+/* line 9, assets/sass/_partials/_fbstyle.scss */
+.facebooklike .fb-image-profile {
+  margin: -90px 10px 0px 50px;
+  z-index: 9;
+  width: 30%; }
+/* line 15, assets/sass/_partials/_fbstyle.scss */
+.facebooklike .about {
+  background: #fff;
+  border-radius: 5px;
+  border: thin solid #ccc;
+  padding: 20px;
+  font-size: 10px; }
+/* line 22, assets/sass/_partials/_fbstyle.scss */
+.facebooklike ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+/* line 27, assets/sass/_partials/_fbstyle.scss */
+.facebooklike .link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; }
+  /* line 31, assets/sass/_partials/_fbstyle.scss */
+  .facebooklike .link i {
+    font-size: 25px; }
+/* line 35, assets/sass/_partials/_fbstyle.scss */
+.facebooklike .procontent {
+  background: #fff;
+  border-radius: 5px;
+  border: thin solid #ccc;
+  padding: 20px; }
+
+@media (max-width: 768px) {
+  /* line 45, assets/sass/_partials/_fbstyle.scss */
+  .facebooklike .fb-profile-text > h1 {
+    font-weight: 700;
+    font-size: 16px; }
+  /* line 50, assets/sass/_partials/_fbstyle.scss */
+  .facebooklike .fb-image-profile {
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; } }

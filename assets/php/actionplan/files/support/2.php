@@ -1,3 +1,4 @@
+
 <div>
     <h3>Positive Family Communication <small> Young person and her or his parent(s) communicate positively, and young person is willing to seek advice and counsel from parents.</small></h3>
     <div class="content">
@@ -8,4 +9,4 @@ Be willing to talk during times that are comfortable for your children, such as 
 Sending e-mail, telephone calls, handwritten cards, photos, children’s art, and personal letters are all wonderful ways to stay connected with your children’s long-distance relatives.</p><p>
 Hang a whiteboard on your refrigerator or in a common area such as an entryway. Use it to write loving messages to one another or to let everyone know where you are, how you can be reached, and when you will be home.</p><p>
 Regardless of your teenagers’ interests and current involvement, regularly sit down with them and talk through their commitments to school, friends, jobs, and so on. Make sure they are making intentional decisions about what they do with their time and make sure that their choices are respectful of your family’s schedule.</p><p>
-*For more on this topic, see Conversations on the Go: Clever Questions to Keep Teens and Grown-ups Talking by Mary Ackerman.</p></div></div>
+*For more on this topic, see Conversations on the Go: Clever Questions to Keep Teens and Grown-ups Talking by Mary Ackerman.</p></div></div><div class="page-break"></div>

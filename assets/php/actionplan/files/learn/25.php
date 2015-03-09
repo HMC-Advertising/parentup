@@ -8,4 +8,4 @@ Ask children to read to you as they learn to read. Show them that you are excite
 Ask a teenager to recommend a favorite book. Read the book and start a discussion later about the character’s values.</p><p>
 Give your child books and magazine subscriptions as birthday and holiday presents.
 Make it a family ritual to read together in the evening—with the television, cell phones, and computers turned off!</p><p>
-*For more on this topic, see The Best of Building Assets Together: Favorite Group Activities that Help Youth Succeed by Jolene L. Roehlkepartain.</p></div></div>
+*For more on this topic, see The Best of Building Assets Together: Favorite Group Activities that Help Youth Succeed by Jolene L. Roehlkepartain.</p></div></div><div class="page-break"></div>
