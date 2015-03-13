@@ -2,24 +2,61 @@
 
 
 	<!-- content-->
+
 	<section id="content" class="frontpage">
+	<!-- non-mobile -->
+	<div class="container">
+		<div class="hidden-sm hidden-xs" style="position:absolute; height:95%; overflow: hidden; z-index: 100">
+			 <div class="col-lg-2 col-md-3" style="height:100%">
+    			<div class="sidenav nonmobile">
+        			<div class="logo">
+            			<a href="<?php bloginfo('url'); ?>">
+                			<img src="<?php echo get_template_directory_uri() ?>/assets/img/desktoplogo.png">
+            			</a>
+        			</div>
+       				 <?php
+            			$defaults = array(
+                            'theme_location'  => 'main_nav',
+                            'menu'            => 'main',
+                            'menu_class'      => 'main-menu',
+                            'menu_id'         => '',
+                            'echo'            => true,
+                            'fallback_cb'     => 'wp_page_menu',
+                            'before'          => '',
+                            'after'           => '',
+                            'link_before'     => '',
+                            'link_after'      => '',
+                            'items_wrap' => '<ul class="main_nav">%3$s</ul>',
+                            'depth'           => 0,
+                            'walker'          => ''
+                        );
+
+
+                         wp_nav_menu($defaults); ?>
+    				</div>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- /none-mobile -->
 		<div class="row">
+			<div class="frontpage_image">
+									<img src="<?php echo get_template_directory_uri()?>/assets/img/fp-stock-org.jpg">
+			</div>
 			<div class="col-lg-12">
+
 				<div class="container">
+
 					<div class="row">
-						<!-- non-mobile -->
-						<div class="hidden-sm hidden-xs">
-						<?php get_template_part("assets/php/templates/sidenav", "nonmobile"); ?>
-						</div>
-						<!-- /none-mobile -->
+
+
 						<!-- content -->
-						<div class="col-lg-10 col-md-9 nonmobile">
+
+						<div class="col-lg-10 col-md-9 nonmobile" style="margin-left:210px">
+
 							<div class="row">
-								<div class="frontpage_image">
-									<img src="<?php echo get_template_directory_uri()?>/assets/img/front-page-stock.png">
-									</div>
-							</div>
-							<div class="row">
+
 								<article class="page_content">
 									<?php if ( have_posts() ) : while ( have_posts() ) :
 										the_post();

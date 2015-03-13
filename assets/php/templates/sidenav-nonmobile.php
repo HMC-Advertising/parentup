@@ -1,7 +1,9 @@
  <div class="col-lg-2 col-md-3" style="height:100%">
     <div class="sidenav nonmobile">
         <div class="logo">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/desktoplogo.png">
+            <a href="<?php bloginfo('url'); ?>">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/desktoplogo.png">
+            </a>
         </div>
         <?php
             $defaults = array(

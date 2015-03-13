@@ -1,5 +1,7 @@
 <?php
 
+    add_filter('widget_text', 'do_shortcode');
+
     function profiles($atts, $content = null){
         extract(shortcode_atts(array(
             "cover" => "http://lorempixel.com/850/280/nightlife/5/",
@@ -21,18 +23,18 @@
             <div class="col-lg-6 about">
                 ';
 
-                $output .= $c[2];
+                $output .= do_shortcode($c[2]);
 
 
             $output .='
             </div>
-            <div class="col-lg-6 link">
+            <div class="col-lg-12 link">
                 <a  data-toggle="collapse" href="#'.$name.'" aria-expanded="false" aria-controls="'.$name.'" class="profilea" ><i class="fa fa-plus"></i></a>
             </div>
             <div id="'.$name.'" class="col-lg-12 procontent collapse">
             ';
 
-                    $output .= $c[1];
+                    $output .= do_shortcode($c[1]);
 
             $output .= '
             </div>
@@ -59,6 +61,7 @@ return $output;
         );
 
         $output = "";
+
         $output .= '<div class="ac">
                                     <div class="links" role="tabpanel" role="tablist">
                                         ';
@@ -72,7 +75,7 @@ return $output;
         return $output;
     }
 
-    add_shortcode("accordian", "acc");
+    add_shortcode("tabs", "acc");
 
 
 
@@ -103,16 +106,40 @@ return $output;
             shortcode_atts(
                 array(
                    "name" => '',
-                   'active' =>""
+                   'active' =>"",
+                   'title' => ''
                 ),
             $atts)
         );
 
         $output = "";
-        $output .='<li role="presentation" class="'.$active.'">
-                        <a href="#'.$name.'" aria-controls="'.$name.'" role="tab" data-toggle="tab">
-                            <i class="fa fa-plus-circle"></i>
-                            '.$name.'
+        $output .='<li role="presentation" class="'.$active.' col-lg-4">
+                        <a href="#'.$name.'" aria-controls="'.$name.'" role="tab" data-toggle="tab" class="col-lg-12">
+                        ';
+                        if(is_page("Talk About It")){
+
+                       $output .= '
+                           <div class="col-lg-12">
+                            '.$title.'
+                            </div>
+                            <div class="col-lg-12">
+                                 <i class="fa fa-plus-circle"></i>
+                            </div>
+                            ';
+                        }
+                        else{
+
+
+                       $output .= '
+                           <div class="col-lg-10">
+                            '.$title.'
+                            </div>
+                            <div class="col-lg-2">
+                                 <i class="fa fa-plus-circle"></i>
+                            </div>
+                            ';
+                        }
+         $output .='
                          </a>
                     </li>';
          return $output;
@@ -152,7 +179,7 @@ return $output;
 
         $output = "";
         $output .='  <article role="tabpanel" class="tab-pane '.$active.'" id="'.$name.'">';
-        $output .= $content;
+        $output .= do_shortcode($content);
         $output .=' </article>';
          return $output;
 
@@ -160,7 +187,72 @@ return $output;
 
     add_shortcode("tab_article", "con_tabs");
 
+    //accordian short code
 
+    function accordianfunction($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                    "link" => "This is the link text",
+                    "id" => "example",
+                    "btclass" => "btn btn-primary"
+                ),
+            $atts)
+        );
+        $output = "";
+
+        $output .= '<div class="accshort"><a class="'.$btclass.'" data-toggle="collapse" href="#'.$id.'" aria-expanded="false" aria-controls="'.$id.'">';
+        $output .= $link;
+        $output .= '<br> <i class="fa fa-angle-down"></i>';
+        $output .='</a><div class="collapse" id="'.$id.'"><div class="well">';
+        $output .= do_shortcode($content);
+        $output .='</div></div></div>';
+
+        return $output;
+    }
+
+    add_shortcode("accordian","accordianfunction");
+
+    //callouts
+
+    function callfunction($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                    "link" => "This is the link text",
+                    "url" => "#"
+                ),
+            $atts)
+        );
+        $output = "";
+        $output .= "<a href='".$url."' class='callout'>";
+        $output .='<h1>'.$link.'</h1>';
+        $output .='<small>'.$content.'</small>';
+        $output .='</a>';
+
+        return $output;
+    }
+    add_shortcode("callout", "callfunction");
+
+    function sourcef($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                   "sinfo" => "This is the source"
+                ),
+            $atts)
+        );
+
+        $output = "";
+        $output .= '<sup><a tabindex="0" class="source" role="button" data-toggle="popover" data-trigger="focus" title="Source" data-content="'.$sinfo.'">';
+
+        $output .=$content;
+        $output .='</a></sup>';
+
+        return $output;
+
+    }
+      add_shortcode("source", "sourcef");
 
 
 ?>

@@ -29,7 +29,7 @@
                          wp_nav_menu($defaults); ?>
                     </div>
                     <div class="col-xs-12 logo">
-                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/vtlogo.png"></a>
+                        <a href="http://healthvermont.gov/"><img src="<?php echo get_template_directory_uri() ?>/assets/img/vtlogo.png"></a>
                     </div>
                 </div>
             </div>

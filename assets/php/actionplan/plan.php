@@ -4,7 +4,7 @@
             <div class="col-lg-12">
                 <header>
                     <h1><span class="left line su"></span>Support<span class="su right line"></span></h1>
-                    <h3>Sub Headline</h3>
+
                     <a data-toggle="collapse" href="#support" aria-expanded="false" aria-controls="support" class="arrow"><i class="fa fa-chevron-down"></i></a>
                 </header>
                 <article id="support" class="collapse">
@@ -117,7 +117,7 @@
         <div class="col-lg-12 ">
             <header>
                 <h1><span class="left emp line"></span>Empowerment<span class="emp right line"></span></h1>
-                <h3>Sub Headline</h3>
+
                 <a data-toggle="collapse" href="#empowerment" aria-expanded="false" aria-controls="empowerment" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="empowerment" class="collapse">
@@ -185,7 +185,7 @@
         <div class="col-lg-12">
           <header>
                 <h1><span class="left be line"></span>BOUNDARIES AND EXPECTATIONS<span class="right be line"></span></h1>
-                <h3>Sub Headline</h3>
+
                 <a data-toggle="collapse" href="#be" aria-expanded="false" aria-controls="be" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="be" class="collapse">
@@ -273,7 +273,7 @@
              <div class="col-lg-12">
                <header>
                     <h1><span class="left cut line"></span>CONSTRUCTIVE USE OF TIME<span class="right cut line"></span></h1>
-                    <h3>Sub Headline</h3>
+
                     <a data-toggle="collapse" href="#cut" aria-expanded="false" aria-controls="cut" class="arrow"><i class="fa fa-chevron-down"></i></a>
                 </header>
                 <article id="cut" class="collapse">
@@ -339,7 +339,7 @@
             <div class="col-lg-12">
                 <header>
                     <h1><span class="left ctl line"></span>COMMITMENT TO LEARNING<span class="right ctl line"></span></h1>
-                    <h3>Sub Headline</h3>
+
                     <a data-toggle="collapse" href="#ctl" aria-expanded="false" aria-controls="ctl" class="arrow"><i class="fa fa-chevron-down"></i></a>
                 </header>
                 <article id="ctl" class="collapse">
@@ -415,7 +415,7 @@
              <div class="col-lg-12">
               <header>
                 <h1><span class="left pv line"></span>POSITIVE VALUES<span class="right pv line"></span></h1>
-                <h3>Sub Headline</h3>
+
                 <a data-toggle="collapse" href="#pv" aria-expanded="false" aria-controls="pv" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="pv" class="collapse">
@@ -502,7 +502,7 @@
               <div class="col-lg-12">
               <header>
                 <h1><span class="left sc line"></span>SOCIAL COMPETENCIES<span class="right sc line"></span></h1>
-                <h3>Sub Headline</h3>
+                <
                 <a data-toggle="collapse" href="#sc" aria-expanded="false" aria-controls="sc" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="sc" class="collapse">
@@ -576,7 +576,7 @@
              <div class="col-lg-12">
                <header>
                 <h1><span class="left pi line"></span>POSITIVE IDENTITY<span class="right pi line"></span></h1>
-                <h3>Sub Headline</h3>
+
                 <a data-toggle="collapse" href="#pi" aria-expanded="false" aria-controls="pi" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="pi" class="collapse">
@@ -633,8 +633,15 @@
             </article>
             </div>
         </div>
-        <div style="width:200px;margin:auto;">
-        <button type="submit"  id="submit" data-toggle="modal" data-target="#info" class="btn btn-7 btn-7a icon-truck">Submit</button>
+        <div style="width:400px;margin:auto;margin-bottom: 50px">
+        <button type="submit"  id="submit" data-toggle="modal" data-target="#info" class="btn btn-7 btn-7a icon-truck">Show me how to take action</button>
+        </div>
+        <div>
+        <p>
+           <strong> This list is courtesy of the Search Institute. Please read the Institute’s terms of use below.</strong></p><p>
+This list is an educational tool. It is not intended to be nor is it appropriate as a scientific measure of the developmental assets of individuals.</p><p>
+Copyright &copy; 1997, 2007 by Search Institute. All rights reserved. This chart may be reproduced for educational, noncommercial use only. No other use is permitted without prior permission from Search Institute, 615 First Avenue N.E., Suite 125, Minneapolis, MN 55413; 800-888-7828. <a href="http://www.search-institute.org/legal" target="_blank">See Search Institute's Permissions Guidelines and Request Form.</a> The following are registered trademarks of Search Institute: Search Institute&reg;, Developmental Assets&reg; and Healthy Communities &bull; Healthy Youth&reg;.</p>
+
         </div>
             <!-- Button trigger odd modal -->
     </form>

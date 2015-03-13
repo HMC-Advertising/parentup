@@ -85,6 +85,16 @@ $(function(){
               e.preventDefault();
               print();
         });
+        $(".source").popover();
+
+        $(".nav-tabs li a").on("click", function(){
+             $(".nav-tabs li a").removeClass("showme");
+             $(".nav-tabs li a i").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+             $(".tab-pane").removeClass("active");
+            $(this).addClass("showme");
+            $(this).find("i").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+
+        })
 
 })
 

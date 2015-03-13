@@ -16,10 +16,10 @@
                     <div class="content1">
                         <ul>
                             <li>
-                                <a href="#" class="twoline">Find out the truth about who’s at risk <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/whos-at-risk/is-my-child-at-risk/" class="twoline">Find out the truth about who’s at risk <i class="fa fa-chevron-right"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="threeline bottom1">See how you’re helping—and get ideas for what more you can do <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/how-can-i-help-prevent-it/set-the-foundation/" class="threeline bottom1">See how you’re helping—and get ideas for what more you can do <i class="fa fa-chevron-right"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -43,10 +43,10 @@
                 <div class="content1">
                          <ul>
                             <li>
-                                <a href="#" class="fourline">Find out why monitoring your teen is critical—and use our checklist to get started  <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/how-can-i-help-prevent-it/monitor-your-teen/" class="fourline">Find out why monitoring your teen is critical—and use our checklist to get started  <i class="fa fa-chevron-right"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="twoline bottom2">Learn what might be signs of a problem  <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/how-can-i-help-prevent-it/know-the-warning-signs/" class="twoline bottom2">Learn what might be signs of a problem  <i class="fa fa-chevron-right"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -70,10 +70,10 @@
                 <div class="content1">
                         <ul>
                             <li>
-                                <a href="#" class="threeline">Find out the true consequences of underage drinking and drug use <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/whats-at-stake/surprising-facts/" class="threeline">Find out the true consequences of underage drinking and drug use <i class="fa fa-chevron-right"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="twoline bottom3">Get a checklist for helping your teens stay safe <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/how-can-i-help-prevent-it/monitor-your-teen/" class="twoline bottom3">Get a checklist for helping your teens stay safe <i class="fa fa-chevron-right"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -97,10 +97,10 @@
                 <div class="content1">
                          <ul>
                             <li>
-                                <a href="#" class="threeline">Find out what you’re doing that’s helping—and ideas for other approaches  <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/how-can-i-help-prevent-it/set-the-foundation/" class="threeline">Find out what you’re doing that’s helping—and ideas for other approaches  <i class="fa fa-chevron-right"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="twoline bottom3">Get tips for effectively talking to your child <i class="fa fa-chevron-right"></i></a>
+                                <a href="http://parentupvt.org/how-can-i-help-prevent-it/talk-about-it/" class="twoline bottom3">Get tips for effectively talking to your child <i class="fa fa-chevron-right"></i></a>
                             </li>
                         </ul>
                     </div>

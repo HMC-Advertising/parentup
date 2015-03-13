@@ -1,4 +1,4 @@
-<div class="hidden-sm hidden-xs hidden-md">
+<div class="hidden-sm hidden-xs hidden-md "style="position: relative; z-index: 1000;">
 <?php get_template_part("assets/php/templates/footer", "nonmobile");?>
 </div>
 
@@ -73,7 +73,7 @@
             e.preventDefault();
             //alert("click");
             //$("#info").addClass("on");
-            $("#info .modal-body").html("<img src='http://placehold.it/100x100'>");
+            $("#info .modal-body").html("<img src='<?php echo get_template_directory_uri(); ?>/assets/img/ajax-loader.gif' class='loader'>");
 
             $.post("<?php echo get_template_directory_uri(); ?>/assets/php/actionplan/page.php",
                 $("form").serialize(),

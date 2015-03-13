@@ -25,7 +25,7 @@
 echo "<div id='sup'>";
 echo '   <header>
                     <h1><span class="left line su"></span>Support<span class="su right line"></span></h1>
-                     <h3>Sub Headline</h3>
+
 
                 </header>';
                 echo "<article><ul>";
@@ -64,7 +64,7 @@ echo "</ul></article></div>";
 echo "<div id='emp'>";
 echo '   <header>
                     <h1><span class="left line su"></span>Empowerment<span class="su right line"></span></h1>
- <h3>Sub Headline</h3>
+
                 </header>';
   echo "<article><ul>";
     for($i = 0; $i<($al); $i++){
@@ -101,7 +101,7 @@ echo "</ul></article></div>";
 echo "<div id='bound'>";
 echo '   <header>
                     <h1><span class="left line su"></span>BOUNDARIES AND EXPECTATIONS<span class="su right line"></span></h1>
- <h3>Sub Headline</h3>
+
                 </header>';
                   echo "<article><ul>";
 
@@ -137,7 +137,7 @@ echo "</ul></article></div>";
 echo "<div id='con'>";
 echo '   <header>
                     <h1><span class="left line su"></span>CONSTRUCTIVE USE OF TIME<span class="su right line"></span></h1>
- <h3>Sub Headline</h3>
+
                 </header>';
     echo "<article><ul>";
 
@@ -174,7 +174,7 @@ echo "</ul></article></div>";
 echo "<div id='com'>";
 echo '   <header>
                     <h1><span class="left line su"></span>COMMITMENT TO LEARNING<span class="su right line"></span></h1>
- <h3>Sub Headline</h3>
+
                 </header>';
     echo "<article><ul>";
     for($i = 0; $i<($cc); $i++){
@@ -210,7 +210,7 @@ echo "</ul></article></div>";
 echo "<div id='val'>";
 echo '   <header>
                     <h1><span class="left line su"></span>POSITIVE VALUES<span class="su right line"></span></h1>
- <h3>Sub Headline</h3>
+
                 </header>';
     echo "<article><ul>";
     for($i = 0; $i<($pp); $i++){
@@ -243,7 +243,7 @@ echo "</ul></article></div>";    ///competencies -------------------------------
 echo "<div id='soc'>";
 echo '   <header>
                     <h1><span class="left line su"></span>SOCIAL COMPETENCIES<span class="su right line"></span></h1>
- <h3>Sub Headline</h3>
+
                 </header>';
                     echo "<article><ul>";
 
@@ -280,7 +280,7 @@ echo "</ul></article></div>";
 echo "<div id='pos'>";
 echo '   <header>
                     <h1>s<span class="left line su"></span>POSITIVE IDENTITY<span class="su right line"></span></h1>
- <h3>Sub Headline</h3>
+
                 </header>';
                      echo "<article><ul>";
 
@@ -290,7 +290,16 @@ echo '   <header>
        }
     }
 
+
 echo "</ul></article></div>";
+
+echo '<div>
+        <p>
+           <strong> This list is courtesy of the Search Institute. Please read the Institute’s terms of use below.</strong></p><p>
+This list is an educational tool. It is not intended to be nor is it appropriate as a scientific measure of the developmental assets of individuals.</p><p>
+Copyright &copy; 1997, 2007 by Search Institute. All rights reserved. This chart may be reproduced for educational, noncommercial use only. No other use is permitted without prior permission from Search Institute, 615 First Avenue N.E., Suite 125, Minneapolis, MN 55413; 800-888-7828. <a href="http://www.search-institute.org/legal" target="_blank">See Search Institute\'s Permissions Guidelines and Request Form</a>. The following are registered trademarks of Search Institute: Search Institute&reg;, Developmental Assets&reg; and Healthy Communities &bull; Healthy Youth&reg;.</p>
+
+        </div>';
 
 
 ?>

@@ -1,0 +1,64 @@
+.checklist{
+    &.accord{
+        display: block;
+    }
+    &.list{
+        display: none;
+    }
+}
+
+@media print{
+     .divpagebreak{
+        page-break-before: always;
+        position: relative;
+        display: block;
+        height:1px;
+    }
+
+    .monitor{
+        #header, #footer, .sidenav, .about, .source, #header-mobile, #sidebar, .breadcrumbs{
+            display: none;
+        }
+        .checklist{
+            &.accord{
+                display:none;
+            }
+
+            &.list{
+                display:block;
+                position:relative;
+                top:0;
+                font-size:12px;
+                ul{
+                    list-style: none;
+                    li{
+                        display: block;
+                        padding-left: 1.2em;
+                        line-height: 15px;
+                        &:before{
+                            content:"\f096";
+                            font-family: FontAwesome;
+                            font-size: 30px;
+                            display: inline-block;
+                            width: 1.2em;
+                            margin-left: -1.2em;
+                            position: relative;
+                            top: 7px;
+                        }
+                    }
+                }
+                margin-left: -200px !important;
+            }
+        }
+        h1{
+            margin-left: -200px !important;
+            text-align: center;
+        }
+        .titles{
+            display:none;
+            &:after{
+                border:none !important;
+            }
+        }
+    }
+}

@@ -2,9 +2,9 @@
                         <article>
                             <h1> My Teen Needs Help Now</h1>
                             <ul>
-                                <li><a href="">I think my teen is drinking or doing drugs <i class="fa fa-angle-right"></i></a></li>
-                                <li><a href="">I know my teen is drinking or doing drugs <i class="fa fa-angle-right"></i></a></li>
-                                <li><a href="">I'm concerned about my teen's mental health <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="http://parentupvt.org/how-can-i-help-my-at-risk-teen/i-think-my-teen-is-drinking-or-using-drugs/">I think my teen is drinking or doing drugs <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="http://parentupvt.org/how-can-i-help-my-at-risk-teen/i-know-my-teen-is-drinking-or-using-drugs/">I know my teen is drinking or doing drugs <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="http://parentupvt.org/how-can-i-help-my-at-risk-teen/im-concerned-about-my-teens-mental-health/">I'm concerned about my teen's mental health <i class="fa fa-angle-right"></i></a></li>
                             </ul>
                         </article>
                         <footer class="on">

@@ -281,8 +281,8 @@
                 position:absolute;
                 width: 40px;
                 height: 40px;
-                top: 13px;
-                left:15px;
+                top: 23px;
+                left:23px;
                 // margin-top: -40px;
                 //left: 5px;
                 pointer-events: none;
@@ -304,6 +304,8 @@
         #submit.btn{
             margin:auto;
             text-align: center;
+            height:75px;
+            width:400px;
             &:after{
                 content: '';
                 position: absolute;
@@ -459,7 +461,7 @@
                     display:none;
                 }
             }
-           #sb-site, .sb-slide, #to_top  {
+           .action-plan #sb-site, .action-plan .sb-slide, .action-plan #to_top  {
                 display:none;
             }
             @page :left {

@@ -19,7 +19,10 @@ template name: Action Plan
                         <!-- content -->
                         <section class="col-lg-10 col-md-9" style="margin-left:200px">
                             <div class="breadcrumbs">
-                                / <a href="">BC</a> / Bread crumbs /
+                              <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
                             </div>
                             <div class="page_content">
                                 <header>

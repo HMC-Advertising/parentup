@@ -1,3 +1,9 @@
+<?php
+/*
+
+Template Name: No Sidebar
+
+*/?>
 
 <?php get_header(); ?>
     <!-- content-->
@@ -9,20 +15,19 @@
                         <!-- non-mobile -->
                         <div class="hidden-sm hidden-xs" style="position:absolute; height:100%">
                         <?php get_template_part("assets/php/templates/sidenav", "nonmobile"); ?>
-                           <div class="clear"></div>
                         </div>
                         <!-- /none-mobile -->
 
                         <!-- content -->
                         <section class="col-lg-10 col-md-9" style="margin-left:200px">
                             <div class="breadcrumbs">
-                               <?php if(function_exists('bcn_display'))
+                                <?php if(function_exists('bcn_display'))
     {
         bcn_display();
     }?>
                             </div>
 
-                            <div class="page_content col-lg-8">
+                            <div class="page_content">
                                 <header>
                                     <h1><?php the_title(); ?></h1>
                                 </header>
@@ -34,17 +39,14 @@
                                 </article>
 
                              </div>
-                             <?php get_sidebar(); ?>
 
                         </section>
                     </div>
-                    <div class="clear"></div>
                     <!-- /content -->
                 </div>
             </div>
         </div>
     </section>
-       <div class="clear"></div>
     <!-- /content-->
 
 

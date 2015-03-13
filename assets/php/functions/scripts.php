@@ -7,7 +7,7 @@ function theme_scripts() {
 
 //lib
     wp_register_style( 'fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
-    wp_register_style( 'slidebars', get_template_directory_uri() .'/assets/js/plugins/Slidebars/development/slidebars.css' );
+    wp_register_style( 'slidebars', get_template_directory_uri() .'/assets/js/plugins/slidebars/development/slidebars.css' );
 
     wp_register_style( 'slick-style','http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css' );
       wp_register_style( 'slick-theme', get_template_directory_uri() . '/assets/js/plugins/slick.js/dev/slick-theme.css' );
@@ -16,7 +16,7 @@ function theme_scripts() {
     wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/plugins/bootstrap/bootstrap.js', array(), '1.0.0', true );
     wp_register_script('html5shiv', get_template_directory_uri() . '/assets/js/plugins/html5shiv/dist/html5shiv.min.js', array(), '1.0.0', false);
     wp_register_script('slick', get_template_directory_uri() . '/assets/js/plugins/slick.js/dev/slick.min.js', array(), '1.0.0', true);
-    wp_register_script('slide', get_template_directory_uri() . '/assets/js/plugins/Slidebars/development/slidebars.js', array(), '1.0.0', true);
+    wp_register_script('slide', get_template_directory_uri() . '/assets/js/plugins/slidebars/development/slidebars.js', array(), '1.0.0', true);
 
     wp_register_script('checkboxes', get_template_directory_uri() . '/assets/js/plugins/checkboxes/svgcheckbx.js', array(), '1.0.0', true);
 
