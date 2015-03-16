@@ -14,7 +14,7 @@
                         <!-- /none-mobile -->
 
                         <!-- content -->
-                        <section class="col-lg-10 col-md-9" style="margin-left:200px">
+                        <section class="col-lg-10 col-md-9 nonmobilecontent">
                             <div class="breadcrumbs">
                                <?php if(function_exists('bcn_display'))
     {

@@ -53,7 +53,7 @@
 
 						<!-- content -->
 
-						<div class="col-lg-10 col-md-9 nonmobile" style="margin-left:210px">
+						<div class="col-lg-10 col-md-9 nonmobile nonmobilecontent">
 
 							<div class="row">
 

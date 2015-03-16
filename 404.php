@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  <!-- content-->
-    <section id="content" class="page">
+    <section id="content" class="page error">
         <div class="row">
             <div class="col-lg-12">
                 <div class="container">
@@ -12,10 +12,12 @@
                         <!-- /none-mobile -->
 
                         <!-- content -->
-                        <section class="col-lg-10 col-md-9" style="margin-left:200px">
+                        <section class="col-lg-10 col-md-9 nonmobilecontent">
+                             <div class="breadcrumbs">
+                                404 Error
+                             </div>
 
-
-                            <div class="page_content error">
+                            <div class="page_content">
 
                                <h1>OOPS!</h1>
                 <div id="search">

@@ -1,9 +1,14 @@
 .facebooklike{
+    background: $w;
+    margin-bottom:30px;
+    padding-top: 0;
+    @include border-radius(5px);
     .fb-profile img.fb-image-lg{
         z-index: 0;
         width: 100%;
         margin-bottom: 10px;
         border-radius: 5px;
+        margin-top: -21px;
     }
 
     .fb-image-profile{
@@ -15,9 +20,12 @@
     .about{
         background: #fff;
         border-radius: 5px;
-        border:thin solid #ccc;
-        padding:20px;
-        font-size: 10px;
+        //border:thin solid #ccc;
+        //padding:20px;
+        font-size: 12px;
+         @media only screen and (max-width : 500px) {
+            text-align:center;
+         }
     }
     ul {
         list-style: none;
@@ -35,7 +43,7 @@
     .procontent{
         background: #fff;
         border-radius: 5px;
-        border:thin solid #ccc;
+        //border:thin solid #ccc;
         padding:20px;
     }
 }

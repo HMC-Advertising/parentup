@@ -13,7 +13,7 @@
                         <!-- /none-mobile -->
 
                         <!-- content -->
-                        <section class="col-lg-10 col-md-9" style="margin-left:200px">
+                        <section class="col-lg-10 col-md-9 nonmobilecontent">
                             <div class="breadcrumbs">
                                 <?php if(function_exists('bcn_display'))
     {
@@ -39,12 +39,11 @@
                     ?>
 
                     <article id="post-<?php the_ID(); ?>" class="col-lg-12 post">
-                        <div class="page-header">
+
                             <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        </div>
-                        <div>
-                            <?php the_content(); ?>
-                        </div>
+                            <?php the_excerpt(); ?>
+                            <a href="<?php the_permalink(); ?>" class="next">Read More</a>
+
 
                     </article>
 

@@ -47,8 +47,8 @@
 		<?php get_template_part("assets/php/templates/sidenav", "mobile"); ?>
 	</div>
 	<div class="hidden-md hidden-lg">
-		<div class="sb-slidebar sb-right">
-		Search
+		<div class="sb-slidebar sb-right" style="padding-top:30px;">
+			<?php get_search_form( ); ?>
 		</div>
 	</div>
 	 <div id="sb-site" class="sb-slide">

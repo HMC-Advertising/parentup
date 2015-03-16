@@ -502,7 +502,7 @@
               <div class="col-lg-12">
               <header>
                 <h1><span class="left sc line"></span>SOCIAL COMPETENCIES<span class="right sc line"></span></h1>
-                <
+
                 <a data-toggle="collapse" href="#sc" aria-expanded="false" aria-controls="sc" class="arrow"><i class="fa fa-chevron-down"></i></a>
             </header>
             <article id="sc" class="collapse">

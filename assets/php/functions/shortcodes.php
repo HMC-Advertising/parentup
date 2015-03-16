@@ -20,7 +20,7 @@
         <img align="left" class="fb-image-profile thumbnail" src="'.$profile.'" alt="Profile '.$name.'"/>
         <div class="fb-profile-text">
             <h1>'.$name.'</h1>
-            <div class="col-lg-6 about">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about">
                 ';
 
                 $output .= do_shortcode($c[2]);
@@ -28,6 +28,7 @@
 
             $output .='
             </div>
+            <div class="clear"></div>
             <div class="col-lg-12 link">
                 <a  data-toggle="collapse" href="#'.$name.'" aria-expanded="false" aria-controls="'.$name.'" class="profilea" ><i class="fa fa-plus"></i></a>
             </div>
@@ -113,8 +114,8 @@ return $output;
         );
 
         $output = "";
-        $output .='<li role="presentation" class="'.$active.' col-lg-4">
-                        <a href="#'.$name.'" aria-controls="'.$name.'" role="tab" data-toggle="tab" class="col-lg-12">
+        $output .='<li role="presentation" class="'.$active.' col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <a href="#'.$name.'" aria-controls="'.$name.'" role="tab" data-toggle="tab" class="row">
                         ';
                         if(is_page("Talk About It")){
 
@@ -131,10 +132,10 @@ return $output;
 
 
                        $output .= '
-                           <div class="col-lg-10">
+                           <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                             '.$title.'
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                                  <i class="fa fa-plus-circle"></i>
                             </div>
                             ';

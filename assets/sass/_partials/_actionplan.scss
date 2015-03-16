@@ -27,12 +27,12 @@
                     color:$dg;
                     margin-bottom: 3px;
                     .line{
-
                         top: 20px;
                         height: 2px;
                         border: thin solid $lg;
                         position: relative;
                         margin-top: -5px;
+
                         &.right{
                             float:right;
                         }
@@ -125,6 +125,12 @@
         .actionplan {
             position: relative;
             padding-top: 50px;
+             @media only screen and (max-width : 900px) {
+                position: relative;
+                padding-top: 0px;
+                margin-left: -25px;
+            }
+
 
             .fa.fa-chevron-down, .fa.fa-chevron-up{
                 font-size: 50px;
@@ -149,6 +155,9 @@
                 padding-bottom: 10px;
                 h1{
                     font-size:50px;
+                    @media only screen and (max-width : 400px) {
+                        font-size: 30px;
+                    }
                     .line{
 
                         top: 20px;
@@ -156,6 +165,9 @@
                         border: thin solid #bf9199;
                         position: relative;
                         margin-top: 10px;
+                        @media only screen and (max-width : 1000px) {
+                            display: none !important;
+                        }
                         &.right{
                             float:right;
                         }
@@ -215,6 +227,9 @@
                        // margin-top:-20px;
                         i{
                             font-size: 50px;
+                             @media only screen and (max-width : 400px) {
+                                font-size: 20px;
+                            }
                         }
 
                     }
@@ -235,6 +250,9 @@
                 cursor: pointer;
                 transition: color 0.3s;
                 width:90%;
+                 @media only screen and (max-width : 400px) {
+                        font-size: 20px;
+                    }
             }
 
             input[type="checkbox"],
@@ -306,6 +324,9 @@
             text-align: center;
             height:75px;
             width:400px;
+             @media only screen and (max-width : 400px) {
+                       width:300px;
+                    }
             &:after{
                 content: '';
                 position: absolute;
@@ -322,6 +343,9 @@
                 box-shadow: 0 5px $dblue;
                 padding: 9px 46px 12px 55px;
                 text-transform: uppercase;
+                 @media only screen and (max-width : 400px) {
+                        font-size: 12px;
+                    }
                 &:active{
                     background: $dblue;
                     box-shadow: 0 5px $lblue;

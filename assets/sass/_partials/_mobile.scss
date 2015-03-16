@@ -1,6 +1,10 @@
 
 #header-mobile{
     background: $cream;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top:0;
     i{
         color:$burg;
         font-size: 40px;
@@ -221,7 +225,7 @@ margin-right: 20px;
         .content{
                          /* Smartphones (portrait) ----------- */
             @media only screen and (max-width : 320px) {
-                width:200px;
+                width:100px;
             }
              @media only screen and (min-width: 321px) and (max-width : 568px) {
                 width:400px;
@@ -272,6 +276,7 @@ margin-right: 20px;
                 }
 }
 #footer.mobile{
+    position: relative;
     .tagline{
         text-align: center;
     }
@@ -350,4 +355,5 @@ margin-right: 20px;
             }
     }
 }
+
 

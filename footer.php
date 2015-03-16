@@ -3,6 +3,7 @@
 </div>
 
 <div class="hidden-lg  sb-slide">
+<div class="clear"></div>
 <?php get_template_part("assets/php/templates/footer", "mobile");?>
 </div>
 
