@@ -12,6 +12,9 @@
            // display: none;
            .modal-dialog{
                 width:1000px;
+                @media only screen and (max-width : 800px) {
+                    width:auto;
+                }
            }
            .print{
             background: none;
@@ -32,6 +35,9 @@
                         border: thin solid $lg;
                         position: relative;
                         margin-top: -5px;
+                        @media only screen and (max-width : 800px) {
+                            display:none;
+                        }
 
                         &.right{
                             float:right;
@@ -80,10 +86,21 @@
                 margin-top: -42px;
                 ul{
                     list-style: none;
+                     @media only screen and (max-width : 500px) {
+                           width:100%;
+                           padding-left: 0;
+                         }
                     li{
                         display: inline-block;
+                         @media only screen and (max-width : 500px) {
+                            display:block;
+                            text-align: center;
+                         }
                         &:before{
                             content:'|';
+                            @media only screen and (max-width : 500px) {
+                            content:'';
+                         }
                         }
                         &:first-child:before{
                             content:'';

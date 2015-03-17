@@ -6,7 +6,8 @@
         extract(shortcode_atts(array(
             "cover" => "http://lorempixel.com/850/280/nightlife/5/",
             "name" =>  "Example",
-            "profile" => "http://lorempixel.com/180/180/people/9/"
+            "profile" => "http://lorempixel.com/180/180/people/9/",
+            "pronoun" => "they"
         ), $atts));
         $c = array( );
         $c = explode("[content]", $content);
@@ -20,7 +21,7 @@
         <img align="left" class="fb-image-profile thumbnail" src="'.$profile.'" alt="Profile '.$name.'"/>
         <div class="fb-profile-text">
             <h1>'.$name.'</h1>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 about">
                 ';
 
                 $output .= do_shortcode($c[2]);
@@ -30,7 +31,13 @@
             </div>
             <div class="clear"></div>
             <div class="col-lg-12 link">
-                <a  data-toggle="collapse" href="#'.$name.'" aria-expanded="false" aria-controls="'.$name.'" class="profilea" ><i class="fa fa-plus"></i></a>
+                <div class="col-lg-8">
+                    Does this look like your child? Make sure you also see '.$pronoun.' risk factor.
+                    </div>
+                    <div class="col-lg-4">
+                <a  data-toggle="collapse" href="#'.$name.'" aria-expanded="false" aria-controls="'.$name.'" class="profilea" >See why '.$name.' may be at risk
+                &nbsp;&nbsp;<i class="fa fa-plus-circle"></i></a>
+                </div>
             </div>
             <div id="'.$name.'" class="col-lg-12 procontent collapse">
             ';
@@ -108,13 +115,15 @@ return $output;
                 array(
                    "name" => '',
                    'active' =>"",
-                   'title' => ''
+                   'title' => '',
+                   'number' => '4',
+                   'class' => ''
                 ),
             $atts)
         );
 
         $output = "";
-        $output .='<li role="presentation" class="'.$active.' col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        $output .='<li role="presentation" class="'.$class.' '.$active.' col-lg-'.$number.' col-md-'.$number.' col-sm-'.$number.' col-xs-12">
                         <a href="#'.$name.'" aria-controls="'.$name.'" role="tab" data-toggle="tab" class="row">
                         ';
                         if(is_page("Talk About It")){

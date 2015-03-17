@@ -14,6 +14,7 @@ function theme_scripts() {
 
 //scripts
     wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/plugins/bootstrap/bootstrap.js', array(), '1.0.0', true );
+    wp_register_script('bootstrap-tran', get_template_directory_uri() . '/assets/js/plugins/bootstrap/bootstrap/transition.js', array(), '1.0.0', true );
     wp_register_script('html5shiv', get_template_directory_uri() . '/assets/js/plugins/html5shiv/dist/html5shiv.min.js', array(), '1.0.0', false);
     wp_register_script('slick', get_template_directory_uri() . '/assets/js/plugins/slick.js/dev/slick.min.js', array(), '1.0.0', true);
     wp_register_script('slide', get_template_directory_uri() . '/assets/js/plugins/slidebars/development/slidebars.js', array(), '1.0.0', true);
@@ -26,8 +27,9 @@ function theme_scripts() {
     wp_register_script('main-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true );
 
     //respond
-        wp_register_script('respond', get_template_directory_uri() . '/assets/js/plugin/respond/dest/respond.min.js', array(), '1.0.0', false );
-         wp_register_script('respond-media', get_template_directory_uri() . '/assets/js/plugin/respond/dest/respond.matchmedia.addListener.min.js', array(), '1.0.0', false );
+        wp_register_script('respond', get_template_directory_uri() . '/assets/js/plugins/respond/dest/respond.min.js', array(), '1.0.0', false );
+         wp_register_script('respond-media', get_template_directory_uri() . '/assets/js/plugins/respond/dest/respond.matchmedia.addListener.min.js', array(), '1.0.0', false );
+         wp_register_script('modern', get_template_directory_uri() . '/assets/js/plugins/modernizer/modernizr.js', array(), '1.0.0', false );
 
 
 //styles
@@ -39,10 +41,12 @@ function theme_scripts() {
 //scripts
 
     wp_enqueue_script("jquery");
-    wp_enqueue_script("bootstrap");
+    //wp_enqueue_script("bootstrap");
+     //wp_enqueue_script("bootstrap-tran");
      wp_enqueue_script('respond');
       wp_enqueue_script('respond-media');
        wp_enqueue_script('html5shiv');
+       wp_enqueue_script('modern');
 
     wp_enqueue_script( 'slide');
 

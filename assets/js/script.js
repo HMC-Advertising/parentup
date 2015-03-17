@@ -70,14 +70,19 @@ $(function(){
         });
 
         $(".profilea .fa").click(function(){
-            console.log("click");
+
              if($(this).hasClass("fa-minus")){
                 $(this).removeClass("fa-minus").addClass("fa-plus");
+
+
            }
            else{
                 $(this).removeClass("fa-plus").addClass("fa-minus");
+
            }
         })
+
+
 
 
 
@@ -94,10 +99,10 @@ $(function(){
             $(this).addClass("showme");
             $(this).find("i").removeClass("fa-plus-circle").addClass("fa-minus-circle");
 
-        })
+        });
+
 
 })
-
 
 
 

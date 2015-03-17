@@ -1,3 +1,18 @@
-.sidenav.mobile{
-    display:none;
+
+#content.frontpage .page_content{
+    background-image:url("../../img/ie-fpbg.png");
+    margin-top:-268px;
+}
+#header .alert a.close{
+     /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+}
+#content.frontpage .onhover .hovering header img.two{
+    display: none;
+
+}
+
+.collapse {
+overflow: hidden !important;
 }

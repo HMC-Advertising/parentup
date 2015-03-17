@@ -1,3 +1,6 @@
+
+
+
 <div class="hidden-sm hidden-xs hidden-md "style="position: relative; z-index: 1000;">
 <?php get_template_part("assets/php/templates/footer", "nonmobile");?>
 </div>
@@ -65,15 +68,18 @@
     </script>
     <?php endif; endif; ?>
 
-  <?php if(is_page_template("temp-actionplan.php")) : ?>
+<?php if(is_page_template("temp-actionplan.php")) : ?>
+  <?php if(is_mobile()): ?>
+     <?php //get_template_part("assets/php/templates/actionplan", "mobile"); ?>
+  <?php else: ?>
+      <?php //get_template_part("assets/php/templates/actionplan", "nonmobile"); ?>
+    <?php endif; ?>
 
-      <?php get_template_part("assets/php/templates/actionplan", "nonmobile"); ?>
-      <?php //get_template_part("assets/php/templates/actionplan", "mobile") ?>
+     <?php get_template_part("assets/php/templates/actionplan", "mobile"); ?>
   <script type="text/javascript">
-       $("#submit").click(function(e){
+  var $ = jQuery;
+       $("button").click(function(e){
             e.preventDefault();
-            //alert("click");
-            //$("#info").addClass("on");
             $("#info .modal-body").html("<img src='<?php echo get_template_directory_uri(); ?>/assets/img/ajax-loader.gif' class='loader'>");
 
             $.post("<?php echo get_template_directory_uri(); ?>/assets/php/actionplan/page.php",
@@ -82,9 +88,7 @@
                       $("#info .modal-body").html(data);
 
                 })
-            .error(function(){
-                console.log("failed");
-            })
+
 
 
         });
@@ -92,7 +96,6 @@
   </script>
 
 <?php endif; ?>
-
 
 </body>
 </html>

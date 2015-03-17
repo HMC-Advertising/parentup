@@ -7,7 +7,7 @@
         z-index: 0;
         width: 100%;
         margin-bottom: 10px;
-        border-radius: 5px;
+        //border-radius: 5px;
         margin-top: -21px;
     }
 
@@ -20,9 +20,9 @@
     .about{
         background: #fff;
         border-radius: 5px;
-        //border:thin solid #ccc;
-        //padding:20px;
-        font-size: 12px;
+        font-size: 15px;
+    padding-bottom: 20px;
+  font-weight: 600;
          @media only screen and (max-width : 500px) {
             text-align:center;
          }
@@ -33,11 +33,20 @@
         padding:0;
     }
     .link{
-        padding-top:10px;
-        padding-bottom:10px;
-        text-align: center;
-        i{
-            font-size: 25px;
+          padding-top: 15px;
+  padding-bottom: 15px;
+
+        background: $burg;
+        color:$cream;
+        a{
+            color:$lblue;
+             text-align: right;
+             float:right;
+            i{
+                font-size: 25px;
+                position: relative;
+                top: 3px;
+            }
         }
     }
     .procontent{

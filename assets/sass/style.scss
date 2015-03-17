@@ -31,16 +31,22 @@ sup{
     background-color: $cream !important;
     height:100%;
 }
+hr{
+    border-top:thin solid $burg;
+      margin-top: 50px;
+  padding-bottom: 40px;
 
+}
 a{
     color:$dblue;
-    font-weight: 600;
+    font-weight: 400;
     @include transition(1, 1s, 0);
     &:hover{
         color:$lblue;
         text-decoration:none;
     }
     &.next{
+        font-weight: 600;
         &:after{
             content:"\f178";
             font-family: FontAwesome;
@@ -57,7 +63,7 @@ h1{
     text-transform: uppercase;
 }
 h2{
-    font-size: 35px;
+    font-size: 28px;
     &.titles{
         padding-bottom: 0;
         margin-bottom:0;
@@ -101,11 +107,15 @@ h2{
     font-weight: 800;
     color:$tintlb;
     font-size: 30px;
+    line-height: 10px;
 }
 .clear{
     clear:both;
 }
-
+.aligncenter{
+    margin:auto;
+    text-align: center;
+}
 #header{
     padding-top: 10px;
     background:$cream;
@@ -420,21 +430,57 @@ h2{
                 display: table;
             }
             .tab-pane{
-            padding:20px;
+                padding:20px;
+                padding-top: 0px;
+                  padding-bottom: 0;
+                ul{
+                    list-style: none;
+                     border-bottom: thin solid #000;
+                     padding-bottom: 20px;
+                    li{
+                        margin-bottom: 15px;
+                        a{
+
+                        }
+                         ul{
+                            padding-left: 10px;
+                            padding-bottom: 0;
+                            border:none !important;
+                            li{
+                                padding-left:15px;
+                                &:before{
+                                    width:25px;
+                                    color:$orange;
+                                    content: "\f14a";
+                                    font-family: FontAwesome;
+                                    display: inline-block;
+                                    margin-left: -25px; /* same as padding-left set on li */
+
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
             .nav-tabs > li{
-                height: 200px;
-                 @media only screen and (max-width : 1000px) {
+                &.facts{
+                    height: 200px;
+                    @media only screen and (max-width : 1000px) {
                            height:auto;
                            padding-top:10px;
                            padding-bottom:10px;
                         }
+                        a{
+                            height:200px;
+                        }
+                    }
                 //display:table-cell;
                 a{
                     //height:100%;
                     display:block;
-                    height:200px;
+                    font-weight: 600;
+                    //height:200px;
                     padding:20px;
                       border:none;
                     border-top:thick solid $dblue;
@@ -463,7 +509,7 @@ h2{
                         font-size:40px;
                         position: relative;
                         //top:50%;
-                        margin-top:30px;
+                        //margin-top:30px;
                     }
                     &.showme{
                         background: $cream !important;
@@ -531,9 +577,17 @@ h2{
                      // display:table-cell;
                       vertical-align: middle;
                       background:$dcream ;
+                      &.active{
+                        color:$burg !important;
+                         &:hover, &:active, &:focus, &:visited{
+                            background:$cream !important;
+                            color:$burg !important;
+                        }
+                      }
 
                     &:hover, &:active, &:focus, &:visited{
                         background:$cream !important;
+                        color:$burg !important;
                     }
 
                     i{
@@ -608,7 +662,7 @@ h2{
 
         .page_content{
             //margin-top:400px;
-            margin-top: -265px;
+            margin-top: -283px;
             background:rgba(230, 228, 214, 0.8);
             padding:20px;
             z-index: 2;
@@ -685,7 +739,7 @@ h2{
                 }
                 article{
                     font-weight: 600;
-                    line-height:23px;
+                    line-height:27px;
                     height:190px;
                     padding:10px;
                     color:$dblue;
@@ -701,18 +755,19 @@ h2{
                             color:$cream;
                             display:block;
                             font-size: 12px;
-                            font-weight: 400;
+                            font-weight: 800;
                             text-transform: uppercase;
-                            padding:25px;
+                            padding:15px;
+                            padding-right: 37px ;
                             &:hover{
                                 text-decoration: none;
-                                background:$dblue;
+                                background:$lblue;
                             }
                             i{
                                 position: relative;
                                 float: right;
                                 font-size: 30px;
-                                right: -22px;
+                                right: -24px;
                             }
                         }
                     }
@@ -877,18 +932,22 @@ h2{
 .callout{
     text-align: center;
     background: $dblue;
-    border:thin solid $burg;
+   // border:thin solid $burg;
     color:$cream;
     padding:10px;
     display: block;
     margin-bottom:20px;
-    @include border-radius(5px);
+    //@include border-radius(5px);
+    line-height: 19px;
     @include transition(1, 1s, 0);
+    padding-top:20px;
+    padding-bottom:20px;
     h1{
         padding:0;
         margin:0;
         margin-bottom:10px;
-        font-size: 25px;
+        font-size: 22px;
+        line-height: 22px;
     }
     small{
 
@@ -986,6 +1045,11 @@ h2{
             margin-left:0px;
         }
     }
+}
+
+//argh
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    color:$burg !important;
 }
 
 @import "_partials/mobile";

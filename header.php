@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-US" class="">
-	<head>
-		<meta charset="UTF-8">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title><?php
 			if(!wp_title()):
@@ -29,6 +33,7 @@
   ga('create', 'UA-60566768-1', 'auto');
   ga('send', 'pageview');
 
+
 </script>
 
 	<?php wp_head(); ?>
@@ -36,6 +41,8 @@
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "5442e064-c3d3-40b2-80b9-889739c8e226", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
+	<!--[if lt IE 9]>
+	<link href="http://parentupvt.org/wp/wp-content/themes/parentup/assets/sass/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
 	</head>
 	<body <?php if(is_page("Monitor Your Teen")){
         echo "class='monitor'";
