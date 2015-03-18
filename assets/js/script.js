@@ -61,26 +61,22 @@ $(function(){
 
 
         $(".arrow .fa").click(function(){
-           if($(this).hasClass("fa-chevron-down")){
-                $(this).removeClass("fa-chevron-down").addClass("fa-chevron-up");
+           if($(this).hasClass("fa-plus-circle")){
+                $(this).removeClass("fa-plus-circle").addClass("fa-minus-circle");
            }
            else{
-                $(this).removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                $(this).removeClass("fa-minus-circle").addClass("fa-plus-circle");
            }
         });
 
-        $(".profilea .fa").click(function(){
-
-             if($(this).hasClass("fa-minus")){
-                $(this).removeClass("fa-minus").addClass("fa-plus");
-
-
-           }
-           else{
-                $(this).removeClass("fa-plus").addClass("fa-minus");
-
-           }
-        })
+        $(".profilea").click(function(){
+              if($(this).children().hasClass("fa-minus-circle")){
+                $(this).children().removeClass("fa-minus-circle").addClass("fa-plus-circle");
+              }
+              else{
+                $(this).children().removeClass("fa-plus-circle").addClass("fa-minus-circle");
+              }
+        });
 
 
 

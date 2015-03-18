@@ -17,7 +17,9 @@
 
         $output .='<div class="row facebooklike">
 <div class="fb-profile ">
+    <div class="img-cont">
         <img align="left" class="fb-image-lg" src="'.$cover.'" alt="Profile image example"/>
+        </div>
         <img align="left" class="fb-image-profile thumbnail" src="'.$profile.'" alt="Profile '.$name.'"/>
         <div class="fb-profile-text">
             <h1>'.$name.'</h1>
@@ -31,13 +33,11 @@
             </div>
             <div class="clear"></div>
             <div class="col-lg-12 link">
-                <div class="col-lg-8">
-                    Does this look like your child? Make sure you also see '.$pronoun.' risk factor.
-                    </div>
-                    <div class="col-lg-4">
-                <a  data-toggle="collapse" href="#'.$name.'" aria-expanded="false" aria-controls="'.$name.'" class="profilea" >See why '.$name.' may be at risk
+
+
+                <a  data-toggle="collapse" href="#'.$name.'" aria-expanded="false" aria-controls="'.$name.'" class="profilea" ><strong>See why '.$name.' may be at risk</strong>
                 &nbsp;&nbsp;<i class="fa fa-plus-circle"></i></a>
-                </div>
+
             </div>
             <div id="'.$name.'" class="col-lg-12 procontent collapse">
             ';
@@ -126,10 +126,14 @@ return $output;
         $output .='<li role="presentation" class="'.$class.' '.$active.' col-lg-'.$number.' col-md-'.$number.' col-sm-'.$number.' col-xs-12">
                         <a href="#'.$name.'" aria-controls="'.$name.'" role="tab" data-toggle="tab" class="row">
                         ';
-                        if(is_page("Talk About It")){
+                        if(is_page("Talk About It") or is_page("Spread The Word &amp; Make Connections")){
 
                        $output .= '
-                           <div class="col-lg-12">
+                           <div class="col-lg-12"';
+                           if(is_page("Spread The Word &amp; Make Connections")){
+                            $output .='style="min-height:57px"';
+                           }
+                        $output .='>
                             '.$title.'
                             </div>
                             <div class="col-lg-12">

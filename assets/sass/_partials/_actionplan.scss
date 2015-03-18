@@ -9,6 +9,10 @@
     font-style: normal;
 }
     #info{
+        .well{
+            padding:0;
+            margin-bottom: 0;
+        }
            // display: none;
            .modal-dialog{
                 width:1000px;
@@ -21,8 +25,9 @@
             border:none;
             color:#ccc;
            }
+
             header{
-                text-align: center;
+                text-align: left;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 h1{
@@ -115,7 +120,8 @@
             }
             article{
                 .content{
-                    margin-left: 50px;
+
+                    margin-top: 20px;
                 }
                 ul{
                      list-style: none;
@@ -132,6 +138,14 @@
                             //color:$dg;
 
                         }
+                        ul{
+                            list-style: disc;
+                              margin-left: 50px;
+                            li{
+                                padding:5px;
+                                padding-left: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -141,7 +155,8 @@
 
         .actionplan {
             position: relative;
-            padding-top: 50px;
+            padding-top: 25px;
+            padding-bottom:50px;
              @media only screen and (max-width : 900px) {
                 position: relative;
                 padding-top: 0px;
@@ -149,37 +164,33 @@
             }
 
 
-            .fa.fa-chevron-down, .fa.fa-chevron-up{
+            .fa.fa-minus-circle, .fa.fa-plus-circle{
                 font-size: 50px;
+                margin-top: 14px;
             }
             .odd{
-                background:#bfbcaf;
-                &.row{
-                    padding-top: 20px;
-               padding-bottom: 20px;
-                }
+                background:#e8e6d5;
+
             }
             .even{
-                background:$cream;
-                &.row{
-                        padding-top: 20px;
-               padding-bottom: 20px;
-                }
+                background:#f4f3e9;
+
             }
             header{
-                text-align: center;
-                padding-top: 10px;
+                //text-align: center;
+                //padding-top: 10px;
                 padding-bottom: 10px;
                 h1{
-                    font-size:50px;
+                    font-size:40px;
+                    //color:$dblue];
                     @media only screen and (max-width : 400px) {
                         font-size: 30px;
                     }
-                    .line{
+                    /*.line{
 
                         top: 20px;
                         height: 2px;
-                        border: thin solid #bf9199;
+                        //border: thin solid #bf9199;
                         position: relative;
                         margin-top: 10px;
                         @media only screen and (max-width : 1000px) {
@@ -215,7 +226,7 @@
                         &.pi{ width:159px;
 
                         }
-                    }
+                    }*/
                 }
                 h3{
                     font-size: 24px;
@@ -237,15 +248,19 @@
                     padding:20px;
                     //height:100px;
                     .question{
-                        float:right;
+                        //float:right;
+                        display: inline;
                         //background:#d1cebe;
                         //padding:10px;
                         height:100%;
                        // margin-top:-20px;
                         i{
-                            font-size: 50px;
+                            font-size: 25px;
                              @media only screen and (max-width : 400px) {
                                 font-size: 20px;
+                            }
+                            &:active, &:focus{
+                                color:$dblue;
                             }
                         }
 
@@ -266,7 +281,9 @@
                 color: rgba(0,0,0,0.2);
                 cursor: pointer;
                 transition: color 0.3s;
-                width:90%;
+                width:auto;
+                color:$burg;
+                font-weight: 400 !important;
                  @media only screen and (max-width : 400px) {
                         font-size: 20px;
                     }
@@ -293,12 +310,12 @@
 
             label:before {
                 content: '';
-                border: 4px solid #fff;
+                border: 4px solid $burg;
                 transition: opacity 0.3s;
             }
             input[type="checkbox"]:checked + label,
             input[type="radio"]:checked + label {
-                color: #fff;
+                color: $dblue;
             }
 
             input[type="checkbox"]:checked + label::before,
@@ -340,7 +357,7 @@
             margin:auto;
             text-align: center;
             height:75px;
-            width:400px;
+            //width:100%;
              @media only screen and (max-width : 400px) {
                        width:300px;
                     }
@@ -353,19 +370,21 @@
                 transition: all 0.3s;
             }
             &.btn-7{
-                background: #00a7ad;
+                background: $orange;
                 color: $w;
                 border-radius: 7px;
-                font-size: 20px;
-                box-shadow: 0 5px $dblue;
+                font-size: 30px;
+                font-weight: 600;
+                box-shadow: 0 5px #b44900;
                 padding: 9px 46px 12px 55px;
                 text-transform: uppercase;
                  @media only screen and (max-width : 400px) {
                         font-size: 12px;
                     }
                 &:active{
-                    background: $dblue;
-                    box-shadow: 0 5px $lblue;
+                    background: $lblue;
+                    box-shadow: 0 5px $dblue;
+                    border:none;
                 }
             }
             &.btn-7a{
@@ -513,4 +532,22 @@ margin: 0.5cm;
 margin: 0.8cm;
 }
         }
+    .external{
+        //border-top:thin solid $burg;
+        //border-left:thin solid $burg;
+        //border-right:thin solid $burg;
+        background: $burg;
+        width:auto;
+        font-size: 20px;
+        padding: 10px;
+        font-weight: 400;
+
+        &.ex{
+            color:$cream
+        }
+        &.int{
+            color:$cream;
+        }
+    }
+
 

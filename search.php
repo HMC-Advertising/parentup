@@ -21,7 +21,10 @@
     }?>
                             </div>
                             <div class="page_content">
-                                                <h1  class="title">Search Results</h1>
+                                                <h1  class="title"><?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?></h1>
                 <?php if ( have_posts() && strlen( trim(get_search_query()) ) != 0 ) : ?>
                 <section id="posts-container" class="<?php echo $container_class; ?> clearfix">
                     <?php
@@ -43,7 +46,7 @@
                             <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
                             <?php the_excerpt(); ?>
                             <a href="<?php the_permalink(); ?>" class="next">Read More</a>
-
+                            <hr>
 
                     </article>
 
@@ -59,7 +62,7 @@
 
 
                 <section class="divider">
-                    <hr>
+
                 </section>
                 <section class="anSearch">
                     <p class="lead">Try Another Search</p>

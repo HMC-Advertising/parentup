@@ -32,11 +32,74 @@ sup{
     height:100%;
 }
 hr{
-    border-top:thin solid $burg;
-      margin-top: 50px;
-  padding-bottom: 40px;
+    border-top: 2px solid $burg;
+    margin-top: 30px;
+    padding-bottom: 0px;
+
 
 }
+.img-cont{
+    overflow: hidden;
+    height:200px;
+}
+ol {
+    counter-reset: counts;
+    li{
+        margin-bottom: .5em;
+        overflow: hidden; // Hide the default ol li numbers
+        margin-bottom:20px;
+        padding-left:43px;
+        &:before{
+            content: counter(counts);
+            counter-increment: counts;
+            font-size: 17px;
+            font-weight: 800;
+            margin-right: .5em;
+            display: inline-block;
+            vertical-align: middle;
+            @include border-radius(50%);
+            background:$dblue;
+            color:$cream;
+            //padding: 12px;
+            padding-top: 4px;
+            padding-bottom: 6px;
+            font-family: 'Open Sans', sans-serif;
+              width: 34px;
+            text-align: center;
+            margin-left: -43px;
+        }
+    }
+    &.less{
+        li{
+             margin-bottom:10px;
+        }
+    }
+}
+
+ul{
+    list-style: none;
+    &.check{
+        margin-top:10px;
+        margin-bottom: 0;
+        padding-left: 30px;
+        margin-left: 30px;
+        //padding-bottom: 10px;
+                            //border:none !important;
+        li{
+            padding-left:15px;
+            &:before{
+                width:25px;
+                                    color:$orange;
+                                    content: "\f14a";
+                                    font-family: FontAwesome;
+                                    display: inline-block;
+                                    margin-left: -25px; /* same as padding-left set on li */
+
+            }
+        }
+    }
+}
+
 a{
     color:$dblue;
     font-weight: 400;
@@ -44,6 +107,12 @@ a{
     &:hover{
         color:$lblue;
         text-decoration:none;
+    }
+    &:active{
+        color:$dblue;
+    }
+    &:visited{
+        color:$dblue;
     }
     &.next{
         font-weight: 600;
@@ -58,12 +127,33 @@ a{
         }
     }
 }
+.orange{
+    color:$orange;
+}
+.burg{
+    color:$burg;
+}
+.dblue{
+    color:$dblue;
+}
+.lblue{
+    color:$lblue;
+}
+.dcream{
+    color:$dcream;
+}
+.cream{
+    color:$cream;
+}
 h1{
     font-weight: 600;
     text-transform: uppercase;
 }
 h2{
-    font-size: 28px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+
     &.titles{
         padding-bottom: 0;
         margin-bottom:0;
@@ -102,6 +192,9 @@ h2{
              }
         }
     }
+}
+h3{
+    line-height: 28px;
 }
 .q{
     font-weight: 800;
@@ -427,37 +520,21 @@ h2{
             .nav-tabs{
                 background: $dcream;
                 padding-top:20px;
+                padding-bottom:20px;
                 display: table;
             }
             .tab-pane{
                 padding:20px;
                 padding-top: 0px;
-                  padding-bottom: 0;
+                padding-bottom: 0;
                 ul{
                     list-style: none;
-                     border-bottom: thin solid #000;
-                     padding-bottom: 20px;
+                     //border-bottom: thin solid #000;
+                     //padding-bottom: 20px;
                     li{
                         margin-bottom: 15px;
                         a{
 
-                        }
-                         ul{
-                            padding-left: 10px;
-                            padding-bottom: 0;
-                            border:none !important;
-                            li{
-                                padding-left:15px;
-                                &:before{
-                                    width:25px;
-                                    color:$orange;
-                                    content: "\f14a";
-                                    font-family: FontAwesome;
-                                    display: inline-block;
-                                    margin-left: -25px; /* same as padding-left set on li */
-
-                                }
-                            }
                         }
                     }
                 }
@@ -473,6 +550,9 @@ h2{
                         }
                         a{
                             height:200px;
+                            &.showme{
+                               height:220px;
+                            }
                         }
                     }
                 //display:table-cell;
@@ -482,15 +562,15 @@ h2{
                     font-weight: 600;
                     //height:200px;
                     padding:20px;
-                      border:none;
+                    border:none;
                     border-top:thick solid $dblue;
                     border-bottom:thick solid $dblue;
                     font-size: 16px;
                     text-transform: uppercase;
                     line-height: 19px;
-                      //display:table-cell;
-                      vertical-align: middle;
-                      background:$dcream ;
+                    //display:table-cell;
+                    vertical-align: middle;
+                    background:$dcream ;
                         @media only screen and (max-width : 800px) {
                            height:100%;
                            padding-top:10px;
@@ -515,7 +595,9 @@ h2{
                         background: $cream !important;
                         border-top:none;
                         border-bottom:none;
-                       height:100%;
+                        height: auto;
+                        padding-bottom: 50px;
+                        margin-bottom: -30px;
 
                     }
                 }
@@ -527,7 +609,7 @@ h2{
                 margin:auto;
             }
             .tab-pane{
-            padding:20px;
+                padding:20px;
             }
             .checklist{
                 .tab-pane{
@@ -535,10 +617,12 @@ h2{
                         li{
                             display: block;
                             padding-left: 1.2em;
+                            font-weight: 600;
                             &:before{
-                                content:"\f0da";
+                                content:"\f054";
                                 font-family: FontAwesome;
-                                font-size: 20px;
+                                font-size: 12px;
+                                color:$dblue;
                                 display: inline-block;
                                 width: 1.2em;
                                 margin-left: -1.2em;
@@ -791,7 +875,7 @@ h2{
                     padding-bottom: 50px;
                 }
                  .bottom2{
-                    padding-bottom: 50px;
+                    padding-bottom: 33px;
                 }
                 .bottom3{
                     padding-bottom:50px;
@@ -869,7 +953,7 @@ h2{
     }
 }
 #sidebar{
-    margin-top:120px;
+    margin-top:78px;
     @media only screen and (max-width : 1100px) {
         margin-top:0;
     }
@@ -877,6 +961,10 @@ h2{
         font-weight: 800;
         font-size: 18px;
         margin-bottom: 20px;
+        line-height: 20px;
+        border-top: 3px solid #000;
+        padding-top: 10px;
+
         @media only screen and (max-width : 1000px) {
             text-align: center;
         }
@@ -890,6 +978,9 @@ h2{
             a{
                 border:thin solid $dblue;
                 text-align: center;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 20px;
                 display: block;
                 padding:10px;
                 background:$dblue;
@@ -931,12 +1022,12 @@ h2{
 
 .callout{
     text-align: center;
-    background: $dblue;
+    background: $dcream;
    // border:thin solid $burg;
-    color:$cream;
+    color:$dblue;
     padding:10px;
     display: block;
-    margin-bottom:20px;
+    margin-bottom:5px;
     //@include border-radius(5px);
     line-height: 19px;
     @include transition(1, 1s, 0);
@@ -1005,13 +1096,13 @@ h2{
             background-image: none;
         }
         .chicklets{
-              color: #00878d;
-  font-weight: 600;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+            color: #00878d;
+            font-weight: 600;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
             font-size: 14px;
             padding-left:0;
             &:after{

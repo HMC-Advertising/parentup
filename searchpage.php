@@ -38,7 +38,7 @@ Template Name: Search Page
                                 <section>
                                     <?php get_search_form(); ?>
                                 </section>
-                                <hr>
+
 
 
                              </div>

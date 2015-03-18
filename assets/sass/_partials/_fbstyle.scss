@@ -33,15 +33,16 @@
         padding:0;
     }
     .link{
-          padding-top: 15px;
-  padding-bottom: 15px;
-
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: right;
         background: $burg;
         color:$cream;
         a{
             color:$lblue;
              text-align: right;
-             float:right;
+             //float:right;
+             font-size:25px;
             i{
                 font-size: 25px;
                 position: relative;

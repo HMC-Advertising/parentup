@@ -16,11 +16,11 @@
 			endif;
 		?></title>
 		<meta name="viewport" content="width=device-width">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
-		<link rel="apple-touch-icon-precomposed" href="">
-		<link rel="shortcut icon" href="">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="shortcut icon" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
 
 		<script src="//use.typekit.net/sfk6wrn.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>

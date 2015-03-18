@@ -9,6 +9,8 @@ function theme_scripts() {
     wp_register_style( 'fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
     wp_register_style( 'slidebars', get_template_directory_uri() .'/assets/js/plugins/slidebars/development/slidebars.css' );
 
+     wp_register_style( 'open sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' );
+
     wp_register_style( 'slick-style','http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css' );
       wp_register_style( 'slick-theme', get_template_directory_uri() . '/assets/js/plugins/slick.js/dev/slick-theme.css' );
 
@@ -36,6 +38,7 @@ function theme_scripts() {
     wp_enqueue_style( 'fontawesome' );
     wp_enqueue_style( 'style-css' );
     wp_enqueue_style( 'slidebars' );
+    wp_enqueue_style( 'open sans' );
 
 
 //scripts
