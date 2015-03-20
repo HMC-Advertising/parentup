@@ -67,7 +67,7 @@
 							</div>
 							<div class="row">
 								<aside class="seperator">
-									<strong>Choose the quote</strong> that Best Captures your parenting style
+									<strong>Choose the quote</strong> that best captures your parenting style
 								</aside>
 							</div>
 							<div class="row">

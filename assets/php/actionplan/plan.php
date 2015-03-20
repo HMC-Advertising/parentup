@@ -139,7 +139,7 @@
                          </div>
                      <div class="collapse mcontent" id="c7">
                         <div class=" ">
-                            | Young person perceives that adults in the community value youth.
+                            Young person perceives that adults in the community value youth.
                         </div>
                     </div>
                 </li>
@@ -222,7 +222,7 @@
                          </div>
                     <div class="collapse mcontent" id="c12">
                         <div class=" ">
-                            School provides clear rules and consequences
+                            School provides clear rules and consequences.
                         </div>
                     </div>
                 </li>
@@ -370,7 +370,7 @@
                          </div>
                     <div class="collapse mcontent" id="c21">
                         <div class=" ">
-                            Young person is motivated to do   in school.
+                            Young person is motivated to do well in school.
                         </div>
                     </div>
                 </li>

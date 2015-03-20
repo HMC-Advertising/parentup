@@ -29,7 +29,7 @@ Template Name: No Sidebar
 
                             <div class="page_content">
                                 <header>
-                                    <h1><?php the_title(); ?></h1>
+                                    <h1><?php the_title(); ?> <div style="float:right" class='st_sharethis' displayText='Share '></div></h1>
                                 </header>
                                 <article>
                                     <?php if ( have_posts() ) : while ( have_posts() ) :

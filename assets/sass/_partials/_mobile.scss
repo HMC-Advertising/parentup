@@ -142,6 +142,7 @@
     height:auto !important;
     display: table;
     z-index:1;
+
     img{
         //width:100%;
     }
@@ -153,7 +154,7 @@
     }
     .slider{
         border-bottom:thin solid $tintlb;
-        background:$cream;
+        background:#dfdccb;
         overflow: hidden;
         &:last-child{
 

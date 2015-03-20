@@ -5,8 +5,8 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
                 <header>
-                    <img class="one" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-1.png" class="c1">
-                     <img class="two" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-1b.png" class="c1">
+                    <img class="one c1" src="<?php echo get_template_directory_uri(); ?>/assets/img/telescope_off.png">
+                     <img class="two c1" src="<?php echo get_template_directory_uri(); ?>/assets/img/telescope_on.png">
                 </header>
                 <article>
                     <span class="q">“</span>My child is well grounded ambitious, and totally supported&mdash;Not the kind of kid who falls into trouble.<span class="q">”</span>
@@ -32,11 +32,11 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
             <header>
-                <img class="one" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-2.png" class="c2">
-                <img class="two" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-2b.png" class="c2">
+                <img class="one c2" src="<?php echo get_template_directory_uri(); ?>/assets/img/wings-off.png" >
+                <img class="two" c2 src="<?php echo get_template_directory_uri(); ?>/assets/img/wing-on.png" >
             </header>
             <article>
-                <span class="q">“</span>I'm Giving my teen independence so she knows she's trusted.<span class="q">”</span>
+                <span class="q">“</span>I'm giving my teen independence so she knows she's trusted.<span class="q">”</span>
             </article>
             </div>
             <footer class="footer s2">
@@ -59,7 +59,7 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
             <header>
-                <img class="one" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-3.png" class="c3">
+                <img class="one" src="<?php echo get_template_directory_uri(); ?>/assets/img/party-off.png" class="c3">
                   <img class="two" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-3b.png" class="c3">
             </header>
             <article>
@@ -86,8 +86,8 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
             <header>
-                <img class="one" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-4.png" class="c4">
-                <img class="two" src="<?php echo get_template_directory_uri(); ?>/assets/img/front-page-icons-4b.png" class="c4">
+                <img class="one c4" src="<?php echo get_template_directory_uri(); ?>/assets/img/eye-off2.png" >
+                <img class="two c4" src="<?php echo get_template_directory_uri(); ?>/assets/img/eye-on.png" >
             </header>
             <article>
                 <span class="q">“</span>My kid know they won't get away with anything in this house<span class="q">”</span>

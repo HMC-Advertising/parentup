@@ -1,7 +1,8 @@
  <section id="sidebar" class="col-lg-3">
-    <?php if(is_page("resources") or is_child("resources")): ?>
+    <?php if(is_page("resources") or is_child("resources") or is_page("media center") or is_child("media center")): ?>
+        <ul>
         <?php
-            $defaults1 = array(
+           /* $defaults1 = array(
                             'theme_location'  => 'r_side_nav',
                             'menu'            => 'r_side_nav',
                             'menu_class'      => 'r_side_nav',
@@ -18,7 +19,22 @@
             );
 
 
-            wp_nav_menu($defaults1); ?>
+            wp_nav_menu($defaults1);*/
+            if(is_page("resources") or is_child("resources")){
+                $here = 11;
+               }
+               else{
+                 $here = 13;
+               }
+
+                wp_list_pages(array(
+                    'title_li' => '',
+                    'depth' => 1,
+                    'child_of' => $here
+                ));
+
+            ?>
+         </ul>
     <?php endif; ?>
    <?php //
         dynamic_sidebar('Sidebar Location');

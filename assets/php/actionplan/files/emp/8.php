@@ -10,4 +10,4 @@ If you’re in charge of a fundraising or charity event, involve your children o
 
 Encourage kids to mentor their peers. Teach them how they can help other youth by listening to them and helping them work through their problems.</li></ul><p>
 
-*For more on this topic, see Empowering Youth: How to Encourage Young Leaders to do Great Things by Kelly Curtis.</p></div></div><div class="page-break"></div>
+*For more on this topic, see <em>Empowering Youth: How to Encourage Young Leaders to do Great Things</em> by Kelly Curtis.</p></div></div><div class="page-break"></div>

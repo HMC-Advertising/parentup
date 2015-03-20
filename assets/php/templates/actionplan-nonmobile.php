@@ -38,7 +38,7 @@
       </div>
       <div class="only_print">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/desktoplogo.png"><br><br>
-        This is the about section of what this is.
+        In addition, research by the Search Institute has identified 40 skills, experiences, relationships, and behaviors (called developmental assets) that help set the foundation for teens to grow into happy and healthy adults with much to contribute to the world. - See more at: http://parentupvt.org/how-can-i-help-prevent-it/set-the-foundation/
       </div>
       <div class="modal-body">
 
@@ -52,4 +52,35 @@
     <a id="to_top" href="#topmodal"><i class="fa fa-chevron-up"></i></a>
 
 </div>
+
+        <script type="text/javascript">
+        var $ = jQuery;
+        $("#submit").click(function(e){
+            e.preventDefault();
+            //alert("click");
+            //$("#info").addClass("on");
+            $("#info .modal-body").html("<img src='http://placehold.it/100x100'>");
+
+            $.post("<?php echo get_template_directory_uri(); ?>/assets/php/actionplan/page.php",
+                $("form").serialize(),
+                function(data){
+                      $("#info .modal-body").html(data);
+
+                })
+            .error(function(){
+                console.log("failed");
+            })
+
+
+        });
+
+        $(".print").click(function(e){
+              e.preventDefault();
+              print();
+        });
+
+
+
+
+        </script>
 

@@ -1,5 +1,5 @@
 <div>
-    <h3>Planning and Decision Making<small> Young person believes it is important not to be sexually active or to use alcohol or other drugs.</small></h3>
+    <h3>Planning and Decision Making<small> Young person knows how to plan ahead and make choices.</small></h3>
     <div class="content">
     <p><strong>
 Show me how to take action:</strong></p><ul><li>

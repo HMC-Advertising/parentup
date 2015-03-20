@@ -2,11 +2,7 @@
      <i class="fa fa-caret-down"></i>
 </div>
 <section class="hovering mobile">
-
-
-
-
-    <section id="swipe1" class="slider">
+ <section id="swipe1" class="slider">
         <div class="slide">
             <article class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-1.png">
@@ -43,7 +39,7 @@
                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-2.png">
             </article>
             <article class="content">
-                <span class="q">“</span>I'm Giving my teen independence so she knows she's trusted.<span class="q">”</span>
+                <span class="q">“</span>I'm giving my teen independence so she knows she's trusted.<span class="q">”</span>
             </article>
            <article class="icon">
                <i class="fa fa-angle-right"></i>

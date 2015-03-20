@@ -70,15 +70,22 @@
 
 <?php if(is_page_template("temp-actionplan.php")) : ?>
   <?php if(is_mobile()): ?>
-     <?php //get_template_part("assets/php/templates/actionplan", "mobile"); ?>
+     <?php get_template_part("assets/php/templates/actionplan", "mobile"); ?>
   <?php else: ?>
-      <?php //get_template_part("assets/php/templates/actionplan", "nonmobile"); ?>
+      <?php get_template_part("assets/php/templates/actionplan", "nonmobile"); ?>
     <?php endif; ?>
 
-     <?php get_template_part("assets/php/templates/actionplan", "mobile"); ?>
+     <?php //get_template_part("assets/php/templates/actionplan", "mobile"); ?>
   <script type="text/javascript">
   var $ = jQuery;
-       $("button").click(function(e){
+  var mb = $(".mobal-body");
+  var mh = $(".mobal-header").height();
+  var mf = $(".mobal-footer").height();
+
+  var mbh = parseInt(($(window).height() - mh - mf)-170);
+  mb.css("height", mbh + "px");
+
+       $("#submit").click(function(e){
             e.preventDefault();
             $("#info .modal-body").html("<img src='<?php echo get_template_directory_uri(); ?>/assets/img/ajax-loader.gif' class='loader'>");
 

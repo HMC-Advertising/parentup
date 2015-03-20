@@ -14,6 +14,7 @@
         //print_r($c);
 
         $output = "";
+        if(!is_mobile()){
 
         $output .='<div class="row facebooklike">
 <div class="fb-profile ">
@@ -51,6 +52,36 @@
 </div>
 <div class="clear"></div>
 ';
+            }
+            else{
+                $output .='
+                    <section class="row facebooklike mobile">
+                        <header class="col-lg-12">
+                            <div class="mobile-conta">
+                                <img align="left" class="fb-image-lg" src="'.$cover.'" alt="Profile image example"/>
+                            </div>
+                            <img align="left" class="fb-image-profile thumbnail" src="'.$profile.'" alt="Profile '.$name.'"/>
+                             <h1>'.$name.'</h1>
+                        </header>
+                        <article class="about">';
+                            $output .= do_shortcode($c[2]);
+                    $output .='
+                        </article>
+                        <div class="clear"></div>
+                        <footer>
+                            <div class="col-lg-12 link">
+                                <a  data-toggle="collapse" href="#'.$name.'" aria-expanded="false" aria-controls="'.$name.'" class="profilea" >
+                                    <strong>See why '.$name.' may be at risk</strong>&nbsp;&nbsp;<i class="fa fa-plus-circle"></i>
+                                </a>
+                            </div>
+                            <div id="'.$name.'" class="col-lg-12 procontent collapse">';
+                                $output .= do_shortcode($c[1]);
+                        $output .= '
+                        </footer>
+                    </section>
+                    <div class="clear"></div>
+                ';
+            }
 
 return $output;
     }

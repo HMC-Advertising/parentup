@@ -279,7 +279,7 @@ echo "</ul></article></div>";
 
 echo "<div id='pos'>";
 echo '   <header>
-                    <h1>s<span class="left   su"></span>POSITIVE IDENTITY<span class="su right  "></span></h1>
+                    <h1><span class="left   su"></span>POSITIVE IDENTITY<span class="su right  "></span></h1>
 
                 </header>';
                      echo "<article><ul>";

@@ -5,7 +5,7 @@ template name: Action Plan
 ?>
 <?php get_header(); ?>
     <!-- content-->
-    <section id="content" class="page">
+    <section id="content" class="page act">
         <div class="row">
             <div class="col-lg-12">
                 <div class="container">
@@ -17,9 +17,7 @@ template name: Action Plan
                         <!-- /none-mobile -->
 
                         <!-- content -->
-                        <section class="col-lg-10 col-md-9 nonmobilecontent@media only screen and (max-width : 1100px) {
-                            display: none !important;
-                        }">
+                        <section class="col-lg-10 col-md-9 nonmobilecontent">
                             <div class="breadcrumbs">
                               <?php if(function_exists('bcn_display'))
     {
@@ -28,7 +26,7 @@ template name: Action Plan
                             </div>
                             <div class="page_content">
                                 <header>
-                                    <h1><?php the_title(); ?></h1>
+                                    <h1><?php the_title(); ?> <div style="float:right" class='st_sharethis' displayText='Share '></div></h1>
                                 </header>
                                 <article>
                                     <?php if ( have_posts() ) : while ( have_posts() ) :
