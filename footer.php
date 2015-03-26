@@ -29,44 +29,8 @@
 </script>
 
 	<?php wp_footer(); ?>
-    <?php if(is_front_page()) : if(is_mobile() or is_tablet()) : ?>
-    <script type="text/javascript">
-         $("#swipe1").slick({
-        arrows: false,
-        slide: ".slide",
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        variableWidth: true
 
-   });
-  $("#swipe2").slick({
-        arrows: false,
-        slide: ".slide",
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        variableWidth: true
-   });
 
-   $("#swipe3").slick({
-        arrows: false,
-        slide: ".slide",
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        variableWidth: true
-   });
-   $("#swipe4").slick({
-         arrows: false,
-        slide: ".slide",
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        variableWidth: true
-   });
-    </script>
-    <?php endif; endif; ?>
 
 <?php if(is_page_template("temp-actionplan.php")) : ?>
   <?php if(is_mobile()): ?>
@@ -78,12 +42,7 @@
      <?php //get_template_part("assets/php/templates/actionplan", "mobile"); ?>
   <script type="text/javascript">
   var $ = jQuery;
-  var mb = $(".mobal-body");
-  var mh = $(".mobal-header").height();
-  var mf = $(".mobal-footer").height();
 
-  var mbh = parseInt(($(window).height() - mh - mf)-170);
-  mb.css("height", mbh + "px");
 
        $("#submit").click(function(e){
             e.preventDefault();

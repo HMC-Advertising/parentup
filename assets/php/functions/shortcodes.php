@@ -289,7 +289,7 @@ return $output;
         );
 
         $output = "";
-        $output .= '<sup><a tabindex="0" class="source" role="button" data-toggle="popover" data-trigger="focus" title="Source" data-content="'.$sinfo.'">';
+        $output .= '<sup><a tabindex="0" class="source" role="button" data-toggle="popover" title="Source" data-content="'.$sinfo.'">';
 
         $output .=$content;
         $output .='</a></sup>';

@@ -4,10 +4,10 @@
         <div class="row odd ex">
             <div class="col-lg-12">
                 <header class="row">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                         <h1><span class="left line su"></span>Support<span class="su right line"></span></h1>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <a data-toggle="collapse" href="#support" aria-expanded="false" aria-controls="support" class="arrow"><i class="fa fa-plus-circle"></i></a>
                     </div>
                 </header>
@@ -120,10 +120,10 @@
           <div class="row even  ex">
         <div class="col-lg-12 ">
             <header class="row">
-                <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                     <h1><span class="left emp line"></span>Empowerment<span class="emp right line"></span></h1>
                 </div>
-                 <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <a data-toggle="collapse" href="#empowerment" aria-expanded="false" aria-controls="empowerment" class="arrow"><i class="fa fa-plus-circle"></i></a>
                 </div>
             </header>
@@ -191,10 +191,10 @@
     <div class="row odd  ex">
         <div class="col-lg-12">
             <header  class="row">
-                <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                     <h1><span class="left be line"></span>BOUNDARIES AND EXPECTATIONS<span class="right be line"></span></h1>
                 </div>
-                <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <a data-toggle="collapse" href="#be" aria-expanded="false" aria-controls="be" class="arrow"><i class="fa fa-plus-circle"></i></a>
                 </div>
             </header>
@@ -282,10 +282,10 @@
         <div class="row even  ex">
              <div class="col-lg-12">
                 <header  class="row">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                         <h1><span class="left cut line"></span>CONSTRUCTIVE USE OF TIME<span class="right cut line"></span></h1>
                     </div>
-                     <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <a data-toggle="collapse" href="#cut" aria-expanded="false" aria-controls="cut" class="arrow"><i class="fa fa-plus-circle"></i></a>
                     </div>
                 </header>
@@ -352,10 +352,10 @@
         <div class="row odd int">
             <div class="col-lg-12">
                 <header  class="row">
-                     <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                         <h1><span class="left ctl line"></span>COMMITMENT TO LEARNING<span class="right ctl line"></span></h1>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <a data-toggle="collapse" href="#ctl" aria-expanded="false" aria-controls="ctl" class="arrow"><i class="fa fa-plus-circle"></i></a>
                     </div>
                 </header>
@@ -432,10 +432,10 @@
     <div class="row even  int">
              <div class="col-lg-12">
                 <header class="row">
-                     <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                         <h1><span class="left pv line"></span>POSITIVE VALUES<span class="right pv line"></span></h1>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <a data-toggle="collapse" href="#pv" aria-expanded="false" aria-controls="pv" class="arrow"><i class="fa fa-plus-circle"></i></a>
                     </div>
                 </header>
@@ -522,10 +522,10 @@
              <div class="row odd int">
                 <div class="col-lg-12">
                     <header class="row">
-                        <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                             <h1><span class="left sc line"></span>SOCIAL COMPETENCIES<span class="right sc line"></span></h1>
                         </div>
-                         <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             <a data-toggle="collapse" href="#sc" aria-expanded="false" aria-controls="sc" class="arrow"><i class="fa fa-plus-circle"></i></a>
                         </div>
                     </header>
@@ -599,10 +599,10 @@
             <div class="row even  int">
                 <div class="col-lg-12">
                     <header class="row">
-                         <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                             <h1><span class="left pi line"></span>POSITIVE IDENTITY<span class="right pi line"></span></h1>
                         </div>
-                         <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             <a data-toggle="collapse" href="#pi" aria-expanded="false" aria-controls="pi" class="arrow"><i class="fa fa-plus-circle"></i></a>
                         </div>
                     </header>
@@ -660,7 +660,7 @@
             </article>
             </div>
         </div>
-        <div style="width:500px; text-align:center; margin:auto;margin-bottom: 50px; margin-top:50px; ma">
+        <div class="actionplanbutton">
             <button type="submit"  id="submit" data-toggle="modal" data-target="#info" class="btn btn-7 btn-7a">Show me how to take action</button>
         </div>
         <p>&nbsp;</p>

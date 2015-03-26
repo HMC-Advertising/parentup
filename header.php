@@ -15,12 +15,13 @@
 				wp_title();
 			endif;
 		?></title>
-		<meta name="viewport" content="width=device-width">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
-		<link rel="apple-touch-icon-precomposed" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
-		<link rel="shortcut icon" href="<?php get_template_directory_uri(); ?>/assets/img/favicon.png">
+
+        <meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php  echo get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php  echo get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" href="<?php  echo get_template_directory_uri(); ?>/assets/img/favicon.png">
+		<link rel="shortcut icon" href="<?php  echo get_template_directory_uri(); ?>/assets/img/favicon.png">
 
 		<script src="//use.typekit.net/sfk6wrn.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
@@ -32,17 +33,31 @@
 
   ga('create', 'UA-60566768-1', 'auto');
   ga('send', 'pageview');
-
-
 </script>
 
 	<?php wp_head(); ?>
 	<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "5442e064-c3d3-40b2-80b9-889739c8e226", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "5442e064-c3d3-40b2-80b9-889739c8e226", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 	<!--[if lt IE 9]>
-	<link href="http://parentupvt.org/wp/wp-content/themes/parentup/assets/sass/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+	<link href="http://parentupvt.org/wp/wp-content/themes/parentup/assets/sass/css/ie.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/respond/dest/respond.min.js"></script>
+         <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/respond/dest/respond.matchmedia.addListener.min.js"></script>
+         <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/modernizer/modernizr.js"></script>
+          <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <?php if(is_front_page()): ?>
+        <?php if(is_mobile()): ?>
+            <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/css/frontpage-mobile.css">
+        <?php elseif (is_tablet()): ?>
+              <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/sass/css/frontpage-tablet.css">
+
+        <?php endif; ?>
+
+    <?php endif; ?>
+
 	</head>
 	<body <?php if(is_page("Monitor Your Teen")){
         echo "class='monitor'";

@@ -176,6 +176,9 @@
             .fa.fa-minus-circle, .fa.fa-plus-circle{
                 font-size: 50px;
                 margin-top: 14px;
+                @media only screen and (max-width : 400px) {
+                    font-size: 35px;
+                }
             }
             .odd{
                 background:#e8e6d5;
@@ -193,7 +196,7 @@
                     font-size:40px;
                     //color:$dblue];
                     @media only screen and (max-width : 400px) {
-                        font-size: 30px;
+                        font-size: 20px;
                     }
                     /*.line{
 
@@ -566,5 +569,16 @@ margin: 0.8cm;
             color:$cream;
         }
     }
+.actionplanbutton{
+    width:500px;
+    text-align:center;
+    margin:auto;
+    margin-bottom: 50px;
+    margin-top:50px;
+    @media only screen and (max-width : 320px) {
+          width:300px;
+    }
+}
+
 
 

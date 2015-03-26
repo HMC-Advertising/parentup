@@ -140,7 +140,7 @@
 .hovering.mobile{
     //margin-top:20px;
     height:auto !important;
-    display: table;
+    //display: table;
     z-index:1;
 
     img{
@@ -155,7 +155,8 @@
     .slider{
         border-bottom:thin solid $tintlb;
         background:#dfdccb;
-        overflow: hidden;
+        height:300px;
+        //overflow: hidden;
         &:last-child{
 
             @media only screen and (max-width : 568px) {
@@ -174,13 +175,15 @@
 
 
     .slide{
-        display: table-row;
+        /*display: table-row;
         height:auto !important;
         //border-bottom:thin solid $tintlb;
         padding-top:20px;;
         //padding-bottom: 20px;
+        width:320px;
+        */
         .image, .content, .icon{
-            display: table-cell;
+           // display: table-cell;
             img{
                 vertical-align: middle;
             }
@@ -188,7 +191,7 @@
         }
         .links{
             @media only screen and (max-width : 320px) {
-                width: 391px;
+                width: 300px;
                   padding-left: 10px !important;
             }
              @media only screen and (min-width: 768px) and (max-width : 1024px) {

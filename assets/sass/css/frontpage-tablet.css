@@ -1,0 +1,124 @@
+        #footer.mobile{
+            margin-top:-20px;
+        }
+
+        #content.frontpage .onhover .hovering .slide{
+            height:auto !important;
+            padding-top:0;
+        }
+
+        #content.frontpage .onhover{
+            margin-left: 2px !important;
+        }
+
+        @media only screen and (max-width:769px){
+            #content.frontpage .onhover{
+                margin-left: 5px !important;
+            }
+        }
+
+        .slider {
+            height: 280px;
+            width: 362px !important;
+            overflow: hidden;
+            position: relative;
+            margin-left:-16px;
+        }
+
+        @media only screen and (max-width:769px){
+            .slider {
+                width:380px !important;
+                margin-left: -20px;
+                margin-right: 5px;
+            }
+        }
+
+        .hovering.mobile{
+            width:724px;
+            }
+
+
+        @media only screen and (max-width:769px){
+            .hovering.mobile{
+                 width:731px;
+            }
+        }
+
+        .slide {
+            padding: 0;
+            margin: 0;
+            width: 800px;
+            padding-top: 30px;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+
+            /*apply a transform to kick in the hardware acceleration.  Without this, the first
+            time we add the transform you get odd rendering of the divs (half missing) */
+            transform: translate(0, 0);
+        }
+
+
+        .slide > div {
+            padding: 0;
+            margin: 0;
+            width: 367px;
+            height: 270px;
+            float: left;
+            display: inline-block;
+
+            /*apply a transform to kick in the hardware acceleration.  Without this, the first
+            time we add the transform you get odd rendering of the divs (half missing) */
+            transform: translate(0, 0);
+        }
+
+@media only screen and (max-width:769px){
+            .slide > div {
+                width:390px !important;
+            }
+        }
+
+        .mi{
+            text-align:center;
+            margin:auto;
+            padding-bottom: 20px;
+        }
+
+        #content.frontpage .onhover .hovering.mobile article{
+            height:106px;
+        }
+        .hovering.mobile .slide .links{
+            width:320px;
+            padding-left: 0 !important;
+        }
+
+        #content.frontpage .onhover .hovering ul li a{
+            padding-right: 15px;
+            height: 150px;
+            padding-top: 33px;
+        }
+        .hovering.mobile .slider{
+            height:330px;
+        }
+        #content.frontpage .onhover .hovering ul{
+            margin-left: 27px;
+            padding-top: 14px;
+            width:270px;
+        }
+
+        #content.frontpage .page_content{
+            margin-top:-320px;
+        }
+
+        @media only screen and (max-width:769px){
+            .frontpage_image{
+                margin-top: 135px;
+            }
+        }
+
+        @media only screen and (max-width:769px){
+
+        }
+        .fa.fa-angle-left{
+            margin-top:113px;
+        }
