@@ -94,7 +94,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-4.png">
             </article>
             <article class="content">
-                 <span class="q">“</span>My kid know they won't get away with anything in this house<span class="q">”</span>
+                 <span class="q">“</span>My kid knows they won't get away with anything in this house<span class="q">”</span>
             </article>
             <article class="icon">
                <i class="fa fa-angle-right"></i>
