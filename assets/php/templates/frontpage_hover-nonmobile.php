@@ -90,7 +90,7 @@
                 <img class="two c4" src="<?php echo get_template_directory_uri(); ?>/assets/img/eye-on.png" >
             </header>
             <article>
-                <span class="q">“</span>My kid know they won't get away with anything in this house<span class="q">”</span>
+                <span class="q">“</span>My kid knows they won't get away with anything in this house<span class="q">”</span>
             </article>
             </div>
             <footer class="footer s4">
