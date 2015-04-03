@@ -28,7 +28,7 @@ echo '   <header>
 
 
                 </header>';
-                echo "<article><ul>";
+                echo "<article><ul class='pp'>";
 
     for($i = 0; $i<$al; $i++){
         if($aTrue[$i] == "yes"){
@@ -66,7 +66,7 @@ echo '   <header>
                     <h1><span class="left   su"></span>Empowerment<span class="su right  "></span></h1>
 
                 </header>';
-  echo "<article><ul>";
+  echo "<article><ul class='pp'>";
     for($i = 0; $i<($al); $i++){
         if($aemp[$i] == "yes"){
             echo "<li>" . $emp[$i]. "</li>";
@@ -103,7 +103,7 @@ echo '   <header>
                     <h1><span class="left   su"></span>BOUNDARIES AND EXPECTATIONS<span class="su right  "></span></h1>
 
                 </header>';
-                  echo "<article><ul>";
+                  echo "<article><ul class='pp'>";
 
     for($i = 0; $i<($aw); $i++){
         if($ab[$i] == "yes"){
@@ -139,7 +139,7 @@ echo '   <header>
                     <h1><span class="left   su"></span>CONSTRUCTIVE USE OF TIME<span class="su right  "></span></h1>
 
                 </header>';
-    echo "<article><ul>";
+    echo "<article><ul class='pp'>";
 
     for($i = 0; $i<($ad); $i++){
         if($aq[$i] == "yes"){
@@ -176,7 +176,7 @@ echo '   <header>
                     <h1><span class="left   su"></span>COMMITMENT TO LEARNING<span class="su right  "></span></h1>
 
                 </header>';
-    echo "<article><ul>";
+    echo "<article><ul class='pp'>";
     for($i = 0; $i<($cc); $i++){
         if($bb[$i] == "yes"){
             echo "<li>".$learning[$i]. "</li>";
@@ -212,7 +212,7 @@ echo '   <header>
                     <h1><span class="left   su"></span>POSITIVE VALUES<span class="su right  "></span></h1>
 
                 </header>';
-    echo "<article><ul>";
+    echo "<article><ul class='pp'>";
     for($i = 0; $i<($pp); $i++){
         if($az[$i] == "yes"){
             echo "<li>".$values[$i]. "</li>";
@@ -245,7 +245,7 @@ echo '   <header>
                     <h1><span class="left   su"></span>SOCIAL COMPETENCIES<span class="su right  "></span></h1>
 
                 </header>';
-                    echo "<article><ul>";
+                    echo "<article><ul class='pp'>";
 
     for($i = 0; $i<($hh); $i++){
         if($rj[$i] == "yes"){
@@ -282,7 +282,7 @@ echo '   <header>
                     <h1><span class="left   su"></span>POSITIVE IDENTITY<span class="su right  "></span></h1>
 
                 </header>';
-                     echo "<article><ul>";
+                     echo "<article><ul class='pp'>";
 
     for($i = 0; $i<($vf); $i++){
         if($tg[$i] == "yes"){
@@ -297,7 +297,7 @@ echo '<div>
         <p>
            <strong> This list is courtesy of the Search Institute. Please read the Institute’s terms of use below.</strong></p><p>
 This list is an educational tool. It is not intended to be nor is it appropriate as a scientific measure of the developmental assets of individuals.</p><p>
-Copyright &copy; 1997, 2007 by Search Institute. All rights reserved. This chart may be reproduced for educational, noncommercial use only. No other use is permitted without prior permission from Search Institute, 615 First Avenue N.E., Suite 125, Minneapolis, MN 55413; 800-888-7828. <a href="http://www.search-institute.org/legal" target="_blank">See Search Institute\'s Permissions Guide s and Request Form</a>. The following are registered trademarks of Search Institute: Search Institute&reg;, Developmental Assets&reg; and Healthy Communities &bull; Healthy Youth&reg;.</p>
+Copyright &copy; 1997, 2007 by Search Institute. All rights reserved. This chart may be reproduced for educational, noncommercial use only. No other use is permitted without prior permission from Search Institute, 615 First Avenue N.E., Suite 125, Minneapolis, MN 55413; 800-888-7828. <a href="http://www.search-institute.org/legal" target="_blank">See Search Institute\'s Permissions, Guides and Request Form</a>. The following are registered trademarks of Search Institute: Search Institute&reg;, Developmental Assets&reg; and Healthy Communities &bull; Healthy Youth&reg;.</p>
 
         </div>';
 

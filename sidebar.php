@@ -1,5 +1,5 @@
  <section id="sidebar" class="col-lg-3">
-    <?php if(is_page("resources") or is_child("resources") or is_page("media center") or is_child("media center")): ?>
+    <?php if(is_page("resources") or is_child("resources") or is_page("media-center") or is_child("media-center")): ?>
         <ul>
         <?php
            /* $defaults1 = array(
@@ -26,6 +26,8 @@
                else{
                  $here = 13;
                }
+
+
 
                 wp_list_pages(array(
                     'title_li' => '',

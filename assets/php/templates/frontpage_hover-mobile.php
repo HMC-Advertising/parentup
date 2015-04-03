@@ -249,7 +249,7 @@
                     </div>
 
                     <div class="col-sm-9 col-xs-10">
-                        <span class="q">“</span>My child is well grounded ambitious, and totally supported&mdash;Not the kind of kid who falls into trouble.<span class="q">”</span>
+                        <span class="q">“</span>My child is well grounded, ambitious, and totally supported&mdash;not the kind of kid who falls into trouble.<span class="q">”</span>
                     </div>
                     <div class="col-sm-3 col-xs-2">
                         <i class="fa fa-angle-right"></i>
@@ -357,22 +357,27 @@
 
 
 
+<section  class="slider ">
+        <div id="swipe4" class="slide">
+            <div style="padding-top:30px">
+                <div class="mi col-lg-12">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-4.png">
+                    </div>
 
+                    <div class="col-sm-9 col-xs-10">
+                         <span class="q">“</span>My kid knows they won't get away with anything in this house.<span class="q">”</span>
 
-    <section id="swipe4" class=" slider">
-        <div class="slide">
-            <article class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-4.png">
-            </article>
-            <article class="content">
-                 <span class="q">“</span>My kid knows they won't get away with anything in this house<span class="q">”</span>
-            </article>
-            <article class="icon">
-               <i class="fa fa-angle-right"></i>
-            </article>
-        </div>
-        <div class="slide">
-            <ul class="links">
+                    </div>
+                    <div class="col-sm-3 col-xs-2">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+            </div>
+            <div>
+                <div style="float:left" class="col-xs-2 col-sm-1">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="col-xs-10 col-sm-11">
+                     <ul class="links">
 
                            <li>
                                 <a href="http://parentupvt.org/how-can-i-help-prevent-it/set-the-foundation/" class="threeline">Find out what you’re doing that’s helping—and ideas for other approaches  </a>
@@ -384,5 +389,12 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
+
+
+
+
+
+
+
 </section>

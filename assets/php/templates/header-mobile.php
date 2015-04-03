@@ -9,7 +9,11 @@
                             </a>
                         </div>
                         <div class="col-xs-6">
-                            <a href="<?php echo home_url( ); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-mobile.png"></a>
+                            <a href="<?php echo home_url( ); ?>"><img src="<?php if(is_mobile() or is_tablet()): ?>
+                                <?php echo get_template_directory_uri() ?>/assets/img/logo-mobile_@2x.png
+                            <?php else: ?>
+                                <?php echo get_template_directory_uri() ?>/assets/img/logo-mobile.png
+                            <?php endif; ?>" height="96" style="margin-left:-10px"></a>
                         </div>
                         <div class="col-xs-3">
                             <a href="#" class="sb-toggle-right">

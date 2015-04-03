@@ -9,7 +9,7 @@
                      <img class="two c1" src="<?php echo get_template_directory_uri(); ?>/assets/img/telescope_on.png">
                 </header>
                 <article>
-                    <span class="q">“</span>My child is well grounded ambitious, and totally supported&mdash;Not the kind of kid who falls into trouble.<span class="q">”</span>
+                    <span class="q">“</span>My child is well grounded, ambitious, and totally supported&mdash;not the kind of kid who falls into trouble.<span class="q">”</span>
                 </article>
              </div>
                 <footer class="footer s1">
@@ -90,7 +90,7 @@
                 <img class="two c4" src="<?php echo get_template_directory_uri(); ?>/assets/img/eye-on.png" >
             </header>
             <article>
-                <span class="q">“</span>My kid knows they won't get away with anything in this house<span class="q">”</span>
+                <span class="q">“</span>My kid knows they won't get away with anything in this house.<span class="q">”</span>
             </article>
             </div>
             <footer class="footer s4">

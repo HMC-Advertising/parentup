@@ -1,5 +1,5 @@
 <div>
-    <h3>Self-Esteem <small> Young person reports having a high self-esteem.</small></h3>
+    <h3>Self-Esteem <small> Young person reports having high self-esteem.</small></h3>
     <div class="content">
     <p><strong>
 Show me how to take action:</strong></p><ul><li>

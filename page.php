@@ -7,14 +7,14 @@
                 <div class="container">
                     <div class="row">
                         <!-- non-mobile -->
-                        <div class="hidden-sm hidden-xs" style="position:absolute; height:100%">
+                        <div class="hidden-sm hidden-xs col-lg-2 col-md-2">
                         <?php get_template_part("assets/php/templates/sidenav", "nonmobile"); ?>
                            <div class="clear"></div>
                         </div>
                         <!-- /none-mobile -->
 
                         <!-- content -->
-                        <section class="col-lg-10 col-md-9 nonmobilecontent">
+                        <section class="col-lg-9 col-md-8 nonmobilecontent">
                             <div class="breadcrumbs">
                                <?php if(function_exists('bcn_display'))
     {

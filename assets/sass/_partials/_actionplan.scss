@@ -100,6 +100,7 @@
                 margin-top: -42px;
                 ul{
                     list-style: none;
+                    margin-top:10px;
                      @media only screen and (max-width : 500px) {
                            width:100%;
                            padding-left: 0;
@@ -135,7 +136,7 @@
                 ul{
                      list-style: none;
                      padding-left: 0;
-                    li{
+                    >li{
                         color:$dg;
                         font-size: 16px;
                         padding:20px;
@@ -143,16 +144,14 @@
                             background: #eeeeee;
                             //color:$dg;
                         }
-                         &:nth-child(even){
-                            //color:$dg;
 
-                        }
                         ul{
                             list-style: disc;
                               margin-left: 50px;
                             li{
                                 padding:5px;
                                 padding-left: 0;
+                                background: none !important;
                             }
                         }
                     }
@@ -447,6 +446,9 @@
 
          }
         @media print {
+            #to_top{
+                display: none;
+            }
             body{
                 background:$w;
                 color:$b;
@@ -499,7 +501,7 @@
                         margin:0;
                         font-size: 14px;
                     }
-                    ul{
+                    /*ul{
                         >li{
                             padding:0px;
                             font-size: 12px !important;
@@ -522,7 +524,23 @@
                                 position: relative;
                             }
                         }
-                    }
+                    }*/
+
+                            ul > li.pp:after{
+                                margin-top:20px;
+                                width: 10%;
+                                border-width: 2px;
+                                border-top-style: solid;
+                                content: "";
+                                display: block;
+                                height: 10px;
+                                line-height: 1em;
+                                margin: -13px auto auto;
+                                padding-top: 20px;
+                                top: 20px;
+                                position: relative;
+                            }
+
                     article{
                         padding-top:0px;
                         padding-bottom:0px;

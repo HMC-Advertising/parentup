@@ -7,6 +7,6 @@ If you parent with a partner, make sure you work on keeping that relationship ha
 Know when to tell your children you’re sorry. Keep it honest and sincere, avoiding the temptation to soothe your own conscience by offering gifts or other indulgences unrelated to the situation.</li><li>
 Show them that you are brave enough to try again, even when you feel embarrassed.</li><li>
 Make sure children hear adults solving problems in peaceful ways—not with shouting, angry words, or hitting. If you and your child witness bullying or intimidation by adults or children, point it out, talk about it, and think of alternate ways the situation could have been handled.</li><li>
-Model for your children hard work, a good attitude, and respect for others. Avoid bad-mouthing coworkers, sports teams or players, and other with whom you compare yourself or compete.</li></ul><p>
-*For more on this topic, see <em>Just When I Needed You: True Stories of Adults Who Made a Difference in the Lives of Young People</em> by Deborah Fisher and <em>Mentoring for Meaningful Results</em>.
+Model for your children hard work, a good attitude, and respect for others. Avoid bad-mouthing coworkers, sports teams or players, and others with whom you compare yourself or compete.</li></ul><p>
+*For more on this topic, see <em>Just When I Needed You: True Stories of Adults Who Made a Difference in the Lives of Young People</em> by Deborah Fisher and <em>Mentoring for Meaningful Results</em> by Kristie Probst.
 </p></div></div><div class="page-break"></div>

@@ -88,6 +88,10 @@ return $output;
 
     add_shortcode("profile", "profiles" );
 
+
+
+if(!is_mobile()){
+
     //tabs
 
     function acc($atts, $content = null){
@@ -117,8 +121,6 @@ return $output;
     add_shortcode("tabs", "acc");
 
 
-
-
     function tab_function($atts, $content = null){
         extract(
             shortcode_atts(
@@ -131,9 +133,7 @@ return $output;
         $output = "";
         $output .='<ul class="nav nav-tabs">';
         $output .= do_shortcode($content);
-        $output .='
-                                        </ul>
-                                    </div>';
+        $output .='</ul></div>';
 
 
         return $output;
@@ -157,11 +157,11 @@ return $output;
         $output .='<li role="presentation" class="'.$class.' '.$active.' col-lg-'.$number.' col-md-'.$number.' col-sm-'.$number.' col-xs-12">
                         <a href="#'.$name.'" aria-controls="'.$name.'" role="tab" data-toggle="tab" class="row">
                         ';
-                        if(is_page("Talk About It") or is_page("Spread The Word &amp; Make Connections")){
+                        if(is_page("Talk About It") or is_page("spread-the-word-make-connections")){
 
                        $output .= '
                            <div class="col-lg-12"';
-                           if(is_page("Spread The Word &amp; Make Connections")){
+                           if(is_page("spread-the-word-make-connections")){
                             $output .='style="min-height:57px"';
                            }
                         $output .='>
@@ -231,6 +231,120 @@ return $output;
     }
 
     add_shortcode("tab_article", "con_tabs");
+}
+else{
+
+    //tabs
+
+    function acc($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                    "cover" => "http://lorempixel.com/850/280/nightlife/5/"
+                ),
+            $atts)
+        );
+
+        $output = "";
+
+        $output .= '<div class="ac">';
+        $output .= do_shortcode($content);
+        $output .="</div>";
+        return $output;
+    }
+
+    add_shortcode("tabs", "acc");
+
+    function tab_function($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                   "name" => '',
+                ),
+            $atts)
+        );
+
+        $output = "";
+        $output .= do_shortcode($content);
+        $output .= "";
+        return $output;
+    }
+    add_shortcode("tab_menu", "tab_function");
+
+    function tab_c($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                   "name" => '',
+                   'active' =>"",
+                   'title' => '',
+                   'number' => '',
+                   'class' => ''
+                ),
+            $atts)
+        );
+
+        $output = "";
+        $output .= "<div class='row'>";
+        $output .='
+         <a href="#'.$name.'" class="col-sm-12 col-xs-12" data-toggle="collapse" aria-expanded="false" aria-controls="'.$name.'">';
+            $output .= ''.$title.'
+                <br>
+                    <i class="fa fa-plus-circle"></i>
+            ';
+
+        $output .= '</a><div class="row">';
+        $output .= do_shortcode($content);
+        $output .= '</div></div>';
+
+        return $output;
+
+    }
+    add_shortcode("tab_links", "tab_c");
+
+
+    function content_tabs($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                   "name" => '',
+                   'active' =>""
+                ),
+            $atts)
+        );
+
+        $output .= do_shortcode($content);
+
+        return $output;
+
+    }
+    add_shortcode("tab_content", "content_tabs");
+
+    function con_tabs($atts, $content = null){
+        extract(
+            shortcode_atts(
+                array(
+                   "name" => '',
+                   'active' =>""
+                ),
+            $atts)
+        );
+
+        $output = "";
+        $output .='<article class="collapse col-sm-12 col-xs-12" id="'.$name.'">';
+        $output .= do_shortcode($content);
+        $output .=' </article>';
+         return $output;
+
+    }
+
+    add_shortcode("tab_article", "con_tabs");
+
+} //end of the mobile
+
+
+
+
 
     //accordian short code
 
@@ -283,15 +397,14 @@ return $output;
         extract(
             shortcode_atts(
                 array(
-                   "sinfo" => "This is the source"
+                   "sinfo" => ""
                 ),
             $atts)
         );
 
         $output = "";
         $output .= '<sup><a tabindex="0" class="source" role="button" data-toggle="popover" title="Source" data-content="'.$sinfo.'">';
-
-        $output .=$content;
+        $output .= $content;
         $output .='</a></sup>';
 
         return $output;

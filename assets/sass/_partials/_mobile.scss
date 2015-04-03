@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 99;
     top:0;
+
     i{
         color:$burg;
         font-size: 40px;
@@ -357,6 +358,65 @@ margin-right: 20px;
                         }
                 }
             }
+    }
+}
+
+
+.mobile_accordian{
+    height:100%;
+    display: block;
+    clear:both;
+    position: relative;
+   // background:$dcream;
+    margin-left: -40px !important;
+    margin-right: -30px;
+     div{
+        text-align: center;
+    }
+    .ac{
+        height:auto;
+        display: block;
+        position: relative;
+        padding:5px;
+        padding-left: 40px;
+        padding-right:10px;
+        background:$dcream;
+        a.col-sm-12{
+            font-size: 23px;
+            display: block;
+            border-top:thick solid $dblue;
+            border-bottom:thick solid $dblue;
+            padding-top:20px;
+            text-align: center;
+            line-height:23px;
+            padding-bottom:20px;
+            margin-top:-5px;
+            i{
+                text-align: center;
+                font-size: 40px;
+                margin-top:7px;
+            }
+        }
+        article{
+            background: $cream;
+            //margin-top: 120px;
+            padding: 40px;
+            padding-top:10px;
+            padding-bottom:10px;
+            height:auto;
+            border-top:thick solid $dblue;
+            border-bottom:thick solid $dblue;
+            a{
+                font-size: 14px;
+                text-align: center;
+                display: initial;
+                padding: 0;
+            }
+            ul{
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
     }
 }
 

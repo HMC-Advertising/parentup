@@ -41,11 +41,15 @@
     <script type="text/javascript">stLight.options({publisher: "5442e064-c3d3-40b2-80b9-889739c8e226", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 	<!--[if lt IE 9]>
-	<link href="http://parentupvt.org/wp/wp-content/themes/parentup/assets/sass/css/ie.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/respond/dest/respond.min.js"></script>
-         <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/respond/dest/respond.matchmedia.addListener.min.js"></script>
-         <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/modernizer/modernizr.js"></script>
-          <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup//assets/js/plugins/html5shiv/dist/html5shiv.min.js"></script>
+	<link href="http://parentupvt.org/wp/wp-content/themes/parentup_production/assets/sass/css/ie.css" rel="stylesheet" type="text/css">
+
+     <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup_production/assets/js/plugins/respond/dest/respond.min.js"></script>
+
+    <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup_production/assets/js/plugins/respond/dest/respond.matchmedia.addListener.min.js"></script>
+
+    <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup_production/assets/js/plugins/modernizer/modernizr.js"></script>
+
+    <script type="text/javascript" src="http://parentupvt.org/wp/wp-content/themes/parentup_production/assets/js/plugins/html5shiv/dist/html5shiv.min.js"></script>
     <![endif]-->
 
     <?php if(is_front_page()): ?>

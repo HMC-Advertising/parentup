@@ -1,9 +1,9 @@
 /*
 Theme Name: Parent Up
-Theme URI: http://wearehmc.com/theme/new_theme
+Theme URI: http://wearehmc.com/theme/Parent Up
 Author: Amanda Iaria @ HMC Advertising
 Author URI: http://wearehmc.com
-Version:
+Version: 1.0
 */
 
 //Vendor - Bootstrap
@@ -21,7 +21,7 @@ body{
     font-size:17px;
 }
 sup{
-    top:-13px;
+    top:-9px;
 }
 ::selection{
     background:$lblue;
@@ -38,6 +38,7 @@ hr{
 
 
 }
+
 .size-full{
     width: 100%;
     height:auto;
@@ -48,9 +49,13 @@ hr{
 }
 ol {
     counter-reset: counts;
+    list-style-type: none;
+     @media only screen and (max-width : 400px) {
+        padding-left: 5px;
+     }
     > li{
         margin-bottom: .5em;
-        overflow: hidden; // Hide the default ol li numbers
+
         margin-bottom:0px;
         padding-left:43px;
         line-height: normal;
@@ -133,6 +138,7 @@ ul{
     }
 }
 
+
 a{
     color:$dblue;
     font-weight: 400;
@@ -140,12 +146,21 @@ a{
     &:hover{
         color:$lblue;
         text-decoration:none;
+         outline:none !important;
+    }
+     &:focus{
+        border:none;
+        outline:none !important;
     }
     &:active{
         color:$dblue;
+         border:none;
+          outline:none !important;
     }
     &:visited{
         color:$dblue;
+         border:none;
+          outline:none !important;
     }
     &.next{
         font-weight: 600;
@@ -283,7 +298,7 @@ h3{
                 background: $orange;
                 padding:10px;
                 display:none;
-                padding-bottom: 12px;
+                padding-bottom: 13px;
                 padding-top: 12px;
             }
             a{
@@ -304,7 +319,7 @@ h3{
                 text-shadow:none;
                 opacity:1.0;
                 &.off{
-                    font-size: 18px;
+                    font-size: 17px;
                     font-weight:800;
                     text-align: left;
                      i{
@@ -445,7 +460,7 @@ h3{
         .page_content{
             background:none;
             margin-top: 50px;
-            padding-bottom: 250px;
+            padding-bottom: 50px;
             @media only screen and (max-width : 1100px) {
                            padding-bottom: 20px;
                            margin-top: 0px;
@@ -746,9 +761,11 @@ h3{
             background:$burg;
 
             margin-top: 15px;
+
             font-weight: 600;
             @media only screen and (max-width : 500px) {
                 font-size: 12px;
+
             }
             @media only screen and (max-width : 1000px) {
               padding-bottom: 10px;
@@ -796,7 +813,7 @@ h3{
 
         .page_content{
             //margin-top:400px;
-            margin-top: -283px;
+            margin-top: -281px;
             background:rgba(230, 228, 214, 0.8);
             padding:20px;
             z-index: 2;
@@ -1049,6 +1066,15 @@ h3{
 
                 }
             }
+            &.current_page_item{
+                a{
+                    background: $cream;
+                    color:$dblue;
+                    &:hover{
+                        color:$lblue;
+                    }
+                }
+            }
         }
     }
 }
@@ -1181,9 +1207,16 @@ h3{
         }
     }
 }
+
 .nonmobilecontent{
-    margin-left:200px;
-     @media only screen and (max-width : 1000px) {
+    margin-left:20px;
+
+
+     @media only screen and (min-width : 992px) and (max-width:1199px) {
+        margin-left: 56px;
+
+     }
+     @media only screen and (max-width : 991px) {
         margin-left:0px;
         margin-top:130px;
      }
@@ -1195,6 +1228,9 @@ h3{
     }
 }
 
+.menu-main-nav-container{
+      min-height: 397px;
+}
 //argh
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
     color:$burg !important;

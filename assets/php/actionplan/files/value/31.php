@@ -9,5 +9,5 @@ Some teens think that all parties have to be unsupervised and involve drinking o
 Don’t laugh at or glorify the behavior of people who have had too much to drink, even on television or in movies.</li><li>
 Let your teen know it’s so important to you that they don’t drink, that you will always provide a no-questions-asked-at-the-time ride home if they end up at a party where there is alcohol.</li><li>
 Seize opportune moments to talk, such as after watching a movie or show together that contains content about sexual relationships (even those considered “family” shows often do).</li></ul><p>
-*For more on this topic, see <em>Parenting Preteens with a Purpose: Navigating the Middle Years by Kate Thomsen</em>, <em>Parenting at the Speed of Teens</em>, and <em>Helping Teens Handle Tough Experiences: Strategies to Foster Resilience</em> by Jill R. Nelson and Sarah Kjos.</p></div></div>
+*For more on this topic, see <em>Parenting Preteens with a Purpose: Navigating the Middle Years</em> by Kate Thomsen, <em>Parenting at the Speed of Teens</em> by Renie Howard, and <em>Helping Teens Handle Tough Experiences: Strategies to Foster Resilience</em> by Jill R. Nelson and Sarah Kjos.</p></div></div>
 <div class="page-break"></div>

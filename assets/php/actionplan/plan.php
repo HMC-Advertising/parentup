@@ -209,7 +209,7 @@
                          </div>
                     <div class="collapse mcontent" id="c11">
                         <div class=" ">
-                            Family has clear rules and consequences and monitors the young person’s whereabouts.
+                            Family has clear rules and consequences, and monitors the young person’s whereabouts.
                         </div>
                     </div>
                 </li>
@@ -270,7 +270,7 @@
                          </div>
                     <div class="collapse mcontent" id="c16">
                         <div class=" ">
-                            Both parent(s) and teachers encourage the young person to do  .
+                            Both parent(s) and teachers encourage the young person to do well.
                         </div>
                     </div>
                 </li>
@@ -449,7 +449,7 @@
                          </div>
                     <div class="collapse mcontent" id="c26">
                         <div class=" ">
-                            Young Person places high value on helping other people.
+                            Young person places high value on helping other people.
                         </div>
                     </div>
                 </li>
@@ -668,7 +668,7 @@
         <p>
              <strong>This list is courtesy of the Search Institute.</strong> Please read the Institute’s terms of use below. </p><p>
 This list is an educational tool. It is not intended to be nor is it appropriate as a scientific measure of the developmental assets of individuals.</p><p>
-Copyright &copy; 1997, 2007 by Search Institute. All rights reserved. This chart may be reproduced for educational, noncommercial use only. No other use is permitted without prior permission from Search Institute, 615 First Avenue N.E., Suite 125, Minneapolis, MN 55413; 800-888-7828. <a href="http://www.search-institute.org/legal" target="_blank">See Search Institute's Permissions Guidelines and Request Form.</a> The following are registered trademarks of Search Institute: Search Institute&reg;, Developmental Assets&reg; and Healthy Communities &bull; Healthy Youth&reg;.</p>
+Copyright &copy; 1997, 2007 by Search Institute. All rights reserved. This chart may be reproduced for educational, noncommercial use only. No other use is permitted without prior permission from Search Institute, <br>615 First Avenue N.E., Suite 125, Minneapolis, MN 55413; 800-888-7828. <a href="http://www.search-institute.org/legal" target="_blank">See Search Institute's Permission Guidelines and Request Form.</a> The following are registered trademarks of Search Institute: Search Institute&reg;, Developmental Assets&reg; and Healthy Communities &bull; Healthy Youth&reg;.</p>
 
         </div>
             <!-- Button trigger odd modal -->
