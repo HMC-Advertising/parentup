@@ -8198,6 +8198,18 @@ h3 {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #52111d !important; }
 
+@media only screen and (max-with: 400px) {
+  /* line 1242, assets/sass/style.scss */
+  #header-mobile .alert a.close.on {
+    font-size: 12px;
+    display: block;
+    width: 100%; }
+  /* line 1247, assets/sass/style.scss */
+  #header-mobile .alert ul li {
+    padding: 5px; }
+    /* line 1249, assets/sass/style.scss */
+    #header-mobile .alert ul li a {
+      font-size: 12px; } }
 /* line 2, assets/sass/_partials/_mobile.scss */
 #header-mobile {
   background: #f0eee0;

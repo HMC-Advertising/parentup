@@ -103,11 +103,11 @@ module.exports = function (grunt){
           	php: {
             	files: ['*.php', 'assets/php/{,*/}*.php'],
             	tasks : ['phplint']
-          	}/*,
+          	},
           	html: {
           		files :['**php'],
           		tasks : ['htmlhint']
-          	}*/
+          	}
         },
 		rsync: {
     		options: {

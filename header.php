@@ -8,12 +8,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title><?php
-			if(!wp_title()):
-					echo " | "; bloginfo("name" );
-
-			else:
+            if(!is_front_page()):
 				wp_title();
-			endif;
+            else:
+            	echo "Parent Up for Vermont";
+            endif;
 		?></title>
 
         <meta name="viewport" content="width=device-width">

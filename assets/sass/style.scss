@@ -1236,6 +1236,25 @@ h3{
     color:$burg !important;
 }
 
+@media only screen and (max-with: 400px){
+    #header-mobile {
+        .alert {
+            a.close.on{
+                font-size: 12px;
+                display: block;
+                width:100%;
+            }
+            ul li {
+                padding:5px;
+                a{
+                    font-size:12px;
+                }
+            }
+        }
+    }
+
+}
+
 @import "_partials/mobile";
 @import "_partials/print-monitor";
 @import "_partials/actionplan";
